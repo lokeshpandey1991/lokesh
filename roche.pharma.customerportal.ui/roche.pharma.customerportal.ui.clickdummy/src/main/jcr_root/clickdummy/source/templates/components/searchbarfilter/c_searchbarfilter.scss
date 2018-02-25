@@ -1,0 +1,70 @@
+.t-search-listing {
+
+  & .search-results-tab-component {
+    padding-right:0;
+    @include MQ(tablet) {
+      width: 1%;
+      white-space: nowrap;
+      & .c-tabs-container {
+        border: 0;
+        margin: 0;
+
+        & .c-tabs-list {
+          top: 0;
+          width: 100%;
+          text-align:right;
+          & li.c-tab-list-item {
+            width: convert-in-rem(268);
+            background-color: $clr-blue;
+            border-color: $clr-white;
+            &:hover {
+              background-color: $clr-tint-blue;
+              border-color:$clr-outline;
+              a {
+                color: $heading-typetwo-clr;
+              }
+            }
+            &.selected, &.selected:hover {
+              background-color: $clr-white;
+              & a {
+                color: $clr-black;
+              }
+            }
+            & a {
+              color: $clr-white;
+              opacity: 1;
+              &:hover {
+                color: $clr-white;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @include MQ(mobileonly) {
+      padding: 0;
+
+      & .c-tabs-container {
+        line-height: 0;
+        & .c-tabs-list {
+          margin-bottom: 0;
+          padding: 0;
+          & li.c-tab-list-item {
+            width: 33%;
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  & .c-search-results-bar {
+    padding-right : convert-in-rem(50);
+    @include MQ(mobileonly) {
+      padding:0;
+    }
+  }
+
+}

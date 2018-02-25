@@ -1,0 +1,72 @@
+{
+	"jcr:primaryType": "cq:Page",
+	"jcr:createdBy": "admin",
+	"jcr:created": "Thu Jul 27 2017 11:02:38 GMT+0530",
+	"jcr:content": {
+		"jcr:primaryType": "cq:PageContent",
+		"jcr:mixinTypes": [
+			"mix:versionable",
+			"cq:LiveSync"
+		],
+		"jcr:createdBy": "admin",
+		"jcr:title": "en",
+		"cq:lastReplicationAction": "Activate",
+		"jcr:versionHistory": "4b3d5048-5e2b-4cf2-a651-1d4fba67dadb",
+		"cq:template": "/apps/roche/pharma/customerportal/templates/languagepage",
+		"cq:lastReplicatedBy": "admin",
+		"cq:lastRolledout": "Wed Aug 09 2017 00:53:42 GMT-0400",
+		"jcr:predecessors": [
+			"b4da1dd0-32f1-40e3-b184-07878dc0c8cb"
+		],
+		"jcr:created": "Thu Jul 27 2017 11:02:38 GMT+0530",
+		"cq:lastReplicated": "Wed Aug 09 2017 00:54:39 GMT-0400",
+		"cq:lastModified": "Wed Aug 09 2017 00:53:42 GMT-0400",
+		"jcr:baseVersion": "b4da1dd0-32f1-40e3-b184-07878dc0c8cb",
+		"jcr:isCheckedOut": true,
+		"jcr:uuid": "37c650d2-3415-403e-897d-60993c72bb43",
+		"sling:resourceType": "roche/customerportal/components/page/languagepage",
+		"cq:lastRolledoutBy": "admin",
+		"cq:lastModifiedBy": "admin"
+	},
+	"home": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Thu Jul 27 2017 11:02:38 GMT+0530"
+	},
+	"landing-home": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Wed Aug 09 2017 10:24:21 GMT+0530"
+	},
+	"TestHeadlineBody": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Wed Aug 09 2017 10:24:21 GMT+0530"
+	},
+	"personaselector": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Wed Aug 09 2017 10:24:21 GMT+0530"
+	},
+	"test": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Wed Aug 09 2017 10:24:21 GMT+0530"
+	},
+	"country-selector": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Wed Aug 09 2017 11:44:03 GMT+0530"
+	},
+	"publishedIndex": {
+		"jcr:primaryType": "nt:unstructured",
+		"jcr:mixinTypes": [
+			"cq:ReplicationStatus"
+		],
+		"deactivatedUrls": "/content/roche/customerportal/us/en/landing-home/product-category/product-detail\n",
+		"cq:lastReplicationAction": "Activate",
+		"cq:lastReplicatedBy": "roche",
+		"cq:lastReplicated": "Sat Aug 26 2017 11:56:45 GMT+0530",
+		"activatedUrls": "/content/roche/customerportal/us/en/home/roche54353\n/content/roche/customerportal/us/en/home/product-category-page\n"
+	}
+}

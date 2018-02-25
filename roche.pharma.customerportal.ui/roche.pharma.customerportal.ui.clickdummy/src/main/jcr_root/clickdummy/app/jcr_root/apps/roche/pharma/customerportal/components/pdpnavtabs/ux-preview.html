@@ -1,0 +1,33 @@
+<!--
+
+    Preview Component .
+
+    -->
+<html lang="en">
+<sly data-sly-use.pdpnavtabsModel="ux-model.js"
+       data-sly-use.lib="/apps/roche/pharma/customerportal/components/pdpnavtabs/pdpnavtabs-template.html" />
+
+<sly data-sly-test="${ pdpnavtabsModel.requestURI == pdpnavtabsModel.nodePathWithSelector} || pdpnavtabsModel.requestURI == pdpnavtabsModel.pagePathWithSelector}">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"
+              data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/favicon.ico" type="image/x-icon" />
+        <title>pdpnavtabs Component | UpFront</title>
+
+        <sly data-sly-call="${clientLib.css @ categories='roche.vendor.publish'}" />
+        <sly data-sly-call="${clientLib.css @ categories='roche.global.publish'}" />
+        <sly data-sly-call="${clientLib.css @ categories='roche.secondary.publish'}" />
+        <sly data-sly-call="${clientLib.css @ categories='roche.pdp.ssi.publish'}" />
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWxty08aW6_xCCrYkOuckYvlKMMm8R8_U&language=en" id="st-script"></script>
+    </head>
+</sly>
+
+ 
+<sly data-sly-call="${lib.pdpnavtabs_template @ data=pdpnavtabsModel}" />
+ <sly data-sly-test="${ pdpnavtabsModel.requestURI == pdpnavtabsModel.nodePathWithSelector} || pdpnavtabsModel.requestURI == pdpnavtabsModel.pagePathWithSelector}" data-sly-call="${clientLib.js @ categories='roche.vendor.publish'}" />
+ <sly data-sly-test="${ pdpnavtabsModel.requestURI == pdpnavtabsModel.nodePathWithSelector} || pdpnavtabsModel.requestURI == pdpnavtabsModel.pagePathWithSelector}" data-sly-call="${clientLib.js @ categories='roche.global.publish'}" />
+ <sly data-sly-test="${ pdpnavtabsModel.requestURI == pdpnavtabsModel.nodePathWithSelector} || pdpnavtabsModel.requestURI == pdpnavtabsModel.pagePathWithSelector}" data-sly-call="${clientLib.js @ categories='roche.secondary.publish'}" />
+ <sly data-sly-test="${ pdpnavtabsModel.requestURI == pdpnavtabsModel.nodePathWithSelector} || pdpnavtabsModel.requestURI == pdpnavtabsModel.pagePathWithSelector}" data-sly-call="${clientLib.js @ categories='roche.pdp.ssi.publish'}" />
+</html>

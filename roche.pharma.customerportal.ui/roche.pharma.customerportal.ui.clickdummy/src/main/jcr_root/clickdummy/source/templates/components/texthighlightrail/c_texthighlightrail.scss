@@ -1,0 +1,41 @@
+.c-text-highlight-rail {
+  &__headline {
+    font-size: convert-in-rem(32);
+    line-height: convert-in-rem(38);
+    margin-top: convert-in-rem(37);
+  }
+  &__body-text {
+    font-size: convert-in-rem(16);
+    line-height: convert-in-rem(22);
+    color: $clr-grey;
+    margin-bottom: 0;
+    @include margin-mobile-l;
+  }
+  &__cta{
+    font-size: convert-in-rem(18);
+    line-height: convert-in-rem(23);
+    margin-top: 20px;
+    display: block;
+  }
+  @media($mobile) {
+    &__headline {
+      font-size: convert-in-rem(22);
+      line-height: convert-in-rem(28);
+      margin-top: convert-in-rem(47);
+    }
+    &__body-text {
+      @include margin-mobile-m;
+    }
+    &__cta {
+      @include margin-mobile-s;
+    }
+  }
+}
+.c-text-highlight-rail-heading {
+  font-size: convert-in-rem(38);
+  line-height: convert-in-rem(44);
+  @media($mobile) {
+  font-size: convert-in-rem(30);
+  line-height: convert-in-rem(36);
+  }
+}

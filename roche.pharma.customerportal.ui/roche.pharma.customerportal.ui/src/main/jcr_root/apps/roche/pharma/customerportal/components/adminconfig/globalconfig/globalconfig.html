@@ -1,0 +1,12 @@
+<h1>Global Configurations</h1>
+<div
+	data-sly-use.global="com.roche.pharma.customerportal.core.models.GlobalConfigurationsModel">
+	<div>WebsitePath : ${global.websitePath @ context='uri'} </div>
+    <div>Elab Document URL : ${global.elabURL @ context='uri'}</div>
+    <div>Google Map Key : ${global.googleMapKey}</div>
+    <div>Captcha Disable : ${global.isCaptchaDisabled}</div>
+    <div>enableDTL : ${global.isDTLEnabled}</div>
+    <div>enableProductMeta : ${global.isProductMetaEnabled}</div>
+    <div>enableElabDoc : ${global.isElabDocEnabled}</div>
+    <div>enableElabDocForAssays : ${global.isElabDocEnabledForAssays}</div>
+</div>

@@ -1,0 +1,24 @@
+.c-registration-status {
+  &__title {
+    font-size: convert-in-rem(22);
+    line-height: convert-in-rem(28);
+    color: $heading-color;
+
+    @media ($tablet) {
+      font-size: convert-in-rem(32);
+      line-height: convert-in-rem(38);
+    }
+  }
+
+  &__content {
+    font-size: convert-in-rem(16);
+    line-height: convert-in-rem(22);
+    color: $clr-paragraph;
+    display: inline-block;
+
+    @media ($tablet) {
+      font-size: convert-in-rem(20);
+      line-height: convert-in-rem(26);
+    }
+  }
+}

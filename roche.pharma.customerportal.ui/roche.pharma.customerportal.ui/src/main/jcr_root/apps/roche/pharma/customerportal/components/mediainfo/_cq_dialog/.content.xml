@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <media
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Roche Media Info"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <fieldset
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Roche Media Info Input"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <ctaText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                class="foundation-layout-util-maximized-alt long-label"
+                                                fieldLabel="CTA Text"
+                                                name="./ctaText"/>
+                                            <ctaDescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                                class="foundation-layout-util-maximized-alt long-label"
+                                                fieldLabel="CTA Description"
+                                                name="./ctaDescription"/>
+                                            <multi
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                                class="foundation-layout-util-maximized-alt long-label"
+                                                fieldDescription="Click 'Add Fields' to add a new Media Info"
+                                                fieldLabel="Media Info">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                                    acs-commons-nested="JSON_STORE"
+                                                    name="./mediaLinks">
+                                                    <layout
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                                        method="absolute"/>
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <imageText
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                                                    class="foundation-layout-util-maximized-alt long-label"
+                                                                    fieldDescription="Enter Image Text"
+                                                                    fieldLabel="Image Text"
+                                                                    name="./imageText"/>
+                                                                <imageHeading
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                    class="foundation-layout-util-maximized-alt long-label"
+                                                                    fieldDescription="Enter Image Heading"
+                                                                    fieldLabel="Image Heading"
+                                                                    name="./imageHeading"/>
+                                                                <imagePath
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                                    class="foundation-layout-util-maximized-alt long-label"
+                                                                    fieldLabel="Image Path"
+                                                                    name="./imagePath"
+                                                                    rootPath="/content/dam/customerportal"/>
+                                                                <altText
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                    class="foundation-layout-util-maximized-alt long-label"
+                                                                    fieldDescription="Enter Image Alt Text"
+                                                                    fieldLabel="Image Alt Text"
+                                                                    name="./altText"/>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </multi>
+                                        </items>
+                                    </column>
+                                </items>
+                            </fieldset>
+                        </items>
+                    </column>
+                </items>
+            </media>
+        </items>
+    </content>
+</jcr:root>

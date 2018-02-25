@@ -1,0 +1,13 @@
+---
+{
+      "layout"     : "app.hbs",
+    "title"      : "FAQ",
+    "fsdId"      : "faq",
+    "categories" : "components",
+    "description": "this is accordion functionality",
+    "components" : "faq",
+    "hiddenUX"   : true
+}
+---
+
+<sly data-sly-call="${lib.faq_template @ data=faqModel}" />

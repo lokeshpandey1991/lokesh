@@ -1,0 +1,111 @@
+.c-pdp-specs-container{
+	margin-top:convert-in-rem(60);
+	@media ($tablet) {
+		margin-top:convert-in-rem(38);
+	}
+}
+.c-pdp-specs-heading{
+	h2{
+	   font-size: convert-in-rem(22);	
+	   line-height: convert-in-rem(28);	
+	   color: $heading-color;
+	   @media ($tablet) {
+	   	   float:left;
+	   	   font-size: convert-in-rem(48);
+	   	   line-height: convert-in-rem(54);
+	   	   width:74%;
+	   }
+	}				
+}
+.c-pdp-specs-seeall{
+	font-size: convert-in-rem(18);
+	color: $heading-color;
+	display:inline-block;
+	padding-right:30px;
+	a:hover, a:visited{
+		color: $heading-color;
+	}
+	@media ($tablet) {
+		float:right;
+		line-height: convert-in-rem(24);
+	   	text-align:right;
+	   	margin-top: convert-in-rem(15);
+	   	padding-right:22px;
+	}
+	@media ($mobile) {
+		margin-top:convert-in-rem(25);
+		line-height: convert-in-rem(22);
+	}
+
+}
+.c-pdp-spec-wrapper{
+	@media ($tablet) {
+		margin-top: convert-in-rem(45);
+		width:94%;		
+	}
+	@media ($mobile) {
+		margin-top: convert-in-rem(23);
+	}
+}
+.c-pdp-spec, .c-pdp-spec-desc{
+	font-size:convert-in-rem(16);
+	line-height: convert-in-rem(22);
+	margin-bottom:0px;
+}
+.c-pdp-spec{
+	color:$heading-color;
+	position:relative;	
+	@media ($tablet) {
+		width:54%;
+		float:left;
+		overflow:hidden;
+		box-sizing:border-box;
+	}
+	@media ($mobile) {
+		margin-bottom:convert-in-rem(5);
+	}
+
+}
+.c-pdp-spec-line{
+	@media ($tablet) {
+		display: inline-block;
+	    width: 100%;
+	    height: 1px;
+	    background-color: $clr-outline;
+	    position: absolute;
+	    margin-left: convert-in-rem(18);
+	    top: convert-in-rem(11);
+	}
+}
+.c-pdp-spec-desc{
+	color:$heading-color;	
+	background-image: url("../../roche.global.publish/images/Oval.png");
+  	background-repeat: no-repeat;
+	background-position: 0 convert-in-rem(5.5);		
+	@media ($tablet) {
+		float:left;
+		width:46%;
+		padding-left:convert-in-rem(34);
+	}
+	@media ($mobile) {
+		padding-left:convert-in-rem(20);
+	}
+}
+.c-pdp-spec-label{
+	@media ($tablet) {
+		display:inline-block;
+		max-width:80%;
+	}
+}
+.c-pdp-spec-item{
+	@media ($tablet) {
+		margin-bottom:convert-in-rem(15);
+	}
+	@media ($mobile){
+		margin-bottom:convert-in-rem(23);
+	}
+}
+.c-pdp-specs-list{
+	padding-left:0px;
+	list-style-type:none;
+}

@@ -1,0 +1,13 @@
+---
+{
+	"layout"	 : "app.hbs",
+    "title"      : "Product Featured Tile",
+    "fsdId"      : "productfeaturedtile",
+    "categories" : "components",
+    "description": "repeating tile HTML fragment used to create featured products template",
+    "components" : "productfeaturedtile",
+    "hiddenUX"   : true
+}
+---
+
+<sly data-sly-call="${lib.productfeaturedtile_template @ data=productfeaturedtileModel}" />

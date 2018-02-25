@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <section
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Product Description"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <headline
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldDescription="Enter the Headline Text"
+                                        fieldLabel="Headline"
+                                        name="./productDescrHeading"
+                                        required="true"/>
+                                    <valueProposition
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                        fieldLabel="Value Proposition"
+                                        name="./productDescription"
+                                        required="true">
+                                        <rtePlugins jcr:primaryType="nt:unstructured">
+                                            <links jcr:primaryType="nt:unstructured">
+                                                <linkDialogConfig
+                                                    jcr:primaryType="nt:unstructured"
+                                                    height="{Long}316">
+                                                    <linkAttributes jcr:primaryType="cq:WidgetCollection"/>
+                                                </linkDialogConfig>
+                                            </links>
+                                            <format
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                            <lists
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                            <justify
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                            <keys
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                            <paraformat
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                            <misctools
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                            <subsuperscript
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                            <findreplace
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                            <edit
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                            <undo
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                        </rtePlugins>
+                                        <uiSettings jcr:primaryType="nt:unstructured">
+                                            <cui jcr:primaryType="nt:unstructured">
+                                                <inline
+                                                    jcr:primaryType="nt:unstructured"
+                                                    toolbar="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript,edit#cut,edit#copy,edit#paste-default,edit#paste-plaintext,edit#paste-wordhtml,links#modifylink,links#unlink,findreplace#find,findreplace#replace,undo#undo,undo#redo,justify#justifyleft,justify#justifycenter,justify#justifyright,lists#unordered,lists#ordered,lists#outdent,lists#indent,table#createoredit,table#removetable,misctools#sourceedit,misctools#specialchars,#paraformat,#styles]">
+                                                    <popovers jcr:primaryType="nt:unstructured">
+                                                        <styles
+                                                            jcr:primaryType="nt:unstructured"
+                                                            items="styles:getStyles:styles-pulldown"
+                                                            ref="styles"/>
+                                                        <paraformat
+                                                            jcr:primaryType="nt:unstructured"
+                                                            items="paraformat:getFormats:paraformat-pulldown"
+                                                            ref="paraformat"/>
+                                                    </popovers>
+                                                </inline>
+                                            </cui>
+                                        </uiSettings>
+                                    </valueProposition>
+                                    <viewFlag
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                        name="./columnView"
+                                        text="Display headline and description same columns"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                </items>
+                            </column>
+                        </items>
+                    </column>
+                </items>
+            </section>
+        </items>
+    </content>
+</jcr:root>

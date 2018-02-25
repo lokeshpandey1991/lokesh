@@ -1,0 +1,13 @@
+---
+{
+	"layout"	 : "app.hbs",
+    "title"      : "Products/Search Listing Wrapper",
+    "fsdId"      : "listingwrapper",
+    "categories" : "components",
+    "description": "Acts as a wrapper where all results tile variation can be rendered",
+    "components" : "listingwrapper",
+    "hiddenUX"   : true
+}
+---
+
+<sly data-sly-call="${lib.listingwrapper_template @ data=listingwrapperModel}" />

@@ -1,0 +1,13 @@
+---
+{
+	"layout"	 : "app.hbs",
+    "title"      : "Image Gallery",
+    "fsdId"      : "imagegallery",
+    "categories" : "components",
+    "description": "Displays cluster of six images to be used on any page",
+    "components" : "imagegallery",
+    "hiddenUX"   : true
+}
+---
+
+<sly data-sly-call="${lib.imagegallery_template @ data=imagegalleryModel}" />

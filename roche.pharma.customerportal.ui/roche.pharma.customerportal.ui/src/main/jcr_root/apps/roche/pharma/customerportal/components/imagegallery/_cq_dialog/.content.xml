@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Image Gallery"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Image - Sightly"
+    width="800">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <image1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Image1"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                allowUpload="{Boolean}false"
+                                autoStart="{Boolean}false"
+                                class="cq-droptarget"
+                                fieldDescription="Upload Image Asset"
+                                fieldLabel="Image 1"
+                                fileNameParameter="./fileName1"
+                                fileReferenceParameter="./fileReference1"
+                                mimeTypes="[image]"
+                                multiple="{Boolean}false"
+                                name="./image1"
+                                requireimage="{Boolean}true"
+                                title="Upload Image Asset"
+                                uploadUrl="${suffix.path}"
+                                useHTML5="{Boolean}true"/>
+                            <altText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Provide a textual alternative of the content and function of the image."
+                                fieldLabel="Alternative Text"
+                                name="./altText1"
+                                required="{Boolean}true"/>
+                        </items>
+                    </column>
+                </items>
+            </image1>
+            <image2
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Image2"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                allowUpload="{Boolean}false"
+                                autoStart="{Boolean}false"
+                                class="cq-droptarget"
+                                fieldDescription="Upload Image Asset"
+                                fieldLabel="Image 2"
+                                fileNameParameter="./fileName2"
+                                fileReferenceParameter="./fileReference2"
+                                mimeTypes="[image]"
+                                multiple="{Boolean}false"
+                                requireimage="{Boolean}true"
+                                title="Upload Image Asset"
+                                uploadUrl="${suffix.path}"
+                                useHTML5="{Boolean}true"/>
+                            <altText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Provide a textual alternative of the content and function of the image."
+                                fieldLabel="Alternative Text"
+                                name="./altText2"
+                                required="{Boolean}true"/>
+                        </items>
+                    </column>
+                </items>
+            </image2>
+            <image3
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Image3"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                allowUpload="{Boolean}false"
+                                autoStart="{Boolean}false"
+                                class="cq-droptarget"
+                                fieldDescription="Upload Image Asset"
+                                fieldLabel="Image 3"
+                                fileNameParameter="./fileName3"
+                                fileReferenceParameter="./fileReference3"
+                                mimeTypes="[image]"
+                                multiple="{Boolean}false"
+                                requireimage="{Boolean}true"
+                                title="Upload Image Asset"
+                                uploadUrl="${suffix.path}"
+                                useHTML5="{Boolean}true"/>
+                            <altText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Provide a textual alternative of the content and function of the image."
+                                fieldLabel="Alternative Text"
+                                name="./altText3"
+                                required="{Boolean}true"/>
+                            <headline
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Provide the Image headline"
+                                fieldLabel="Image Headline"
+                                name="./imageHeadline"
+                                required="{Boolean}true"/>
+                        </items>
+                    </column>
+                </items>
+            </image3>
+            <image4
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Image4"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                allowUpload="{Boolean}false"
+                                autoStart="{Boolean}false"
+                                class="cq-droptarget"
+                                fieldDescription="Upload Image Asset"
+                                fieldLabel="Image 4"
+                                fileNameParameter="./fileName4"
+                                fileReferenceParameter="./fileReference4"
+                                mimeTypes="[image]"
+                                multiple="{Boolean}false"
+                                requireimage="{Boolean}true"
+                                title="Upload Image Asset"
+                                uploadUrl="${suffix.path}"
+                                useHTML5="{Boolean}true"/>
+                            <altText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Provide a textual alternative of the content and function of the image."
+                                fieldLabel="Alternative Text"
+                                name="./altText4"
+                                required="{Boolean}true"/>
+                        </items>
+                    </column>
+                </items>
+            </image4>
+            <image5
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Image5"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                allowUpload="{Boolean}false"
+                                autoStart="{Boolean}false"
+                                class="cq-droptarget"
+                                fieldDescription="Upload Image Asset"
+                                fieldLabel="Image 5"
+                                fileNameParameter="./fileName5"
+                                fileReferenceParameter="./fileReference5"
+                                mimeTypes="[image]"
+                                multiple="{Boolean}false"
+                                requireimage="{Boolean}true"
+                                title="Upload Image Asset"
+                                uploadUrl="${suffix.path}"
+                                useHTML5="{Boolean}true"/>
+                            <altText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Provide a textual alternative of the content and function of the image."
+                                fieldLabel="Alternative Text"
+                                name="./altText5"
+                                required="{Boolean}true"/>
+                        </items>
+                    </column>
+                </items>
+            </image5>
+            <image6
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Image6"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                allowUpload="{Boolean}false"
+                                autoStart="{Boolean}false"
+                                class="cq-droptarget"
+                                fieldDescription="Upload Image Asset"
+                                fieldLabel="Image 6"
+                                fileNameParameter="./fileName6"
+                                fileReferenceParameter="./fileReference6"
+                                mimeTypes="[image]"
+                                multiple="{Boolean}false"
+                                requireimage="{Boolean}true"
+                                title="Upload Image Asset"
+                                uploadUrl="${suffix.path}"
+                                useHTML5="{Boolean}true"/>
+                            <altText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Provide a textual alternative of the content and function of the image."
+                                fieldLabel="Alternative Text"
+                                name="./altText6"
+                                required="{Boolean}true"/>
+                        </items>
+                    </column>
+                </items>
+            </image6>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,49 @@
+var TYPE_JCR_PATH = "JCR_PATH";
+var INSTANT_PUBLISH = "isInstantPublish"
+var ACTIVATION_TIME = "activationTime"
+
+function check(){
+    if(isPayloadValid() && !(isInstantPublish() || hasPublishLater())){
+       return true;
+    }
+    return false;
+}
+
+function isPayloadValid(){
+    var payload = graniteWorkflowData.getPayload().toString();
+    var payloadType = graniteWorkflowData.getPayloadType();
+    if(Packages.org.apache.commons.lang3.StringUtils.isNotBlank(payload) && Packages.org.apache.commons.lang3.StringUtils.isNotBlank(payloadType)) {
+        if((payloadType == TYPE_JCR_PATH) && jcrSession.nodeExists(payload)){
+            var pageNode = jcrSession.getNode(payload);
+            if(pageNode.isNodeType(Packages.com.day.cq.wcm.api.NameConstants.NT_PAGE)){
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+function isInstantPublish() {
+    var payload = graniteWorkflowData.getPayload().toString();
+    var payloadType = graniteWorkflowData.getPayloadType();
+    if((payloadType == TYPE_JCR_PATH) && jcrSession.nodeExists(payload)){
+            var pageNode = jcrSession.getNode(payload+"/jcr:content");
+            if(pageNode.hasProperty(INSTANT_PUBLISH) || pageNode.hasProperty(ACTIVATION_TIME)){
+                return true;
+            }
+    }
+    return false;
+}
+
+function hasPublishLater() {
+    var currentTime = Date.now();
+    var payload = graniteWorkflowData.getPayload().toString();
+    var payloadType = graniteWorkflowData.getPayloadType();
+    if((payloadType == TYPE_JCR_PATH) && jcrSession.nodeExists(payload)){
+      	var pageNode = jcrSession.getNode(payload+"/jcr:content");
+           if(pageNode.hasProperty(ACTIVATION_TIME) && (Date.parse(pageNode.getProperty(ACTIVATION_TIME)) < currentTime)){
+                return true;
+           }
+        }
+    return false;
+}

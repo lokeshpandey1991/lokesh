@@ -1,0 +1,227 @@
+{
+	"jcr:primaryType": "dam:Asset",
+	"jcr:mixinTypes": ["mix:referenceable"],
+	"jcr:createdBy": "admin",
+	"jcr:created": "Mon Aug 28 2017 11:29:02 GMT-0400",
+	"jcr:uuid": "02646dcf-48cb-41b4-97b2-ab3eb1a8cac9",
+	"jcr:content": {
+		"jcr:primaryType": "dam:AssetContent",
+		"jcr:mixinTypes": ["cq:ReplicationStatus"],
+		"cq:lastReplicationAction": "Activate",
+		"cq:lastReplicatedBy": "admin",
+		"jcr:lastModifiedBy": "admin",
+		"status": "Finished",
+		"dam:proxyUrl": "/_renditions_/37a/37af2177-30e8-433e-bf34-bcfc4f42e55a/",
+		"cq:lastReplicated": "Mon Aug 28 2017 11:31:51 GMT-0400",
+		"dam:s7damType": "VideoAVS",
+		"jcr:lastModified": "Mon Aug 28 2017 11:29:42 GMT-0400",
+		"dam:relativePath": "roche/customerportal/demo.mp4",
+		"renditions": {
+			"jcr:primaryType": "nt:folder",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Mon Aug 28 2017 11:29:02 GMT-0400",
+			"cq5dam.thumbnail.48.48.png": {
+				"jcr:primaryType": "nt:file",
+				"jcr:createdBy": "workflow-process-service",
+				"jcr:created": "Mon Aug 28 2017 11:29:42 GMT-0400",
+				"jcr:content": {
+					"jcr:primaryType": "nt:resource",
+					"jcr:lastModifiedBy": "workflow-process-service",
+					"jcr:mimeType": "image/png",
+					"jcr:lastModified": "Mon Aug 28 2017 11:29:42 GMT-0400",
+					":jcr:data": 4004,
+					"jcr:uuid": "f8c7ddf3-6cb6-4cb6-8da8-028128213487"
+				}
+			},
+			"cqdam.video.dm.avs.840x480.1400k.mp4": {
+				"jcr:primaryType": "sling:OrderedFolder",
+				"jcr:createdBy": "workflow-process-service",
+				"jcr:created": "Mon Aug 28 2017 11:29:40 GMT-0400",
+				"jcr:content": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": ["dam:Metadata"],
+					"jcr:lastModifiedBy": "workflow-process-service",
+					"dam:proxyUrl": "/_renditions_/37a/37af2177-30e8-433e-bf34-bcfc4f42e55a/avs/demo-0x480-1400k.mp4",
+					"jcr:mimeType": "video/mp4",
+					"rendition.handler.id": "video.dm.proxy",
+					"jcr:lastModified": "Mon Aug 28 2017 11:29:40 GMT-0400",
+					"dam:size": 1062529,
+					"video.dm.deliveryMode": "progressiveDownload",
+					"metadata": {
+						"jcr:primaryType": "nt:unstructured",
+						"audioBitrate": 128,
+						"videoCodec": "libx264",
+						"mimeType": "video/mp4",
+						"height": 480,
+						"audioBitrateCustom": "false",
+						"videoEncodingPresetPath": "/etc/dam/video/dynamicmedia/Adaptive Video Encoding/MP4 - autox720 px, 1400 kbps",
+						"keepAspectRatio": "true",
+						"twoPass": "false",
+						"constantBitrate": "true",
+						"extension": "mp4",
+						"audioSamplingRate": "44100",
+						"videoBitrate": 1400,
+						"width": 840,
+						"videoFrameRate": "30",
+						"audioCodec": "dolby_heaac",
+						"videoDuration": "5.533"
+					}
+				}
+			},
+			"cqdam.pyramid.tiff": {
+				"jcr:primaryType": "nt:file",
+				"jcr:createdBy": "workflow-process-service",
+				"jcr:created": "Mon Aug 28 2017 11:29:42 GMT-0400",
+				"jcr:content": {
+					"jcr:primaryType": "nt:resource",
+					"jcr:mixinTypes": ["dam:Metadata"],
+					"jcr:lastModifiedBy": "workflow-process-service",
+					"jcr:mimeType": "image/tiff",
+					"jcr:lastModified": "Mon Aug 28 2017 11:29:42 GMT-0400",
+					":jcr:data": 50396,
+					"jcr:uuid": "d724fec4-bc4e-4e4a-a7e9-7406eff11688",
+					"metadata": {
+						"jcr:primaryType": "nt:unstructured",
+						"ptiff.original": false,
+						"ptiff.height": 320,
+						"ptiff.md5": "c01b1653472b5fe5e74d38ed268ec207",
+						"ptiff.size": 50396,
+						"ptiff.width": 560
+					}
+				}
+			},
+			"cq5dam.thumbnail.140.100.png": {
+				"jcr:primaryType": "nt:file",
+				"jcr:createdBy": "workflow-process-service",
+				"jcr:created": "Mon Aug 28 2017 11:29:42 GMT-0400",
+				"jcr:content": {
+					"jcr:primaryType": "nt:resource",
+					"jcr:lastModifiedBy": "workflow-process-service",
+					"jcr:mimeType": "image/png",
+					"jcr:lastModified": "Mon Aug 28 2017 11:29:42 GMT-0400",
+					":jcr:data": 22654,
+					"jcr:uuid": "0cc489f0-5c2f-446f-afbb-c993a16d7297"
+				}
+			},
+			"cqdam.video.dm.avs.630x360.800k.mp4": {
+				"jcr:primaryType": "sling:OrderedFolder",
+				"jcr:createdBy": "workflow-process-service",
+				"jcr:created": "Mon Aug 28 2017 11:29:40 GMT-0400",
+				"jcr:content": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": ["dam:Metadata"],
+					"jcr:lastModifiedBy": "workflow-process-service",
+					"dam:proxyUrl": "/_renditions_/37a/37af2177-30e8-433e-bf34-bcfc4f42e55a/avs/demo-0x360-800k.mp4",
+					"jcr:mimeType": "video/mp4",
+					"rendition.handler.id": "video.dm.proxy",
+					"jcr:lastModified": "Mon Aug 28 2017 11:29:40 GMT-0400",
+					"dam:size": 649402,
+					"video.dm.deliveryMode": "progressiveDownload",
+					"metadata": {
+						"jcr:primaryType": "nt:unstructured",
+						"audioBitrate": 128,
+						"videoCodec": "libx264",
+						"mimeType": "video/mp4",
+						"height": 360,
+						"audioBitrateCustom": "false",
+						"videoEncodingPresetPath": "/etc/dam/video/dynamicmedia/Adaptive Video Encoding/MP4 - autox720 px, 1000 kbps",
+						"keepAspectRatio": "true",
+						"twoPass": "false",
+						"constantBitrate": "true",
+						"extension": "mp4",
+						"audioSamplingRate": "44100",
+						"videoBitrate": 800,
+						"width": 630,
+						"videoFrameRate": "30",
+						"audioCodec": "dolby_heaac",
+						"videoDuration": "5.533"
+					}
+				}
+			},
+			"cqdam.video.dm.avs.1260x720.2600k.mp4": {
+				"jcr:primaryType": "sling:OrderedFolder",
+				"jcr:createdBy": "workflow-process-service",
+				"jcr:created": "Mon Aug 28 2017 11:29:40 GMT-0400",
+				"jcr:content": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": ["dam:Metadata"],
+					"jcr:lastModifiedBy": "workflow-process-service",
+					"dam:proxyUrl": "/_renditions_/37a/37af2177-30e8-433e-bf34-bcfc4f42e55a/avs/demo-0x720-2600k.mp4",
+					"jcr:mimeType": "video/mp4",
+					"rendition.handler.id": "video.dm.proxy",
+					"jcr:lastModified": "Mon Aug 28 2017 11:29:40 GMT-0400",
+					"dam:size": 1889358,
+					"video.dm.deliveryMode": "progressiveDownload",
+					"metadata": {
+						"jcr:primaryType": "nt:unstructured",
+						"audioBitrate": 128,
+						"videoCodec": "libx264",
+						"mimeType": "video/mp4",
+						"height": 720,
+						"audioBitrateCustom": "false",
+						"videoEncodingPresetPath": "/etc/dam/video/dynamicmedia/Adaptive Video Encoding/MP4 - autox720 px, 2600 kbps",
+						"keepAspectRatio": "true",
+						"twoPass": "false",
+						"constantBitrate": "true",
+						"extension": "mp4",
+						"audioSamplingRate": "44100",
+						"videoBitrate": 2600,
+						"width": 1260,
+						"videoFrameRate": "30",
+						"audioCodec": "dolby_heaac",
+						"videoDuration": "5.533"
+					}
+				}
+			},
+			"original": {
+				"jcr:primaryType": "nt:file",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Aug 28 2017 11:29:02 GMT-0400",
+				"jcr:content": {
+					"jcr:primaryType": "nt:resource",
+					"jcr:lastModifiedBy": "admin",
+					"jcr:mimeType": "video/mp4",
+					"jcr:lastModified": "Mon Aug 28 2017 11:29:02 GMT-0400",
+					":jcr:data": 383631,
+					"jcr:uuid": "df580370-6243-4438-a0c6-9dbc7203d637"
+				}
+			},
+			"cq5dam.thumbnail.319.319.png": {
+				"jcr:primaryType": "nt:file",
+				"jcr:createdBy": "workflow-process-service",
+				"jcr:created": "Mon Aug 28 2017 11:29:42 GMT-0400",
+				"jcr:content": {
+					"jcr:primaryType": "nt:resource",
+					"jcr:lastModifiedBy": "workflow-process-service",
+					"jcr:mimeType": "image/png",
+					"jcr:lastModified": "Mon Aug 28 2017 11:29:42 GMT-0400",
+					":jcr:data": 86534,
+					"jcr:uuid": "75cd4e61-819b-4ea9-9863-69817ad2bd71"
+				}
+			}
+		},
+		"related": {
+			"jcr:primaryType": "nt:unstructured"
+		},
+		"metadata": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:mixinTypes": ["cq:Taggable"],
+			"duration": "5.56",
+			"audioBitrate": "91",
+			"videoCodec": "h264 (Constrained Baseline)",
+			"audioSampleRate": "48000",
+			"dam:extracted": "Mon Aug 28 2017 11:29:02 GMT-0400",
+			"dc:format": "video/mp4",
+			"audioChannels": "1",
+			"videoBitrate": "465",
+			"bitrate": "551",
+			"size": "560x320",
+			"audioDuration": "5.568",
+			"frameRate": "30",
+			"audioCodec": "aac",
+			"dam:sha1": "5c5a07267317b166a218e5edb7667ccd2b5351be",
+			"dam:size": 383631,
+			"videoDuration": "5.533"
+		}
+	}
+}

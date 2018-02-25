@@ -1,0 +1,34 @@
+{{#each this}}
+<div class="c-featuredTile__list row">
+  <a href="{{url}}" class="c-featuredTile__link x-sub-hover"
+     data-fn-click="true"
+     data-da-satelliteTrackEvent="product-click-tracking"
+     data-da-link_link-Page-Name=""
+     data-da-link_link-Category=""
+     data-da-link_link-Section="product-tile"
+     data-da-link_link-Text="{{title}}"
+     data-da-link_link-Interaction-Method=""
+     data-da-link_product-name="{{title}}"
+     data-da-link_product-category="{{category}}"
+     data-da-link_product-id="{{id}}"
+     data-da-link_link-Header="product"
+     data-da-search_selected-position="{{searchIndex}}"
+     data-da-link_event="product-click">
+    <div class="c-featuredTile__productWrapper col-xs-12">
+      <div class="c-featuredTile__productAsset">
+        <img src="/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/blank.png" data-src="{{image}}"
+          alt="{{altText}}" class="js-dynamic-image" data-template="featuredTile" data-processed="false"
+        />
+      </div>
+      <div class="c-featuredTile__productContent">
+        {{#if title}}
+        <span class="c-featuredTile__productTitle">{{title}}</span>
+        {{/if}}
+        {{#if category}}
+        <span class="c-featuredTile__productCategory">{{category}}</span>
+        {{/if}}
+      </div>
+    </div>
+  </a>
+</div>
+{{/each}}

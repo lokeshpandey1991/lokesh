@@ -1,0 +1,286 @@
+.c-filter {
+  $filterParent: &;
+
+  margin-top: convert-in-rem(33);
+  display: inline-block;
+
+  .x-liipbox__top-section {
+    border-bottom: 1px solid rgba($heading-color, 0.2);
+  }
+  .x-liipbox__left-s {
+    border-right: 1px solid rgba($heading-color, 0.2);
+  }
+  .x-liipbox__right-s {
+    float: none;
+    position: absolute;
+    text-transform: uppercase;
+    padding: 17px;
+  }
+  .x-liipbox .navbar-toggle .icon-bar {
+    background-color: $clr-outline;
+  }
+
+  &__overlay {
+    display: block;
+    background: $clr-white;
+    z-index: 99999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+  }
+
+  &__content-section {
+    padding: convert-in-rem(32) convert-in-rem(16) 0;
+  }
+
+  @include MQ(mobileonly) {
+    margin-top: 0;
+    display: block;
+  }
+
+  &__title {
+    font-family: $font-imagopro-book;
+    color: $heading-color;
+    font-size: convert-in-rem(12);
+    letter-spacing: 2px;
+    line-height: convert-in-rem(16);
+    text-transform: uppercase;
+    margin-bottom: convert-in-rem(32);
+
+    @media ($tablet) {
+      margin-bottom: convert-in-rem(35);
+    }
+  }
+
+  &__heading {
+    color: $heading-color;
+    font-family: $font-imagopro-book;
+    padding: 0;
+    font-size: convert-in-rem(14);
+    line-height: convert-in-rem(14);
+    margin-bottom: convert-in-rem(20);
+    @media ($tablet) {
+      margin-bottom: convert-in-rem(18);
+    }
+  }
+
+  &__heading-link {
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      color: $heading-color;
+    }
+  }
+
+  &__display-input {
+    display: block;
+    width: 100%;
+    border: 1px solid rgba($heading-color, 0.2);
+    padding: convert-in-rem(8) convert-in-rem(15);
+    background: $clr-white;
+    font-size: convert-in-rem(12);
+    letter-spacing: 2px;
+    line-height: convert-in-rem(16);
+    font-family: $font-imagopro-light;
+    color: $heading-color;
+    text-transform: uppercase;
+  }
+
+  &-down-arrow {
+    position: absolute;
+    border: solid $clr-outline;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 0.1875rem;
+    right: 17px;
+    top: 12px;
+    transform: rotate(-45deg);
+  }
+
+  &__list li {
+    border: 0;
+    padding: 0;
+    margin-bottom: convert-in-rem(18);
+  }
+
+  &__list .radio {
+    margin: 0;
+  }
+
+  &__collapse-cta {
+    @extend .x-secondary-cta-up;
+    margin-right: convert-in-rem(17);
+    &:hover {
+      background: none;
+    }
+  }
+  .collapsed &__collapse-cta {
+    @extend .x-secondary-cta-down;
+    margin-right: convert-in-rem(17);
+    &:hover {
+      background: none;
+    }
+  }
+
+  .radio &__label {
+    padding-left: convert-in-rem(33);
+  }
+
+  input[type="radio"] {
+    opacity: 0;
+    &+.customRadio {
+      display: inline-block;
+      height: 7px;
+      width: 7px;
+      border: 1px solid $heading-color;
+      background-color: white;
+      margin: 0 0 0 -28px;
+      border-radius: 50%;
+      box-shadow: 0 0 3px -1px rgba(0, 0, 0, 0.8);
+      pointer-events: none;
+      position: absolute;
+      top: 8px;
+      &::after {
+        content: '.';
+        color: transparent;
+        position: absolute;
+        display: block;
+        width: 2px;
+        height: 2px;
+        margin: 7px 0 0 7px;
+        opacity: 0.6;
+        border-radius: 50%;
+        transition: .2s;
+      }
+    }
+    &:checked {
+      &+.customRadio {
+        &::after {
+          width: 7px;
+          height: 7px;
+          margin: -1px;
+          opacity: 1;
+          background-color: $clr-acnt-blue;
+          box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+
+  &__facet {
+    display: inline-block;
+    border: 1px solid $heading-color;
+    margin-right: 15px;
+    margin-bottom: 8px;
+  }
+  &__cross {
+    background-color: $clr-btn-pink;
+    padding: 8px 17px;
+    position: relative;
+    border-right: 1px solid $heading-color;
+    cursor: pointer;
+  }
+  &__cross-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-15%, -50%);
+    width: 100%;
+  }
+  &__cross--icon-bar {
+    width: 11px;
+    height: 1px;
+    background-color: $heading-color;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  &__cross--icon-bar:last-child {
+    transform: rotate(-45deg);
+  }
+  &__facet-text {
+    display: inline-block;
+    padding: 8px 14px 7px;
+  }
+}
+.c-sort-dropdown-mobile {
+  display: block;
+  background: $clr-white;
+  z-index: $zindex-xlg;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow-y: scroll;
+  .c-top-section {
+    border-bottom: 1px solid $clr-outline;
+    height: 60px;
+    .x-liipbox {
+      overflow: hidden;
+    }
+    .c-left-s {
+      width: auto;
+      padding: convert-in-rem(20);
+    }
+    .c-right-s {
+      width: 60px;
+      height: 60px;
+      border-left: 1px solid $clr-outline;
+    }
+  }
+  .c-sort-overlay {
+    text-align: left;
+  }
+  .c-content-section {
+    height: auto;
+    margin: 8px 16px 20px 16px;
+    ul {
+      padding: 0;
+      list-style: none;
+      li {
+        padding-top: 24px;
+        position: relative;
+        &::last-child {
+          padding-bottom: 24px;
+        }
+        input[type="radio"] {
+          width: 16px;
+          height: 16px;
+          margin: 0;
+          cursor: default;
+          opacity: 0;
+          &+.customRadio {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            background-color: $clr-white;
+            margin: 0 0 0 -16px;
+            border-radius: 50%;
+            border: 1px solid rgba($heading-color, 0.4);
+            pointer-events: none;
+            position: absolute;
+            top: 32px;
+          }
+          &:checked {
+            &+.customRadio {
+              background-color: $clr-acnt-blue;
+              border: 1px solid $heading-color;
+            }
+          }
+        }
+        .text {
+          margin-left: 5px;
+        }
+        .customCheckbox {
+          display: none;
+        }
+      }
+    }
+  }
+}

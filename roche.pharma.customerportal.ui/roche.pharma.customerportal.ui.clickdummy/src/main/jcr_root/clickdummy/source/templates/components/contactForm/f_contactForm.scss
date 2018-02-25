@@ -1,0 +1,416 @@
+.c-contact-form {
+  font-family: $font-imagopro-book;
+  color: $heading-color;
+  .guide-header-bar-wrapper,
+  .mobileLayout.step,
+  .guideTextBox.action {
+    display: none;
+  }
+  .panel{
+    box-shadow: none;
+  }
+  &__form-title {
+    padding: 12px 16px 0 16px;
+    font-family: $font-imagopro-book;
+    border-bottom: 1px solid $clr-outline;
+    h1 {
+      font-size: convert-in-rem(30);
+      font-weight: bold;
+      line-height: convert-in-rem(36);
+      color: $heading-color;
+    }
+    .title {
+      margin-left: 0;
+    }
+  }
+  .multiline.textField textArea {
+    resize: none;
+    height: 40px;
+    padding-top: convert-in-rem(5);
+  }
+  .guideFieldWidget input[type="text"],
+  .guideFieldWidget textarea {
+    border: none;
+    border-bottom: 1px solid $clr-outline;
+    padding: 0;
+    border-radius: 0;
+    font-size: convert-in-rem(18);
+    line-height: convert-in-rem(24);
+    color: $heading-color;
+    &::placeholder {
+      color: $heading-color;
+    }
+     &:focus {
+      outline: none;
+    }
+  }
+  .subheadline {
+    padding: 0 16px;
+    color: $heading-color;
+    font-size: convert-in-rem(12);
+    line-height: convert-in-rem(24);
+    margin-top: convert-in-rem(28);
+  }
+  .guideTextDraw.guideformtitle {
+    margin-top: convert-in-rem(30);
+    font-size: convert-in-rem(22);
+    line-height: convert-in-rem(28);
+    color: $heading-color;
+    padding-left: 0;
+    &:focus {
+      outline: none;
+    }
+  }
+  .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart) {
+    margin-right: convert-in-rem(4);
+  }
+  .dropDownList {
+    margin-top: convert-in-rem(12);
+    position: relative;
+    &:after {
+      content: ' ';
+      position: absolute;
+      border: solid #9ba4aa;
+      border-width: 0 1px 1px 0;
+      display: inline-block;
+      padding: convert-in-rem(3);
+      right: 15px;
+      top: 20px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      pointer-events: none;
+    }
+  }
+
+  .dropDownList select {
+    font-size: convert-in-rem(16);
+    line-height: convert-in-rem(22);
+    color: $clr-paragraph;
+    border: 1px solid $heading-color;
+    height: 52px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    &::-ms-expand {
+      display: none;
+    }
+  }
+  .guidetextbox.guidefield,
+  .guidenumericbox.guidefield {
+    margin-top: convert-in-rem(15);
+  }
+  .guidecheckbox.guidefield {
+    margin-top: convert-in-rem(20);
+  }
+  .guideFieldLabel label {
+    font-size: convert-in-rem(18);
+    line-height: convert-in-rem(24);
+    color: $heading-color;
+  }
+  button.submit:not(.af-icon-button) {
+    border: 1px solid $heading-color;
+    background-color: $clr-tint-blue;
+    border-radius: 0;
+    width: 91.5%;
+    height: 52px;
+    display: block;
+    margin: 0 auto;
+    color: $heading-color;
+    text-transform: uppercase;
+    font-size: convert-in-rem(14);
+    letter-spacing: 1px;
+    line-height: convert-in-rem(18);
+    margin-top: convert-in-rem(25);
+    &:hover {
+      opacity: 0.65;
+      background: $clr-tint-blue;
+    }
+  }
+  .guideCheckBoxItem .guideFieldWidget input[type="checkbox"]:focus {
+    outline: none;
+  }
+  .guideCheckBoxGroupItems {
+    position: relative;
+  }
+  .guideCheckBoxItem .guideWidgetLabel label {
+    margin-left: convert-in-rem(35);
+    font-size: convert-in-rem(18);
+    line-height: convert-in-rem(22);
+    color: $heading-color;
+    &:after {
+      width: 30px;
+      height: 30px;
+      content: " ";
+      border: 1px solid $heading-color;
+      background-color: $clr-tint-blue;
+      display: inline-block;
+      visibility: visible;
+      position: absolute;
+      left: 0;
+      top: 4px;
+    }
+  }
+  .guideCheckBoxItem .guideWidgetLabel label.js-checked:after {
+    content: "\2714";
+    font-size: convert-in-rem(20);
+    text-align: center;
+  }
+  &__support-section {
+    font-family: $font-imagopro-book;
+    color: $heading-color;
+    font-size: convert-in-rem(16);
+    line-height: convert-in-rem(20);
+    margin-top: convert-in-rem(48);
+    h2 {
+      font-size: convert-in-rem(32);
+      line-height: convert-in-rem(28);
+      margin-bottom: convert-in-rem(32);
+    }
+    .title {
+      padding: 0 convert-in-rem(16);
+    }
+    .support-alignment{
+      width: 100%;
+      margin-left: 0;
+    }
+    @media($mobile) {
+      .x-rte-wrapper{
+        padding-left: convert-in-rem(16);
+        padding-right: convert-in-rem(16);
+      }
+    }
+  }
+  .popover {
+    &.hint-text {
+      color: $clr-black;
+      background-color: $clr-tooltip-bg;
+      border-color: $clr-tooltip-border;
+      border-radius: 0;
+      width: 250px;
+      &.top {
+        margin-top: -15px;
+        .arrow {
+          border-top-color: $clr-tooltip-border;
+          &:after {
+            border-top-color: $clr-tooltip-bg;
+          }
+        }
+      }
+    }
+  }
+  .guideHelpQuestionMark {
+    display: none;
+  }
+  .x-hint-btn {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    @media($mobile) {
+      bottom: 16px;
+    }
+    right: 16px;
+  }
+  .guidedropdownlist {
+    .x-hint-btn {
+      bottom: 57px;
+      @media($mobile) {
+        bottom: 70px;
+      }
+    }
+
+    .guideFieldNode.validation-failure .x-hint-btn {
+      bottom: 79px;
+    }
+  }
+  .guideFieldNode.validation-failure {
+    .x-hint-btn {
+      bottom: 32px;
+    }
+  }
+  .guideFieldError {
+    color: $clr-error-red;
+    font-size: convert-in-rem(12);
+    line-height: convert-in-rem(15);
+  }
+  .guideFieldNode.validation-failure:not(.guideButton):not(.guideTextDraw) {
+    background: none;
+    border-color: $clr-white;
+  }
+  .guideFieldNode.validation-success:not(.guideButton):not(.guideTextDraw) {
+    background: none;
+    border-color: $clr-white;
+  }
+  .guideFieldNode.validation-failure input {
+    border-bottom: 4px solid $clr-error-red;
+  }
+  .guideFieldNode.validation-failure .dropDownList select,
+  .guideFieldNode.validation-failure .guideCheckBoxItem label:after {
+    border: 4px solid $clr-error-red;
+  }
+  .guideFieldNode.validation-failure .dropDownList select:focus {
+    outline: none;
+  }
+  .c-page-notification .CTA-link {
+    display: none;
+  }
+  .guidetextbox .guideFieldLabel label,
+  .guidenumericbox .guideFieldLabel label {
+    top: convert-in-rem(20);
+    position: absolute;
+    z-index: 9;
+    transition: 0.2s;
+  }
+  .js-active .guideFieldLabel label {
+    top: convert-in-rem(-5);
+    font-size: convert-in-rem(12);
+  }
+  .guidecheckbox .guideActiveField label:after {
+    outline: auto;
+  }
+  .guidecheckbox .guideActiveField.validation-failure label:after {
+    outline: none;
+  }
+  .guidetextbox .js-active.validation-failure label,
+  .guidenumericbox .js-active.validation-failure label,
+  .guidedropdownlist .validation-failure label{
+    color: $clr-error-red;
+  }
+  #loadingPage {
+   display: none;
+  }
+  .g-recaptcha {
+    margin: convert-in-rem(35) convert-in-rem(15) convert-in-rem(15);
+  }
+  .captcha-error {
+    margin-left: convert-in-rem(15);
+  }
+}
+
+@media($tablet) {
+  .c-contact-form {
+    &__form-title {
+      padding: 0 convert-in-rem(50);
+      h1 {
+        font-size: convert-in-rem(64);
+        line-height: convert-in-rem(68);
+      }
+    }
+    .guideContainerWrapperNode.guideContainerNode {
+      width: 100%;
+      padding-left: convert-in-rem(34);
+      position: relative;
+    }
+    .guideTextDraw.guideformtitle {
+      margin-top: convert-in-rem(48);
+      padding-left: convert-in-rem(16);
+      font-size: convert-in-rem(32);
+      line-height: convert-in-rem(38);
+      width: 100%;
+    }
+    &__support-section {
+      h2 {
+        font-size: convert-in-rem(32);
+        line-height: convert-in-rem(22);
+      }
+      .x-rte-wrapper p{
+        font-size: convert-in-rem(14);
+      }
+    }
+    .dropDownList {
+      margin-top: 0;
+    }
+    .guideDropDownList .guideFieldLabel label {
+      font-size: convert-in-rem(22);
+      line-height: convert-in-rem(26);
+      margin-top: convert-in-rem(15);
+    }
+    .c-contact-form .dropDownList {
+      margin-top: 0;
+    }
+    .subheadline {
+      position: absolute;
+      top: convert-in-rem(-68);
+      right: 0;
+    }
+    .guidetextbox.guidefield,
+    .guidenumericbox.guidefield {
+      margin-top: convert-in-rem(18);
+    }
+    .guideFieldWidget input[type="text"],
+    .guideCheckBoxItem .guideWidgetLabel label,
+    .guideFieldWidget textarea {
+      font-size: convert-in-rem(22);
+      line-height: convert-in-rem(26);
+    }
+    .guidecheckbox.guidefield {
+      margin-top: convert-in-rem(24);
+    }
+    button.submit:not(.af-icon-button) {
+      margin: convert-in-rem(30) 0 0 convert-in-rem(16);
+      max-width: 268px;
+    }
+    .guidetextbox .guideFieldLabel label,
+    .guidenumericbox .guideFieldLabel label {
+       top: convert-in-rem(15);
+     }
+    .js-active .guideFieldLabel label{
+      top: convert-in-rem(-5);
+    }
+    .x-hint-btn {
+      right: -20px;
+      bottom: 2px;
+    }
+    .guideFieldNode.validation-failure {
+      .x-hint-btn {
+        bottom: 18px;
+      }
+    }
+    .guidedropdownlist {
+      .x-hint-btn {
+        bottom: 18px;
+      }
+
+      .guideFieldNode.validation-failure .x-hint-btn {
+        bottom: 34px;
+      }
+    }
+}
+}
+
+@media($desktop) {
+  .c-contact-form {
+    .guidetextbox .guideFieldLabel label,
+    .guidenumericbox .guideFieldLabel label {
+       top: convert-in-rem(36);
+     }
+    .js-active .guideFieldLabel label{
+      top: convert-in-rem(10);
+    }
+    &__support-section {
+      h2{
+        font-size: convert-in-rem(32);
+      }
+      .x-rte-wrapper p{
+        font-size: convert-in-rem(16);
+      }
+    }
+
+    .x-hint-btn {
+      bottom: 3px;
+    }
+    .guideFieldNode.validation-failure {
+      .x-hint-btn {
+        bottom: 20px;
+      }
+    }
+    .guidedropdownlist {
+      .x-hint-btn {
+        bottom: 20px;
+      }
+
+      .guideFieldNode.validation-failure .x-hint-btn {
+        bottom: 41px;
+      }
+    }
+  }
+}

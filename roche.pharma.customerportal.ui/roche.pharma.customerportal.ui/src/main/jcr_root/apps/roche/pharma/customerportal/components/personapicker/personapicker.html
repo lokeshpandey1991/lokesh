@@ -1,0 +1,29 @@
+
+<!--/*
+
+    Persona Selector  Component .
+
+  	This is the  component for Persona Selector.
+
+    */-->
+
+<sly data-sly-test="${wcmmode.edit}">
+        Kindly Configure the Persona.
+
+</sly>
+
+
+<sly data-sly-test="${!wcmmode.edit}">
+	
+	<sly data-sly-use.personapickerModel="com.roche.pharma.customerportal.core.models.PersonaSelectorModel"
+       data-sly-use.lib="/apps/roche/pharma/customerportal/components/personapicker/personapicker-template.html" />
+	   
+	   
+	   <sly data-sly-call="${lib.personapicker_template @ data=personapickerModel}" />
+
+</sly>
+
+
+
+
+

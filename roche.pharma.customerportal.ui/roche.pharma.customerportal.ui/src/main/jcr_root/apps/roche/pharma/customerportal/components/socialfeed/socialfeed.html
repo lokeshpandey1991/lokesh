@@ -1,0 +1,12 @@
+<!--
+
+    Social Feed Component.
+
+  	This is the component to display social feed from twitter for Roche account as congigured from the dialog and to display these feeds on even detail page.
+
+    -->
+
+<sly data-sly-use.socialFeedModel="com.roche.pharma.customerportal.core.models.SocialFeedModel"
+       data-sly-use.lib="/apps/roche/pharma/customerportal/components/socialfeed/socialfeed-template.html"
+       data-sly-call="${lib.socialfeed_template @ data=socialFeedModel}" />
+

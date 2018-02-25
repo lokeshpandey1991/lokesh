@@ -1,0 +1,14 @@
+<!--
+
+    Related Products Component.
+
+  	This is the component for product detail page
+
+    -->
+    <sly data-sly-test.emptyContent="${wcmmode.edit}">
+		<div data-emptytext="configure ${component.title}"
+		class="cq-placeholder"></div>
+	</sly>
+<sly data-sly-use.relatedProductsModel="com.roche.pharma.customerportal.core.models.RelatedProductsModel"
+       data-sly-use.lib="/apps/roche/pharma/customerportal/components/relatedproducts/relatedproducts-template.html"
+       data-sly-call="${lib.relatedproducts_template @ data=relatedProductsModel}" />

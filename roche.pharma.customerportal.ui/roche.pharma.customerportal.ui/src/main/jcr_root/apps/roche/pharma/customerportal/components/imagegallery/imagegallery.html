@@ -1,0 +1,8 @@
+<sly data-sly-test.emptyContent="${wcmmode.edit}">
+    <div data-emptytext="configure ${component.title}" class="cq-placeholder"></div>
+</sly>
+
+
+<sly data-sly-use.imageGallery="com.roche.pharma.customerportal.core.models.ImageGallery"
+       data-sly-use.lib="/apps/roche/pharma/customerportal/components/imagegallery/imagegallery-template.html"
+       data-sly-call="${lib.imagegallery_template @ data=imageGallery}" />

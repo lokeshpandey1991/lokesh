@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+	xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="nt:unstructured"
+	jcr:title="Product" sling:resourceType="granite/ui/components/foundation/section">
+	<layout jcr:primaryType="nt:unstructured"
+		sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+		margin="{Boolean}false" />
+	<items jcr:primaryType="nt:unstructured">
+		<column jcr:primaryType="nt:unstructured"
+			sling:resourceType="granite/ui/components/foundation/container">
+			<items jcr:primaryType="nt:unstructured">
+				<productType cq:showOnCreate="{Boolean}true"
+					jcr:primaryType="nt:unstructured" jcr:title="New / Feature"
+					sling:resourceType="granite/ui/components/foundation/form/fieldset">
+					<items jcr:primaryType="nt:unstructured">
+						<feature cq:showOnCreate="{Boolean}true" jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/foundation/form/select"
+							cq-msm-lockable="productType" fieldLabel="New / Feature" name="./productType">
+							<items jcr:primaryType="nt:unstructured">
+								<simple jcr:primaryType="nt:unstructured" text="Please Select"
+									value="none" />
+								<new jcr:primaryType="nt:unstructured" text="New Product"
+									value="newProduct" />
+								<feature jcr:primaryType="nt:unstructured" text="Feature Product"
+									value="featureProduct" />
+							</items>
+						</feature>
+					</items>
+				</productType>
+				<assayType cq:showOnCreate="{Boolean}true"
+					jcr:primaryType="nt:unstructured" jcr:title="Product Type"
+					sling:resourceType="granite/ui/components/foundation/form/fieldset">
+					<items jcr:primaryType="nt:unstructured">
+						<feature cq:showOnCreate="{Boolean}true" jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/foundation/form/select"
+							cq-msm-lockable="productFeatureType" fieldLabel="Product Type" name="./productFeatureType">
+							<items jcr:primaryType="nt:unstructured">
+								<new jcr:primaryType="nt:unstructured" text="Fetured Assay"
+									value="featuredAssay" />
+								<feature jcr:primaryType="nt:unstructured" text="Simple Assay"
+									value="simpleAssay" />
+							</items>
+						</feature>
+					</items>
+				</assayType>
+				<productlogo cq:showOnCreate="{Boolean}true"
+					jcr:primaryType="nt:unstructured" jcr:title="Product Logo Configuration"
+					sling:resourceType="granite/ui/components/foundation/form/fieldset">
+					<items jcr:primaryType="nt:unstructured">
+						<productLogoSelect cq:showOnCreate="{Boolean}true"
+							jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/foundation/form/select"
+							cq-msm-lockable="productLogoSelect" fieldLabel="Select Product Logo"
+							name="./productLogoSelect" renderReadOnly="{Boolean}true">
+							<datasource jcr:primaryType="nt:unstructured"
+								sling:resourceType="/apps/roche/pharma/customerportal/components/productlogo/datasource.html" />
+						</productLogoSelect>
+					</items>
+				</productlogo>
+				<link jcr:primaryType="nt:unstructured"
+					sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+					fieldLabel="System Specification Document Path" name="./systemSpecificationDoc" />
+			</items>
+		</column>
+	</items>
+</jcr:root>

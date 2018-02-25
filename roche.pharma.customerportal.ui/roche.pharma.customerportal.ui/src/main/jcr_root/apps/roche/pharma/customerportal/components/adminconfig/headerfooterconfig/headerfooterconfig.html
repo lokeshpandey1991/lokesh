@@ -1,0 +1,73 @@
+
+<div data-sly-use.global="com.roche.pharma.customerportal.core.models.LanguageHeaderFooterModel">
+
+<h1>Language header footer configurations</h1>
+<h2>Header</h2>
+homePagePath : ${global.homePagePath} <br>
+homePageLogoPath : ${global.fileReference} <br>
+homePageLogoAltText : ${global.logoAltText} <br>
+              Headerlinks 
+ <table>
+		<tr>
+			<th>Name</th>
+			<th>Link</th>
+		</tr>
+		<div data-sly-unwrap data-sly-test="${global.headerList}"
+			data-sly-list="${global.headerList}">
+		<tr>
+			<td>${item.pageName}</td>
+			<td>${item.pagePath}</td>
+		</tr>
+		</div>
+	</table>
+	<br>
+	
+	 Footerlinks 
+ <table>
+		<tr>
+			<th>Name</th>
+			<th>Link</th>
+		</tr>
+		<div data-sly-unwrap data-sly-test="${global.footerList}"
+			data-sly-list="${global.footerList}">
+		<tr>
+			<td>${item.pageName}</td>
+			<td>${item.pagePath}</td>
+			<td>${item.isVisibleOnMobile}</td>
+		</tr>
+		</div>
+	</table>
+	<br>
+	
+	HamburgerMenu Left
+ <table>
+		<tr>
+			<th>Name</th>
+			<th>Link</th>
+		</tr>
+		<div data-sly-unwrap data-sly-test="${global.hamburgerMenuLeftList}"
+			data-sly-list="${global.hamburgerMenuLeftList}">
+		<tr>
+			<td>${item.pageName}</td>
+			<td>${item.pagePath}</td>
+		</tr>
+		</div>
+	</table>
+	<br>
+	
+	HamburgerMenu Right
+ <table>
+		<tr>
+			<th>Name</th>
+			<th>Link</th>
+		</tr>
+		<div data-sly-unwrap data-sly-test="${global.hamburgerMenuRightList}"
+			data-sly-list="${global.hamburgerMenuRightList}">
+		<tr>
+			<td>${item.pageName}</td>
+			<td>${item.pagePath}</td>
+		</tr>
+		</div>
+	</table>
+
+</div>

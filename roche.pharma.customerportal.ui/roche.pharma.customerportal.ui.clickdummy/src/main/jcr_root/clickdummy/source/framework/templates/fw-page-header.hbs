@@ -1,0 +1,15 @@
+<div class="fw-page-header">
+    <div class="fw-page-header__container">
+        <a href="/" class="fw-page-header__back"><</a>
+        {{#if page.fsdId}}
+            {{page.fsdId}} - {{page.title}}
+        {{/if}}
+        {{#if showControls}}
+            <ul class="fw-page-header__controls">
+                <li class="fw-page-header__control fw-page-header__control--mobile">mobile</li>
+                <li class="fw-page-header__control fw-page-header__control--tablet">tablet</li>
+                <li class="fw-page-header__control fw-page-header__control--desktop">desktop</li>
+            </ul>
+        {{/if}}
+    </div>
+</div>

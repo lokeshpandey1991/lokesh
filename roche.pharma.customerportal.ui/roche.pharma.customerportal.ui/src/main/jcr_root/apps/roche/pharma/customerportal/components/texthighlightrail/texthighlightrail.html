@@ -1,0 +1,6 @@
+        <sly data-sly-test.emptyContent="${wcmmode.edit}"> <div data-emptytext="configure ${component.title}" class="cq-placeholder"></div></sly>
+
+
+<sly data-sly-use.texthighlightrailModel="com.roche.pharma.customerportal.core.models.TextHighlightRailModel"
+       data-sly-use.lib="/apps/roche/pharma/customerportal/components/texthighlightrail/texthighlightrail-template.html" />
+            <sly data-sly-call="${lib.texthighlightrail_template @ data=texthighlightrailModel}" />

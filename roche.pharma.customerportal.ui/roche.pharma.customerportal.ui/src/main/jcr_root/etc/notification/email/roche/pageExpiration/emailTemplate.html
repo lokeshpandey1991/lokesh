@@ -1,0 +1,68 @@
+     From: admin@gmail.com
+Subject: ${subject}   
+
+<div style="color: blue;">
+<style type="text/css">
+        .test-result-table {
+            border: 1px solid black;
+            width: 800px;
+        }
+        .test-result-table-header-cell {
+            border-bottom: 1px solid black;
+            background-color: silver;
+        }
+        .test-result-step-command-cell {
+            border-bottom: 1px solid gray;
+        }
+        .test-result-step-description-cell {
+            border-bottom: 1px solid gray;
+        }
+        .test-result-step-result-cell-ok {
+            border-bottom: 1px solid gray;
+            background-color: green;
+        }
+        .test-result-step-result-cell-failure {
+            border-bottom: 1px solid gray;
+            background-color: red;
+        }
+        .test-result-step-result-cell-notperformed {
+            border-bottom: 1px solid gray;
+            background-color: white;
+        }
+        .test-result-describe-cell {
+            background-color: tan;
+            font-style: italic;
+        }
+        .test-cast-status-box-ok {
+            border: 1px solid black;
+            float: left;
+            margin-right: 10px;
+            width: 45px;
+            height: 25px;
+            background-color: green;
+        }
+        </style>
+
+    <div>
+        <h3 class="test-results-header">
+           Hi team following pages are going too expire in future
+        </h3>
+
+        <table class="test-result-table" cellspacing="0">
+            <thead>
+                <tr>
+                    <td class="test-result-table-header-cell">
+                       Page path
+                    </td>
+                    <td class="test-result-table-header-cell">
+                      No of days to deactivate 
+                    </td>
+
+                </tr>
+            </thead>
+            <tbody>
+                   ${pageList}
+
+            </tbody>
+        </table>
+ </div>

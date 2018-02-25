@@ -1,0 +1,33 @@
+{
+  "sortList": [
+    {
+      "searchLabel": "Relevance",
+      "searchValue": "relevance",
+      "searchType": "all"
+    },
+    {
+      "searchLabel": "Name A-Z",
+      "searchValue": "title",
+      "searchType": "all"
+    },
+    {
+      "searchLabel": "Name Z-A",
+      "searchValue": "titledesc",
+      "searchType": "all"
+    },
+    {
+      "searchLabel": "Newest",
+      "searchValue": "publishedDate",
+      "searchType": "more"
+    },
+    {
+      "searchLabel": "Oldest",
+      "searchValue": "publishedDatedesc",
+      "searchType": "more"
+    }
+  ],
+  "defaultOption" : {
+    "Product": "title",
+    "More": "Oldest"
+  }
+}

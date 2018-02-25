@@ -1,0 +1,14 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "jcr:lastModifiedBy": "admin",
+  "personaHeaderText": "hello this is the header of selector.",
+  "personaList": [
+    "{\"personaSelectorTagType\":\"/etc/tags/roche/customerportal/persona/healthcare\",\"personaSelectorName\":\"fty\",\"personaSelectorDescription\":\"description\"}",
+    "{\"personaSelectorTagType\":\"/etc/tags/roche/customerportal/persona/healthcare\",\"personaSelectorName\":\"asdasdasd\",\"personaSelectorDescription\":\"\"}"
+  ],
+  "jcr:created": "Tue Jul 18 2017 17:14:27 GMT+0530",
+  "multiple": false,
+  "jcr:lastModified": "Thu Jul 20 2017 16:47:51 GMT+0530",
+  "sling:resourceType": "roche/customerportal/components/personapicker"
+  }

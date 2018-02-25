@@ -1,0 +1,43 @@
+<!--
+    general Map  Component .
+
+    This is the  component for General Map
+
+    -->
+<sly data-sly-template.generalMap_template="${@ data, flag}">
+  <section data-module="generalMap" class="c-general-map x-component-spacing clearfix">
+    <div class="col-sm-6 col-xs-12 contact-container">
+      <div class="contact-wrapper">
+        <h2>${data.heading}</h2>
+        <div class="contact-address" data-sly-test="${data.address}">${data.address @ context="html"}</div>
+        <div class="contact-info">
+          <div class="contact-phone" data-sly-test="${data.phoneNumber}">
+            <span>${"rdoe_generalMap.phoneNumber" @ i18n}:</span>
+            <span>${data.phoneNumber}</span>
+          </div>  
+          <div class="contact-email" data-sly-test="${data.email}">
+            <span>${"rdoe_generalMap.email" @ i18n}:</span>
+            <span>${data.email}</span>
+          </div>  
+        </div>
+        <div class="contact-timings" data-sly-test="${data.timeDetailListing}">
+          <div data-sly-list.items="${data.timeDetailListing}">
+            <div>${items.timeDetails}</div>
+          </div>    
+        </div>
+
+        <div class="view-cta">
+          <a class="x-sub-hover c-general-map__view-cta" target="${data.linkBehaviour}" href="${data.ctaLink @ context='uri'}" data-fn-click="true"
+            data-da-satellitetrackevent="generic-link-tracking" data-da-link_link-page-name="" data-da-link_link-category="${data.linkType}" data-da-link_link-section="general-map" data-da-link_link-header="${data.heading}" data-da-link_link-Text="${data.ctaLabel}" data-da-link_link-interaction-method="" data-da-link_contact-us-method="general-map-contact"  data-da-link_event="contact-us">
+            <span>${data.ctaLabel}</span>
+            <span class="u-right-arrow u-right-arrow-white x-text-hidden">Next</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <div data-lat="${data.latitude}" data-marker="/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/marker.png" data-lng="${data.longitude}" class="col-sm-6 col-xs-12 map-container" id="generalContactMap">
+    </div>
+  </section>
+</sly>
+

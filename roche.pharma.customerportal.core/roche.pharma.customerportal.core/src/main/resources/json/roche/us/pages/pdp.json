@@ -1,0 +1,279 @@
+{
+	"jcr:primaryType": "cq:Page",
+	"jcr:createdBy": "admin",
+	"jcr:created": "Tue Aug 01 2017 15:49:55 GMT+0530",
+	"jcr:content": {
+		"jcr:primaryType": "cq:PageContent",
+		"jcr:mixinTypes": [
+			"mix:versionable"
+		],
+		"jcr:createdBy": "admin",
+		"eventType": "Webinar",
+		"hideInSearch": "true",
+		"pageType": "product",
+		"storyType": "medicalValue",
+		"formType": "contact-sales",
+		"personaTags":["roche:customerportal/persona/researcher","roche:customerportal/persona/healthcare"],
+		"pageTypeText": "News_Health",
+		"productType":"featureProduct",
+		"jcr:title": "ROCHE54353",
+		"productLogoSelect":"Logo1'''Logo1 Description'''/content/dam/roche/customerportal/products/11/04/56/110456.jpg",
+		"cq:lastReplicationAction": "Activate",
+		"jcr:versionHistory": "755be0ba-273b-4d67-9727-d516c634d459",
+		"cq:template": "/apps/roche/pharma/customerportal/templates/productdetailTemplate",
+		"cq:lastReplicatedBy": "admin",
+		"jcr:description":"This is product page",
+		"eventStartDate": "Thu Sep 07 2017 00:00:00 GMT+0530",
+		"eventEndDate": "Thu Sep 21 2017 00:00:00 GMT+0530",
+		"location": "Munich, Germany",
+		"systemSpecificationDoc":"https://pim-eservices.roche.com/eLD_SF/be/en/Documents/GetDocument?documentId=b1192884-1d78-e711-5790-00215a9b3428",
+		"productId": "11876333122",
+		"jcr:predecessors": [
+			"25e5fff1-ec94-4da7-b01c-89133a758b4b"
+		],
+		"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+		"jcr:created": "Tue Aug 01 2017 15:49:55 GMT+0530",
+		"cq:lastReplicated": "Fri Jul 28 2017 08:40:09 GMT-0400",
+		"cq:lastModified": "Thu Aug 03 2017 15:56:28 GMT+0530",
+		"cq:cloudserviceconfigs": [
+			"[]"
+		],
+		"jcr:baseVersion": "25e5fff1-ec94-4da7-b01c-89133a758b4b",
+		"jcr:isCheckedOut": true,
+		"jcr:uuid": "a77fe7e4-4914-4bb2-bad5-ac7590ef7d36",
+		"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/productdetailpage",
+		"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+		"cq:lastModifiedBy": "admin",
+		"cq:tags": [
+			"customerportal:pim/product/Customerportal-health-topics-lab/bloodManagement/bloodGas",
+			"customerportal:pim/product/Customerportal-health-topics-lab/bloodManagement",
+			"customerportal:pim/product/researchTopics/lab",
+			"customerportal:pim/product/healthTopics/bloodManagement"
+		],
+		"listingTag": "customerportal:pim/product/healthTopics/bloodManagement/bloodGas",
+		"product": {
+			"jcr:primaryType": "nt:unstructured",
+			"fileReference": "/content/dam/roche/customerportal/products/product-7.png",
+			"productName": "Cobas® 6800 System",
+			"jcr:lastModifiedBy": "admin",
+			"altText": "alt text",
+			"valueProposition": "Explore the future of molecular testing",
+			"jcr:lastModified": "Fri Jul 28 2017 11:03:24 GMT-0400",
+			"sling:resourceType": "roche/customerportal/components/productDetailName"
+		},
+		"pdpnavtabs": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Thu Mar 02 2017 02:52:27 GMT-0500",
+			"jcr:lastModified": "Thu Mar 02 2017 03:22:24 GMT-0500",
+			"sling:resourceType": "/apps/roche/pharma/customerportal/components/pdpnavtabs",
+			"hideTab2": "true",
+			"hideTab3" : "false",
+			"hideTab4" : "true"
+		},
+		"faq": {
+			"headline":"Headline",
+			"accoridonArray":[
+			            {"question":"Question","answer":"Answer"},
+			            {"question":"Question","answer":"Answer"}
+		        ]
+		},
+
+		"pdpnavtabs1": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Thu Mar 02 2017 02:52:27 GMT-0500",
+			"jcr:lastModified": "Thu Mar 02 2017 03:22:24 GMT-0500",
+			"sling:resourceType": "/apps/roche/pharma/customerportal/components/pdpnavtabs",
+			"hideTab1": "true",
+			"hideTab2": "true",
+			"hideTab3" : "true",
+			"hideTab4" : "false",
+			"defaultTab" : "tab4"
+		},
+		"productDescription": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:lastModifiedBy": "admin",
+			"productDescrHeading": "Headline",
+			"productDescription": "This is sample description",
+			"jcr:lastModified": "Fri Jul 28 2017 01:35:02 GMT-0400",
+			"sling:resourceType": "roche/customerportal/components/productDescription",
+			"columnView": "false"
+		},
+		"heromedia": {
+			"jcr:primaryType": "nt:unstructured",
+			"fileReference": "/content/dam/roche/customerportal/hero-banner.png",
+			"jcr:lastModifiedBy": "admin",
+			"headline": "High throughput and maximum walk-away time",
+			"altText": "test",
+			"ctaLabel": "Explore",
+			"headlinePosition": "topLeft",
+			"subHeadline": "Take hold of the future with cobas® 6800 system",
+			"variationType": "heroBanner",
+			"textPosition": "lefInsideImage",
+			"jcr:lastModified": "Fri Jul 28 2017 09:16:40 GMT-0400",
+			"ctaLink": "/content/roche/customerportal/us/en/home",
+			"sling:resourceType": "roche/customerportal/components/heroMedia",
+			"textIsRich": "true",
+			"transparentOverlay": "true"
+		},
+		"productInfoPar": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "admin",
+			"cq:lastReplicated": "Thu Jul 27 2017 10:19:53 GMT-0400",
+			"sling:resourceType": "foundation/components/parsys",
+			"heromedia": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:createdBy": "admin",
+				"jcr:lastModifiedBy": "admin",
+				"jcr:created": "Fri Jul 28 2017 01:34:52 GMT-0400",
+				"jcr:lastModified": "Fri Jul 28 2017 01:34:52 GMT-0400",
+				"sling:resourceType": "roche/customerportal/components/heroMedia"
+			}
+		},
+		"productSpecsPar": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "admin",
+			"cq:lastReplicated": "Fri Jul 28 2017 03:07:22 GMT-0400",
+			"sling:resourceType": "foundation/components/parsys",
+			"featuretable_1509545040": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"tableHeading": "Compatible Tubes",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "admin",
+				"jcr:lastModifiedBy": "admin",
+				"jcr:created": "Fri Jul 28 2017 02:48:43 GMT-0400",
+				"cq:lastReplicated": "Fri Jul 28 2017 07:47:27 GMT-0400",
+				"text": "<table cellpadding=\"1\" cellspacing=\"0\" border=\"1\">\n<tbody><tr><th>Tube Size<br>\n</th>\n<th>Acceptable Measurement (mm)<br>\n</th>\n</tr><tr><th>Height -Test<br>\n</th>\n<td>65-103<br>\n</td>\n</tr><tr><th>Outside&nbsp;Diameter&nbsp;(includes barecode label)<br>\n</th>\n<td>&nbsp;12-16.2</td>\n</tr></tbody></table>\n",
+				"tableDisclaimer": "*May vary based on workflow demands",
+				"jcr:lastModified": "Fri Jul 28 2017 11:04:56 GMT-0400",
+				"sling:resourceType": "roche/customerportal/components/featuretable",
+				"textIsRich": "true",
+				"tableDescription": "Tube dimensions acceptable for use on the cobas® 6800/8800 Systems:"
+			},
+			"featuretable_1412107521": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"tableHeading": "Dimensions and weight",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "admin",
+				"jcr:lastModifiedBy": "admin",
+				"jcr:created": "Fri Jul 28 2017 02:48:43 GMT-0400",
+				"cq:lastReplicated": "Fri Jul 28 2017 07:47:29 GMT-0400",
+				"text": "<table cellpadding=\"1\" cellspacing=\"1\" border=\"1\" width=\"40%\" height=\"40%\">\n<tbody><tr><th scope=\"col\">REF</th>\n<th scope=\"col\">Fixed</th>\n<th scope=\"col\">Movable</th>\n</tr><tr><th>Instrument dimension<br>\n</th>\n<td>292 x 216 x 129 cm&nbsp;<span style=\"font-size: 0.8125rem;\">(W x H x D)</span></td>\n<td>292 x 222 x 129 cm (W x H x D)<br>\n</td>\n</tr><tr><th>Instrument weight<br>\n� Excluding instrument gateway server<br>\n� Including instrument gateway server<br>\n</th>\n<td><p>1573 kg</p>\n<p>1624 kg<br>\n</p>\n</td>\n<td><p>1701 kg</p>\n<p>1752 kg<br>\n</p>\n</td>\n</tr></tbody></table>\n",
+				"jcr:lastModified": "Fri Jul 28 2017 07:47:05 GMT-0400",
+				"sling:resourceType": "roche/customerportal/components/featuretable",
+				"textIsRich": "true"
+			},
+			"featuretable": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy":"admin",
+				"tableHeading":"Anticyricin",
+				"jcr:lastModifiedBy":"admin",
+				"jcr:created":"Thu Jul 27 2017 13:53:31 GMT+0530",
+				"text":"<table><tbody><tr><th scope='col'> Result<\/th><th scope='col'> cobas HPV Test<\/th><th scope='col'> Test<\/th><th scope='col'> Test<\/th><\/tr><tr><th scope='row'>Result<\/th><td>test 1<\/td><td>test 2<\/td><td>test 3<\/td><\/tr><tr><th scope='row'>Result<\/th><td>test 1<\/td><td>test 2<\/td><td>test 3<\/td><\/tr><tr><th scope='row'>Result<\/th><td>test 1<\/td><td>test 2<\/td><td>test 3<\/td><\/tr><\/tbody><\/table>",
+				"tableDisclaimer":"* General test results",
+				"jcr:lastModified":"Thu Jul 27 2017 14:38:41 GMT+0530",
+				"sling:resourceType":"roche/customerportal/components/featuretable",
+				"textIsRich":"true",
+				"tableDescription":"Sample Table description"
+			}
+		},
+		"elabdoc1": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:lastModifiedBy": "admin",
+			"params": [
+				"{\"text\":\"test\",\"value\":\"123\"}",
+				"{\"text\":\"param\",\"value\":\"test\"}"
+			],
+			"pageType": "product",
+			"jcr:lastModified": "Thu Aug 03 2017 15:56:28 GMT+0530",
+			"sling:resourceType": "roche/customerportal/components/eLabDociFrame"
+		},
+		"elabdoc": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:lastModifiedBy": "admin",
+			"pageType": "product",
+			"jcr:lastModified": "Thu Aug 03 2017 15:56:28 GMT+0530",
+			"sling:resourceType": "roche/customerportal/components/eLabDociFrame"
+		},
+		"searchelabdoc": {
+		    "jcr:primaryType": "nt:unstructured",
+			"jcr:lastModifiedBy": "admin",
+			"pageType": "searchPage",
+			"jcr:lastModified": "Thu Aug 03 2017 15:56:28 GMT+0530",
+			"sling:resourceType": "roche/customerportal/components/searchDociFrame"
+		},
+		"video" : {
+		"jcr:primaryType":"nt:unstructured",
+		"fileReference":"/content/dam/roche/customerportal/demo.mp4",
+		"jcr:lastModifiedBy":"admin",
+		"headline":"sample headline",
+		"jcr:created":"Thu Aug 24 2017 15:59:16 GMT+0530",
+		"view":"",
+		"jcr:lastModified":"Thu Aug 24 2017 16:07:45 GMT+0530",
+		"sling:resourceType":"roche/customerportal/components/videomedia",
+		"assetPath":"",
+		"videoType":"internal",
+		"textIsRich":"true",
+		"transparentOverlay":"false",
+		"posterLink":"/content/dam/roche/customerportal/hero-banner.png"
+		},
+		"video2" : {
+		"jcr:primaryType":"nt:unstructured",
+		"fileReference":"/content/dam/roche/customerportal/demo.mp4",
+		"jcr:lastModifiedBy":"admin",
+		"headline":"sample headline",
+		"jcr:created":"Thu Aug 24 2017 15:59:16 GMT+0530",
+		"view":"",
+		"jcr:lastModified":"Thu Aug 24 2017 16:07:45 GMT+0530",
+		"sling:resourceType":"roche/customerportal/components/videomedia",
+		"assetPath":"https://progressive-eu.assetsadobe.com/rochestaging/_renditions_/2f1/2f195f9e-f0ac-470a-8f8f-fd6c9de5ea0f/avs/small.mp4",
+		"videoType":"internal",
+		"textIsRich":"true",
+		"transparentOverlay":"false",
+		"posterLink":"/content/dam/roche/customerportal/hero-banner.png"
+		},
+		"par" : {
+			"pagedetails": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:createdBy": "admin",
+			"titleOne": "Heading",
+			"titleTwo": "Sub heading",
+			"titleThree": "heading",
+			"pageDescriptionOne": "Page description one",
+			"pageDescriptionTwo": "Page description two",
+			"jcr:lastModifiedBy": "admin",
+			"target": "_self",
+			"jcr:created": "Thu Aug 24 2017 12:45:39 GMT+0530",
+			"url": "/content/roche/customerportal/us/en/home",
+			"label": "Label",
+			"twoColumnView": "true",
+			"jcr:lastModified": "Thu Aug 24 2017 16:45:27 GMT+0530",
+			"sling:resourceType": "roche/customerportal/components/pageDetails",
+			"textIsRich": [
+			"true",
+			"true"
+			]
+		}
+		}
+	}
+}

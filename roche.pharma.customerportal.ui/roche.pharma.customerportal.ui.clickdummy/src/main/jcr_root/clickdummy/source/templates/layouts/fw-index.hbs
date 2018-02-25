@@ -1,0 +1,30 @@
+	<!DOCTYPE html>
+<!--[if IE 9 ]><html lang="de" class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><html lang="de" class="no-js"><!--<![endif]-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"
+              data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="locale" content="en_US"/>
+    <title>Global Components Roche</title>
+ <sly data-sly-call="${clientLib.css @ categories='roche.vendor.publish'}" />
+ <sly data-sly-call="${clientLib.css @ categories='roche.global.publish'}" />
+ <sly data-sly-call="${clientLib.css @ categories='roche.secondary.publish'}" />
+ <sly data-sly-call="${clientLib.css @ categories='roche.pdp.ssi.publish'}" />
+</head>
+
+<body class="fw x-wrapper" data-spy="scroll" data-target="#main-navbar" data-offset="90">
+
+
+    {{> body }}
+
+
+ <sly data-sly-call="${clientLib.js @ categories='roche.vendor.publish'}" />
+ <sly data-sly-call="${clientLib.js @ categories='roche.global.publish'}" />
+ <sly data-sly-call="${clientLib.js @ categories='roche.secondary.publish'}" />
+ <sly data-sly-call="${clientLib.js @ categories='roche.pdp.ssi.publish'}" />
+
+</body>
+</html>

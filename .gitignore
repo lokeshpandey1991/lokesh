@@ -1,0 +1,30 @@
+# Ignore VLT files
+.vlt
+.vlt-sync.log
+.vlt-sync-config.properties
+ 
+# Ignore Quickstart launches in the source tree
+license.properties
+crx-quickstart
+ 
+# Ignore compilation results
+target
+ 
+# Ignore IDE and Operating System artifacts
+nb-configuration.xml
+.idea
+.classpath
+.metadata
+.project
+.settings
+maven-eclipse.xml
+*.iml
+*.ipr
+*.iws
+.DS_Store
+*/bin/*
+vault
+bin
+roche.pharma.customerportal.ui/roche.pharma.customerportal.ui.clickdummy/src/main/jcr_root/clickdummy/app/jcr_root/apps/**/.content.xml
+roche.pharma.customerportal.ui/roche.pharma.customerportal.ui.clickdummy/src/main/jcr_root/clickdummy/source/PhantomJS_2.1.1_(Windows_7_0.0.0)/test-results.xml
+*.map

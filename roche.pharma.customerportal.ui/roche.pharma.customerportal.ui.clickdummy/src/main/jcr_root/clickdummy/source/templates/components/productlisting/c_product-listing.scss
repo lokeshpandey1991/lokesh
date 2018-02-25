@@ -1,0 +1,103 @@
+.t-prod-listing {
+  .search-results-tab {
+    min-height: 300px;
+  }
+  .prod-listing-container,
+  .prod-listing-container__fw {
+    min-height: 300px;
+  }
+  .filter-list-container {
+    width: 50%;
+    position: relative;
+    float: left;
+  }
+  @media ($mobile) {
+    .sorting-list-container {
+      width: 50%;
+      float: left;
+    }
+    .t-prod-result-text {
+      padding: convert-in-rem(24) convert-in-rem(16);
+    }
+  }
+  @media ($tablet) {
+    .c-page-title,
+    .c-headline-body {
+      margin-top: convert-in-rem(60);
+      margin-bottom: convert-in-rem(60);
+    }
+  }
+  .prod-search-results-tile {
+    text-align: center;
+    @media ($tablet) {
+      .sorting-list-container {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+  .prod-search-results-tile {
+    border-top: 1px solid $clr-carousel-border;
+    border-bottom: 1px solid $clr-carousel-border;
+  }
+  @media ($tablet) {
+    .prod-search-results-tile {
+      @include rel-padding(24, 0, 24, 102);
+      text-align: left;
+    }
+    .prod-filter-container {
+      float: left;
+      width: 255px;
+      border-top: 1px solid $clr-carousel-border; //border-right : 1px solid $clr-carousel-border;
+    }
+    .prod-search-results-tile,
+    .prod-listing-container {
+      float: right;
+      width: calc(100% - 255px);
+      border-left: 1px solid $clr-outline;
+    }
+    .prod-listing-container__fw {
+      margin: 0 convert-in-rem(151.5);
+    }
+    .sorting-list-container {
+      float: right;
+      clear: left;
+      &.sorting-list-container--margin {
+        padding: convert-in-rem(24) 0;
+      }
+    }
+  }
+  .c-plp-filters {
+    display: block;
+    color: $heading-color;
+    font-family: Imago;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 5px;
+    margin-left: 3rem;
+  }
+
+  .c-plp-filters-title {
+    display: block;
+    color: $heading-color;
+    font-family: Imago;
+    font-size: 16px;
+    line-height: 1;
+    padding: 5px;
+    margin-left: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  &__count {
+    @include MQ(mobileonly) {
+      display: block;
+    }
+  }
+  &__filter-container {
+    width: 255px;
+    display: inline-block;
+    border-top: 1px solid $clr-carousel-border;
+  }
+}

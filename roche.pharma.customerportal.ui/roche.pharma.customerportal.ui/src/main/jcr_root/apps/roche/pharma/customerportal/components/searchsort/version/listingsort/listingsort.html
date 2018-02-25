@@ -1,0 +1,16 @@
+<!--/*
+
+	Search Sort Component
+	
+	This is Roche Search Sort Component
+	
+*/-->
+
+<sly data-sly-test.emptyContent="${wcmmode.edit}"> 
+	<div data-emptytext="Configure Sort" class="cq-placeholder">
+	</div>
+</sly>
+<sly data-sly-use.searchSortModel="com.roche.pharma.customerportal.core.models.SearchSortModel"
+	data-sly-use.lib="listingsort-template.html"
+	data-sly-call="${lib.listingsort_template @ data=searchSortModel,tab='more'}" />
+

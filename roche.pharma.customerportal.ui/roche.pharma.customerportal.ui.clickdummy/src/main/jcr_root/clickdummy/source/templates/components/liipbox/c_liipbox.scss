@@ -1,0 +1,183 @@
+.x-liipbox {
+  &__top-section {
+    @include clearfix();
+    border-bottom: 1px solid $border-color;
+    height: 50px;
+  }
+  &__right-s {
+    width: auto;
+    padding: convert-in-rem(15);
+    &__logo {
+      background: url("/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/whiteRoche.svg");
+      height: 21px;
+      width: 40px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  &__left-s {
+    width: 50px;
+    height: 50px;
+    border-right: 1px solid $border-color;
+    &__cross-icon {
+      background: url("/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/cross-icon.png") no-repeat 50% 50%;
+      height: 100%;
+      width: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      background-size: 18px 18px;
+      border: none;
+    }
+  }
+  &__text {
+    position: absolute;
+    margin-top: convert-in-rem(16);
+    display: inline-block;
+    font-size: convert-in-rem(11);
+    padding-left: convert-in-rem(14.5);
+    letter-spacing: convert-in-rem(2);
+    line-height: convert-in-rem(20);
+    text-transform: uppercase;
+    color: $clr-white;
+    vertical-align: middle;
+    width: 68vw;
+    height: 20px;
+  }
+  &.no-cookie {
+    .persona-text {
+      width: 80%;
+    }
+  }
+  button.navbar-toggle {
+    position: relative;
+    display: block;
+    float: left;
+    padding: convert-in-rem(18) convert-in-rem(12);
+    margin: 0;
+    -ms-transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    transition: all 300ms linear;
+    border: 0;
+    .icon-bar {
+      background-color: $clr-white;
+      height: 1px;
+      position: absolute;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      -o-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      &+.icon-bar {
+        margin-top: 6px;
+        position: relative;
+      }
+    }
+    &.translated {
+      .icon-bar+.icon-bar {
+        position: absolute;
+      }
+      .icon-bar:nth-of-type(1) {
+        background-color: transparent;
+      }
+      .icon-bar:nth-of-type(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        height: 2px;
+      }
+      .icon-bar:nth-of-type(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        height: 2px;
+      }
+    }
+    &:hover,&:focus{
+      background: transparent;
+    }
+  }
+}
+
+@media ($tablet) {
+  .x-liipbox {
+    &__top-section {
+      height: 130px;
+    }
+    &__right-s {
+      padding: convert-in-rem(44) convert-in-rem(49);
+      &__logo {
+        height: 24.44px;
+        width: 46.97px;
+        position: absolute;
+        right: 10px;
+        top: 18px;
+        -ms-transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+        &.translated {
+          background: none;
+          height: 41px;
+          width: 77px;
+          -webkit-transform: translate(-25px, 25px);
+          transform: translate(-25px, 25px);
+        }
+      }
+    }
+    &__left-s {
+      width: 130px;
+      height: 130px;
+      &__cross-icon {
+        background-size: 26px 26px;
+      }
+    }
+    &__text {
+      font-size: convert-in-rem(38);
+      line-height: convert-in-rem(44);
+      text-transform: none;
+      padding-left: convert-in-rem(49);
+      width: 75vw;
+      height: 44px;
+      margin-top: convert-in-rem(40);
+    }
+    &.no-cookie {
+      .persona-text {
+        width: 80%;
+      }
+    }
+    .navbar-toggle {
+      &.translated {
+        -ms-transform: translate(42px, 42px);
+        -webkit-transform: translate(42px, 42px);
+        -moz-transform: translate(42px, 42px);
+        transform: translate(42px, 42px);
+        width: 42px;
+        height: 42px;
+        padding-left: 3px;
+        padding-top: 3px;
+        .icon-bar:nth-of-type(2) {
+          width: 36px;
+        }
+        .icon-bar:nth-of-type(3) {
+          width: 36px;
+        }
+      }
+    }
+  }
+}
+
+@media ($tablet-min) and ($tablet-max) {
+  .x-liipbox {
+    &__text {
+      font-size: convert-in-rem(28);
+    }
+  }
+}

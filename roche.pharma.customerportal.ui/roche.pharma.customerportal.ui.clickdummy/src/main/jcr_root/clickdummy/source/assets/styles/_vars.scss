@@ -1,0 +1,110 @@
+// declaring variables
+
+$font-imagopro-bold: 'imago-bold', Arial, sans-serif;
+
+$font-imagopro-bolditalic: 'imago-bold-italic', Arial, sans-serif;
+
+$font-imagopro-book: 'imago-book', Arial, sans-serif;
+
+$font-imagopro-medium: 'imago-medium', Arial, sans-serif;
+
+$font-imagopro-light: 'imago-light', Arial, sans-serif;
+
+$font-minion-italic: 'Minion-Italic', Arial, sans-serif;
+
+$font-roboto: 'Roboto', Arial, sans-serif;
+
+$base-font-size: 16 !default;
+
+$fontsize-sm: 12px;
+$fontsize-md: 14px;
+
+// Responsive Breakpoints
+
+//$max-viewport : 'min-width: 1440px'; // usage => @media ($max-viewport)
+
+$desktop: 'min-width: 992px';
+
+// usage => @media ${$desktop}
+
+$tablet-min: 'min-width: 768px';
+$tablet-max: 'max-width: 1024px';
+
+$tablet: 'min-width: 768px';
+
+// usage => @media ${$tablet}
+
+$tablet-landscape: '${$tablet} and (orientation: landscape)';
+
+// usage => @media $($tablet-landscape}
+
+$mobile: 'max-width: 767px';
+
+// usage => @media ${$mobile}
+
+$mobile-landscape: '${$mobile} and (orientation: landscape)';
+
+$tabletLandscape: 'min-width: 1024px';
+
+$desktop-large: 'min-width: 1200px';
+
+$desktop-x-large: 'min-width: 1440px';
+
+// usage => @media ${$mobile-landscape}
+
+/*Base font sizes, colors*/
+
+$heading-color: #17313f;
+
+$link-color: #0066CC;
+
+$link-color-404: #5c9dde;
+
+//** Number of columns in the grid.
+$grid-columns: 12 !default;
+
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width: 30px !default;
+
+/* Standard color codes */
+$clr-white: #ffffff;
+$clr-blue: #0066cc;
+$clr-black: #18303f;
+$clr-acnt-blue: #90c2ef;
+$clr-tint-blue: #c8e0f7;
+$clr-acnt-pink: #fdcad6;
+$clr-tint-pink: #fde4ea;
+$clr-error-red: #fa5252;
+$clr-btn-blue: #c8e0f7;
+$clr-btn-purple: #0066cc;
+$clr-btn-pink: #fdcad6;
+$clr-outline: #9ba4aa;
+$clr-paragraph: #4a4a4a;
+$clr-light-pink: #ffe4e7;
+$clr-dark-pink: #ffc8d0;
+$clr-light-blue: #7cc4ee;
+$clr-paragraph: #4a4a4a;
+$clr-grey: #4a4a4a;
+$clr-light-grey: #efefef;
+$clr-carousel-border: #B3BBC0;
+$clr-blue-overlay: #247BCF;
+$clr-productlisting-border: #F3F4F5;
+$clr-tooltip-bg: #F5F6F9;
+$clr-tooltip-border: #B3BBC0;
+$clr-arrow-blue: #1E78D2;
+$zindex-xs: 10;
+$zindex-sm: 100;
+$zindex-sm: 999;
+$zindex-xlg: 1024;
+$border-color: #69A5DE;
+$zindex-xss: 10;
+$zindex-xs: 100;
+$zindex-sm: 999;
+$zindex-md: 1024;
+$zindex-lg: 999;
+$zindex-xlg: 99999;
+$zindex-xxlg: 999999;
+$border-color: #69A5DE;
+$heading-typetwo-clr: #17213f;
+$zindex-none: 0;
+

@@ -1,0 +1,8 @@
+
+<sly data-sly-test.emptyContent="${wcmmode.edit}">
+<div data-emptytext="configure ${component.title}"
+	class="cq-placeholder"></div>
+</sly>
+<sly data-sly-use.assayMenuTab="com.roche.pharma.customerportal.core.models.AssayMenuModel"
+     data-sly-use.lib="assayMenuTab-template.html"
+     data-sly-call="${lib.assayMenuTab_template @ data=assayMenuTab}" />

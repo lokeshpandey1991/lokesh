@@ -1,0 +1,63 @@
+{
+	"jcr:primaryType": "rep:AuthorizableFolder",
+	"_kU0epOXScTkne0CK453": {
+		"jcr:primaryType": "rep:User",
+		"jcr:mixinTypes": [
+			"rep:AccessControllable"
+		],
+		"jcr:createdBy": "",
+		"rep:password": "{SHA-256}a39318dacc77e04d-1000-cee734e03d8275e5cb0721c76c47cdc1d91a2f4dd58d31a7e31501614e030979",
+		"jcr:created": "Fri Aug 25 2017 21:14:47 GMT+0530",
+		"cq:lastModified": "Tue Sep 19 2017 09:17:55 GMT+0530",
+		"rep:principalName": "admin",
+		"cq:authorizableCategory": "",
+		"jcr:uuid": "21232f29-7a57-35a7-8389-4a0e4a801fc3",
+		"rep:authorizableId": "admin",
+		"cq:lastModifiedBy": "admin",
+		".tokens": {
+			"jcr:primaryType": "rep:Unstructured",
+			"2017-09-21T09.29.07.684+05.30": {
+				"jcr:primaryType": "rep:Token",
+				"rep:token.exp": "Thu Sep 21 2017 21:29:07 GMT+0530",
+				"rep:token.key": "{SHA-256}8e8a032b88780d97-861c4c98cba6e48aac82fde17316a131b701b8f3b8e2621a188a16123b9eaa37",
+				"ip": "0:0:0:0:0:0:0:1",
+				"useragent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36",
+				"jcr:uuid": "c8487400-b050-4a01-b2a3-6e0d85a48ef2",
+				"referer": "http://localhost:4502/crx/de/index.jsp"
+			}
+		},
+		"preferences": {
+			"jcr:primaryType": "nt:unstructured",
+			"cq.authoring.editor.page.showTour62": "false",
+			"granite.shell.showonboarding620": "false",
+			"cq.authoring.cloudservices.optin": "hide"
+		},
+		"profile": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:mixinTypes": [
+				"rep:AccessControllable"
+			],
+			"email": "rsharma67@sapient.com",
+			"familyName": "Administrator",
+			"sling:resourceType": "cq/security/components/profile"
+		},
+		"rep:policy": {
+			"jcr:primaryType": "rep:ACL",
+			"deny": {
+				"jcr:primaryType": "rep:DenyACE",
+				"rep:principalName": "user-administrators",
+				"rep:privileges": [
+					"jcr:versionManagement",
+					"jcr:modifyAccessControl",
+					"rep:userManagement",
+					"jcr:readAccessControl",
+					"crx:replicate",
+					"rep:write",
+					"jcr:lifecycleManagement",
+					"jcr:retentionManagement",
+					"jcr:lockManagement"
+				]
+			}
+		}
+	}
+}

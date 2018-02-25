@@ -1,0 +1,12 @@
+
+<!--
+
+    Hero Media  Component .
+
+  	This is the  component for Hero Media
+
+    -->
+        <sly data-sly-test.emptyContent="${wcmmode.edit}"> <div data-emptytext="configure ${component.title}" class="cq-placeholder"></div></sly>
+    	<li>Email Body text is-${ properties['emailBody'] @ context='html'}</li>
+    <li>Email Subject- ${ properties['emailSubject'] @ context='html'}</li>
+		<li>Email Template- ${ properties['emailTemplate'] @ context='html'}</li>

@@ -1,0 +1,13 @@
+{  
+   "jcr:primaryType":"nt:unstructured",
+   "jcr:createdBy":"admin",
+   "jcr:lastModifiedBy":"admin",
+   "headline":"hello",
+   "jcr:created":"Tue Sep 19 2017 17:16:41 GMT+0530",
+   "jcr:lastModified":"Tue Sep 19 2017 17:17:13 GMT+0530",
+   "ctaLink":"/content/customerportal/global-master-blueprint/en/home",
+   "ctaName":"jusdhufushduf",
+   "sling:resourceType":"roche/customerportal/components/texthighlightrail",
+   "textIsRich":"true",
+   "bodyText":"<p>jhsadufhausdfusafd</p>\r\n"
+}

@@ -1,0 +1,160 @@
+.c-navigation-overlay {
+  font-family: $font-imagopro-book;
+  background: $clr-blue;
+  height: 100%;
+  .top-section {
+    @include clearfix();
+    border-bottom: 1px solid $border-color;
+    height: 60px;
+  }
+  .links-section {
+    display: block;
+    position: relative;
+    margin: 0 52px;
+  }
+  .left-s {
+    width: auto;
+    padding: convert-in-rem(18);
+    .logo {
+      background: url("/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/whiteRoche.svg") no-repeat;
+      height: 24px;
+      width: 44px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .persona-link {
+      display: inline-block;
+      font-size: convert-in-rem(13);
+      padding-left: convert-in-rem(19);
+      letter-spacing: convert-in-rem(2);
+      line-height: convert-in-rem(20);
+      text-transform: uppercase;
+      color: $clr-white;
+      vertical-align: middle;
+    }
+  }
+  .right-s {
+    width: 60px;
+    height: 60px;
+    border-left: 1px solid $border-color;
+    .cross-icon {
+      background: url("/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/cross-icon.png") no-repeat 50% 50%;
+      height: 100%;
+      width: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      background-size: 18px 18px;
+    }
+  }
+  .link-row {
+    display: block;
+    font-size: convert-in-rem(22);
+    line-height: convert-in-rem(28);
+    padding-top: convert-in-rem(35);
+    color: $clr-white;
+    a.link {
+      color: $clr-white;
+    }
+  }
+  .row-1,
+  .row-2 {
+    padding: 0;
+  }
+  .row-2 {
+    margin: convert-in-rem(43) 0 convert-in-rem(38);
+    .link-row {
+      font-size: convert-in-rem(14);
+      line-height: convert-in-rem(18);
+      text-transform: uppercase;
+      letter-spacing: convert-in-rem(2);
+      padding: convert-in-rem(12) 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+  .row-1 .cta-white {
+    background: url("/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/cta-arrow.png") no-repeat;
+    height: 14px;
+    width: 14px;
+    padding-right: convert-in-rem(25);
+    position: relative;
+    top: convert-in-rem(2);
+    display: inline-block;
+  }
+  .region-picker {
+    background: url("/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/regionPicker_light.svg") no-repeat left;
+    height: 13px;
+    width: 13px;
+    display: inline-block;
+    position: relative;
+    top: convert-in-rem(1);
+  }
+  .country-name {
+    padding-left: convert-in-rem(8);
+  }
+}
+
+@media ($tablet) {
+  .c-navigation-overlay {
+    .top-section {
+      height: 131px;
+    }
+    .links-section {
+      margin: 0 auto;
+      min-height: calc(100% - 130px);
+      display: flex;
+    }
+    .left-s {
+      padding: 4.4rem 4.9rem;
+      .logo {
+        width: 77px;
+        height: 42px;
+      }
+    }
+    .right-s {
+      width: 133.5px;
+      height: 131px;
+      .cross-icon {
+        background-size: 32px 32px;
+      }
+    }
+    .link-row {
+      @include rel-padding(0, 0, 44, 0);
+      &:first-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.21);
+      }
+    }
+    .row-1,
+    .row-2 {
+      padding: convert-in-rem(100) 0 0;
+      flex: 1;
+    }
+    .row-2 {
+      margin: 0 auto;
+      border-left: 1px solid $border-color;
+      .link-row {
+        border-top: none;
+        border-bottom: none;
+      }
+    }
+    .left-sm {
+      margin-left: convert-in-rem(150);
+      margin-top: convert-in-rem(22);
+      .link-row {
+        font-size: convert-in-rem(32);
+        font-weight: 300;
+        text-transform: none;
+        border: none;
+      }
+    }
+    .right-sm {
+      margin-left: convert-in-rem(98);
+      padding-left: 0;
+      .link-row {
+        font-size: convert-in-rem(18);
+        line-height: convert-in-rem(60);
+        padding: 0;
+      }
+    }
+  }
+}

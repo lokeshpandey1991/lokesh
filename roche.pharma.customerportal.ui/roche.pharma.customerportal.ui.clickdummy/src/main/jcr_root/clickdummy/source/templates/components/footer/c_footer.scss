@@ -1,0 +1,105 @@
+.c-footer {
+  @include clearfix();
+  @include rel-padding(44, 7, 44, 16);
+  width:100%;
+  box-shadow: 0 -2px 2px 0 rgba(0,0,0,0.06);
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    margin: 0;
+  }
+  li:last-child {
+    padding-bottom: 0;
+  }
+  .social-link {
+    padding-bottom: convert-in-rem(24);
+    display: inline-block;
+  }
+  .social-icon {
+    width: 58px;
+    height: 58px;
+    background-size: 100% 100%;
+  }
+  &__link {
+    display: inline-block;
+    text-transform: uppercase;
+    color: $heading-color;
+    font-size: convert-in-rem(12);
+    letter-spacing: convert-in-rem(2);
+    line-height: convert-in-rem(16);
+    margin-bottom: convert-in-rem(41);
+  }
+  &__text {
+    font-size: convert-in-rem(10);
+    line-height: convert-in-rem(14);
+  }
+  .social-icons {
+    padding-top: convert-in-rem(5);
+    max-width: 60px;    
+  }
+  &__legal-content {
+    max-width: convert-in-rem(177);
+  }
+  &__legal-content,
+  &__copyright {
+    padding-top: convert-in-rem(43);
+  }
+  .region-picker {
+    position:relative;
+    width:0;
+    &::before{
+      content:'';
+      background: url("/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/regionPicker_dark.png") no-repeat;
+      height: 10px;
+      width: 10px;
+      display: inline;
+      position:absolute;
+      left:-15px; 
+      bottom:0;
+      padding-right: convert-in-rem(18); 
+      top: convert-in-rem(3);
+    }
+  }
+  .region {
+    cursor: pointer;
+  }
+}
+
+@media ($tablet) {
+  .c-footer {
+    padding: convert-in-rem(55) convert-in-rem(50);
+    li {
+      display: inline-block;
+    }
+    &__link {
+      display: inline-block;
+      margin-right: convert-in-rem(40);
+      padding: convert-in-rem(5) 0 0;
+      margin-bottom: 0;
+    }
+    &__legal-content {
+      padding-top: convert-in-rem(19);
+      max-width: convert-in-rem(472);
+    }
+    &__copyright {
+      padding-top: convert-in-rem(21);
+    }
+    .social-icon {
+      width: 40px;
+      height: 40px;
+    }
+    .social-link {
+      padding-bottom: convert-in-rem(19);
+      &:nth-child(odd) {
+        margin-right: convert-in-rem(22);
+      }
+    }
+    .social-icons {
+      max-width: 110px;
+      padding-top: 0;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<!--/*
+Country Selector Component
+*/-->
+<sly data-sly-test.emptyContent="${wcmmode.edit}">
+<div data-emptytext="configure ${component.title}"
+	class="cq-placeholder"></div>
+</sly>
+
+<sly data-sly-test="${wcmmode.disabled}">
+<div class="clearfix">
+	<sly
+		data-sly-use.countrySelectorModel="com.roche.pharma.customerportal.core.models.CountrySelectorModel"
+		data-sly-use.lib="countryselector-template.html"
+		data-sly-call="${lib.countryselector_template @ data=countrySelectorModel}" />
+</div>
+</sly>

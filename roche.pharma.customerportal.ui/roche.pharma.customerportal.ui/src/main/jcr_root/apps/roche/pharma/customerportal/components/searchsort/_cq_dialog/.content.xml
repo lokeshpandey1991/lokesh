@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+	xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="nt:unstructured"
+	jcr:title="Search Sort" sling:resourceType="cq/gui/components/authoring/dialog">
+	<content jcr:primaryType="nt:unstructured"
+		sling:resourceType="granite/ui/components/foundation/container">
+		<items jcr:primaryType="nt:unstructured">
+			<tabs jcr:primaryType="nt:unstructured"
+				sling:resourceType="granite/ui/components/foundation/container">
+				<layout jcr:primaryType="nt:unstructured"
+					sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+					type="nav" />
+				<items jcr:primaryType="nt:unstructured">
+					<searchSortTab jcr:primaryType="nt:unstructured"
+						jcr:title="SearchSort" sling:resourceType="granite/ui/components/foundation/section">
+						<layout jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" />
+						<items jcr:primaryType="nt:unstructured">
+							<column jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/foundation/container">
+								<items jcr:primaryType="nt:unstructured">
+									<searchsort cq:showOnCreate="{Boolean}true" jcr:primaryType="nt:unstructured"
+										jcr:title="Search Sort" sling:resourceType="granite/ui/components/foundation/form/fieldset">
+										<items jcr:primaryType="nt:unstructured">
+											<searchSortOptions jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/foundation/form/multifield"
+												class="full-width" fieldDescription="Click '+' to add a new link"
+												fieldLabel="Search Sort Options">
+												<field jcr:primaryType="nt:unstructured"
+													sling:resourceType="granite/ui/components/foundation/form/fieldset"
+													acs-commons-nested="JSON_STORE" name="./searchsort">
+													<layout jcr:primaryType="nt:unstructured"
+														sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+														method="absolute" />
+													<items jcr:primaryType="nt:unstructured">
+														<column jcr:primaryType="nt:unstructured"
+															sling:resourceType="granite/ui/components/foundation/container">
+															<items jcr:primaryType="nt:unstructured">	
+																<linkBehaviour jcr:primaryType="nt:unstructured"
+																	sling:resourceType="granite/ui/components/foundation/form/select"
+																	fieldLabel="Sort Behaviour" name="./searchValue">
+																	   <items jcr:primaryType="nt:unstructured">
+																			<relevance jcr:primaryType="nt:unstructured"
+																				text="Relevance" value="relevance" />
+																			<title jcr:primaryType="nt:unstructured"
+																				text="Name A-Z" value="title" />																				
+																			<titleDsc jcr:primaryType="nt:unstructured"
+																				text="Name Z-A" value="titleDesc" />
+																			<publishedDate jcr:primaryType="nt:unstructured"
+																				text="Newest" value="publishedDateDesc" />
+																			<publishedDateDsc jcr:primaryType="nt:unstructured"
+																				text="Oldest" value="publishedDate" />																				
+										  								</items>
+								  								</linkBehaviour>  
+                                                                <type jcr:primaryType="nt:unstructured"
+																	sling:resourceType="granite/ui/components/foundation/form/select"
+																	fieldLabel="Sort Tab" name="./searchType">
+																	   <items jcr:primaryType="nt:unstructured">
+																			<all jcr:primaryType="nt:unstructured"
+																				text="All" value="all" />
+																			<product jcr:primaryType="nt:unstructured"
+																				text="Product" value="product" />																				
+																			<more jcr:primaryType="nt:unstructured"
+																				text="More" value="more" />																			
+										  								</items>
+								  								</type>   																
+															</items>
+														</column>
+													</items>
+												</field>
+											</searchSortOptions>
+										</items>
+									</searchsort>
+								</items>
+							</column>
+						</items>
+					</searchSortTab>
+					<defaultProductSortTab jcr:primaryType="nt:unstructured"
+						jcr:title="Default Product Sort Behaviour" sling:resourceType="granite/ui/components/foundation/section">
+						<layout jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" />
+						<items jcr:primaryType="nt:unstructured">
+							<column jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/foundation/container">
+								<items jcr:primaryType="nt:unstructured">
+									<searchsort cq:showOnCreate="{Boolean}true" jcr:primaryType="nt:unstructured"
+										jcr:title="Default Product Sort Behaviour" sling:resourceType="granite/ui/components/foundation/form/fieldset">
+										<items jcr:primaryType="nt:unstructured">
+										<linkBehaviour jcr:primaryType="nt:unstructured"
+													   sling:resourceType="granite/ui/components/foundation/form/select"
+													   fieldLabel="Sort Behaviour" name="./productDefaultBehaviour">
+															   <items jcr:primaryType="nt:unstructured">
+																	<relevance jcr:primaryType="nt:unstructured"
+														        				text="Relevance" value="relevance" />
+																	<title jcr:primaryType="nt:unstructured"
+															        	   text="Name A-Z" value="title" />																				
+																	<titleDsc jcr:primaryType="nt:unstructured"
+																        	  text="Name Z-A" value="titleDesc" />
+																	<publishedDate jcr:primaryType="nt:unstructured"
+																				   text="Newest" value="publishedDateDesc" />
+																	<publishedDateDsc jcr:primaryType="nt:unstructured"
+																				      text="Oldest" value="publishedDate" />																				
+										  						</items>
+								  		</linkBehaviour>  
+										</items>
+									</searchsort>
+								</items>
+							</column>
+						</items>
+					</defaultProductSortTab>
+					<defaultMoreSortTab jcr:primaryType="nt:unstructured"
+						jcr:title="Default More Sort Behaviour" sling:resourceType="granite/ui/components/foundation/section">
+						<layout jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" />
+						<items jcr:primaryType="nt:unstructured">
+							<column jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/foundation/container">
+								<items jcr:primaryType="nt:unstructured">
+									<searchsort cq:showOnCreate="{Boolean}true" jcr:primaryType="nt:unstructured"
+										jcr:title="Default More Sort Behaviour" sling:resourceType="granite/ui/components/foundation/form/fieldset">
+										<items jcr:primaryType="nt:unstructured">
+										<linkBehaviour jcr:primaryType="nt:unstructured"
+													   sling:resourceType="granite/ui/components/foundation/form/select"
+													   fieldLabel="Sort Behaviour" name="./moreDefaultBehaviour">
+															   <items jcr:primaryType="nt:unstructured">
+																	<relevance jcr:primaryType="nt:unstructured"
+														        				text="Relevance" value="relevance" />
+																	<title jcr:primaryType="nt:unstructured"
+															        	   text="Name A-Z" value="title" />																				
+																	<titleDsc jcr:primaryType="nt:unstructured"
+																        	  text="Name Z-A" value="titleDesc" />
+																	<publishedDate jcr:primaryType="nt:unstructured"
+																				   text="Newest" value="publishedDateDesc" />
+																	<publishedDateDsc jcr:primaryType="nt:unstructured"
+																				      text="Oldest" value="publishedDate" />																				
+										  						</items>
+								  		</linkBehaviour>  
+										</items>
+									</searchsort>
+								</items>
+							</column>
+						</items>
+					</defaultMoreSortTab>
+				</items>
+			</tabs>
+		</items>
+	</content>
+</jcr:root>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Event Details"
+    sling:resourceType="granite/ui/components/foundation/section">
+    <layout
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+        margin="{Boolean}false"/>
+    <items jcr:primaryType="nt:unstructured">
+        <column
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <eventstartdate
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/form/datepicker"
+                    displayedFormat="DD.MM.YYYY"
+                    fieldDescription="Select the Event Start Date"
+                    fieldLabel="Event Start Date"
+                    name="./eventStartDate"
+                    type="datetime"/>
+                <eventenddate
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/form/datepicker"
+                    displayedFormat="DD.MM.YYYY"
+                    fieldDescription="Select the Event End Date"
+                    fieldLabel="Event End Date"
+                    name="./eventEndDate"
+                    type="datetime"/>
+                <location
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldDescription="Enter the location for the Event"
+                    fieldLabel="Location"
+                    name="./location"/>
+				<eventType
+					cq:showOnCreate="{Boolean}true"
+					jcr:primaryType="nt:unstructured"
+					jcr:title="Event Type"
+					sling:resourceType="granite/ui/components/foundation/form/fieldset">
+					<items jcr:primaryType="nt:unstructured">
+						<values
+							cq:showOnCreate="{Boolean}true"
+							jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/foundation/form/select"
+							cq-msm-lockable="eventType"
+							fieldLabel="Event Type"
+							name="./eventType">
+							<items jcr:primaryType="nt:unstructured">
+								<conference
+									jcr:primaryType="nt:unstructured"
+									text="Conference"
+									value="conference"/>
+								<webinars
+									jcr:primaryType="nt:unstructured"
+									text="Webinar"
+									value="webinar"/>
+								<tradeshow
+									jcr:primaryType="nt:unstructured"
+									text="Trade Show"
+									value="tradeShow"/>
+							</items>
+						</values>
+					</items>
+				</eventType>
+            </items>
+        </column>
+    </items>
+</jcr:root>

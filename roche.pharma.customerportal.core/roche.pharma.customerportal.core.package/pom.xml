@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>roche-pharma-customerportal-core</artifactId>
+        <groupId>roche.pharma.customerportal.core</groupId>
+		<version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>roche-pharma-customerportal-core-package</artifactId>
+
+    <packaging>war</packaging>
+    <name>Roche Pharma Customerportal Core :: Package</name>
+
+    <build>
+        <!-- Only needed for Sonar-JS-Plugin until http://jira.codehaus.org/browse/SONARPLUGINS-1802 is solved -->
+        <sourceDirectory>src/main/jcr_root</sourceDirectory>
+
+        <plugins>
+            <!-- creates and deploys packages -->
+            <plugin>
+                <groupId>com.day.jcr.vault</groupId>
+                <artifactId>content-package-maven-plugin</artifactId>
+				<configuration>
+                    <filters>
+                        <!-- rewriter configuration for PDF generation -->
+						<filter>
+							<root>/apps/roche/pharma/customerportal</root>
+							<excludes>
+								<exclude>/apps/roche/pharma/customerportal/components</exclude>
+								<exclude>/apps/roche/pharma/customerportal/templates</exclude>
+								<exclude>/apps/roche/pharma/customerportal/i18n</exclude>
+								<exclude>/apps/roche/pharma/customerportal/configuration</exclude>
+							</excludes>
+						</filter>
+					</filters>
+				</configuration>					
+            </plugin>
+
+            <!-- checks all xml files (within view projects) for well-formedness -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>xml-maven-plugin</artifactId>
+            </plugin>
+            <!-- static code analysis for javascript <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>jslint-maven-plugin</artifactId> 
+                </plugin> -->
+        </plugins>
+    </build>
+
+    <dependencies>
+
+        <!-- embed bundle within package -->
+		
+		<dependency>
+            <artifactId>roche-pharma-customerportal-services-bundle</artifactId>
+            <groupId>${project.groupId}</groupId>
+            <version>${project.version}</version>
+            <type>bundle</type>
+        </dependency>
+		
+        <dependency>
+            <artifactId>roche-pharma-customerportal-core-bundle</artifactId>
+            <groupId>${project.groupId}</groupId>
+            <version>${project.version}</version>
+            <type>bundle</type>
+        </dependency>
+
+
+
+    </dependencies>
+</project>

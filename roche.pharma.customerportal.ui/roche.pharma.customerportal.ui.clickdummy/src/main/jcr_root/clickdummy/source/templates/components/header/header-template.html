@@ -1,0 +1,53 @@
+<sly data-sly-template.header_template="${@ data, flag}">
+  <input type="hidden" name="currentPagepath" value="${data.currentResolvedPath}">
+  <input type="hidden" name="currentChannel" value="${data.currentChannel}">
+  <header class="c-header x-component-spacing" data-module="headerNavigationComp">
+    <div class="c-header__wrapper c-header__wrapper--sticky js-header-wrapper">
+      <div class="c-header__primary" style="width: 50%;">
+        <button type="button" class="c-header__menu x-hamburger-icon js-menu" itemprop="image" data-fn-click="true"
+             data-da-satelliteTrackEvent="generic-link-tracking"
+               data-da-link_link-page-name="" 
+               data-da-link_link-category="" 
+               data-da-link_link-section="global-top-navigation"
+               data-da-link_link-header="hamburger-menu-overlay"
+               data-da-link_link-text="${'rdoe_global.hamburger' @ i18n}"
+data-da-link_link-interaction-method="" >
+          <span class="sr-only">${'rdoe_global.hamburger' @ i18n} </span>
+        </button>
+        <div style="text-align: center;float: right;">
+          Header
+        </div>         
+      </div>    
+      <div class="c-header__secondry">
+        <a class="c-header__link c-header__nav-link c-header__link--margin" itemprop="url" href="${data.homePagePath}.html" data-fn-click="true"
+             data-da-satelliteTrackEvent="generic-link-tracking"
+               data-da-link_link-page-Name="" 
+               data-da-link_link-category="" 
+               data-da-link_link-section="global-top-navigation"
+               data-da-link_link-text="${'rdoe_global.siteName' @ i18n}" data-da-link_link-interaction-method="">
+          Site Name
+        </a>
+        <a href="javascript:void(0);" data-url="${data.countrySelectorPath}/_jcr_content/par/countryselector.html" class="c-header__link c-header__nav-link c-header__link--margin current-country js-link-country" data-fn-click="true"
+             data-da-satelliteTrackEvent="generic-link-tracking"
+               data-da-link_link-page-name="" 
+               data-da-link_link-category="" 
+               data-da-link_link-section="global-top-navigation"
+               data-da-link_link-header="country-selector"
+               data-da-link_link-text="${data.countryCode}" data-da-link_link-interaction-method="">
+          ${data.countryCode}
+        </a>
+        <a href="javascript:void(0);"  data-url="${data.personaSelectorPath}/_jcr_content/par/personapicker.html" data-sly-test="${!data.isPersonaDisabled}" class="c-header__link c-header__nav-link c-header__link--margin persona-link js-header-persona-link hidden-xs">
+          ${data.persona}
+        </a>
+        <a class="c-header__link c-header__link--logo x-sub-hover" itemprop="url" href="${data.homePagePath}.html" data-fn-click="true"
+             data-da-satelliteTrackEvent="generic-link-tracking"
+               data-da-link_link-page-name="" 
+               data-da-link_link-category="" 
+               data-da-link_link-section="global-top-navigation"
+               data-da-link_link-text="${data.logoAltText}" data-da-link_link-interaction-method=""><span>Logo</span>
+          <!--<img src="${data.logoPath}" itemprop="logo" alt="${data.logoAltText}" />-->
+        </a>
+      </div>
+    </div>
+  </header>
+

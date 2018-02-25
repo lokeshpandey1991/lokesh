@@ -1,0 +1,13 @@
+---
+{
+	"layout"	 : "app.hbs",
+    "title"      : "Product Thumbnail on event detail page",
+    "fsdId"      : "productThumbnail",
+    "categories" : "components",
+    "description": "showing products in event detail page",
+    "components" : "productThumbnail",
+    "hiddenUX"   : true
+}
+---
+
+<sly data-sly-call="${lib.productThumbnail_template @ data=productThumbnailModel}" />

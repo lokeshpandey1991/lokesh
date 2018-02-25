@@ -1,0 +1,163 @@
+.c-assay-menu {
+  .content-wrap {
+    padding: 0;
+  }
+  &__btn {
+    background-color: $clr-blue;
+    width: 100%;
+    display: inline-block;
+    padding: convert-in-rem(27);
+    text-align: center;
+    &__titletext {
+      color: $clr-white;
+      font-size: convert-in-rem(22);
+      line-height: convert-in-rem(22);
+      font-family: $font-imagopro-book;
+    }
+    .view-btn {
+      background-color: $clr-blue;
+      border: 1px solid $clr-white;
+      width: 100%;
+      color: $clr-white;
+      font-size: convert-in-rem(16);
+      line-height: convert-in-rem(22);
+      padding: convert-in-rem(15);
+      display: inline-block;
+      margin-top: convert-in-rem(14);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+  &__wrapper {
+    background: $clr-white;
+    z-index: $zindex-xlg;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 0 convert-in-rem(50);
+    @media ($mobile) {
+      display: none;
+      padding: 0;
+    }
+    &__header {
+      @include clearfix;
+      z-index: $zindex-xlg;
+      position: fixed;
+      width: 100%;
+      height: 45px;
+      top: 0;
+      overflow: hidden;
+      display: block;
+      background: $clr-blue;
+      .right-col {
+        padding-left: convert-in-rem(16);
+        display: table-cell;
+        &__row {
+          display: table;
+          font-size: convert-in-rem(13);
+          letter-spacing: convert-in-rem(2);
+          line-height: convert-in-rem(18);
+          text-transform: uppercase;
+          color: $clr-white;
+          vertical-align: middle;
+          height: 45px;
+          display: table-cell;
+        }
+        .assay-title {
+          color: $clr-white;
+          font-size: convert-in-rem(12);
+          letter-spacing: 2px;
+          padding: convert-in-rem(5) 0;
+          text-transform: uppercase;
+          height: auto;
+          vertical-align: middle;
+          margin: auto;
+          display: table-cell;
+        }
+      }
+
+      .left-col {
+        width: 50px;
+        height: 45px;
+        float: left;
+        border-right: 1px solid $clr-white;
+        position: relative;
+      }
+    }
+    .close {
+      left: 10px;
+      top: 12px;
+      &:after,
+      &:before {
+        height: 22px;
+        width: 1px;
+      }
+    }
+  }
+  &__key-list,&__key--m {
+    display: none;
+    padding: convert-in-rem(48) convert-in-rem(30);
+  }
+  &__key {
+    font-size: convert-in-rem(22);
+    line-height: convert-in-rem(25);
+    padding-bottom: convert-in-rem(20);
+  }
+  &__related-assays {
+    @media ($mobile) {
+      padding: convert-in-rem(18) convert-in-rem(35);
+    }
+    .assay-name {
+      font-size: convert-in-rem(22);
+      line-height: convert-in-rem(28);
+      color: $heading-color;
+      padding: convert-in-rem(15) 0 convert-in-rem(10) 0;
+    }
+    .assay-title {
+      font-size: convert-in-rem(16);
+      line-height: convert-in-rem(24);
+      padding-top: convert-in-rem(15);
+    }
+  }
+  .new {
+    color: $heading-color;
+    &:before {
+      content: "";
+      float: left;
+      width: convert-in-rem(12);
+      height: convert-in-rem(12);
+      background: $clr-acnt-blue;
+      margin-right: convert-in-rem(14);
+      margin-top: convert-in-rem(6);
+      border-radius: convert-in-rem(10);
+    }
+  }
+  .feature {
+    color: $heading-color;
+    &:before {
+      @extend .new;
+      background: $clr-acnt-pink;
+    }
+  }
+  &__content {
+    display: none;
+  }
+}
+
+@media ($tablet) {
+  .c-assay-menu {
+    &__wrapper {
+      &__header {
+        display: none;
+      }
+    }
+    &__key-list {
+      border: 1px solid $clr-outline;
+      height: convert-in-rem(178);
+    }
+  }
+}

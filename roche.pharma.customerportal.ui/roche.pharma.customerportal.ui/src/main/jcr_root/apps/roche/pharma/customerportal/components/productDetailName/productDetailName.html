@@ -1,0 +1,11 @@
+<!--
+
+    Product Detail  Component .
+
+  	This is the  component for product detail page
+
+    -->
+
+<sly data-sly-use.productDetailNameModel="com.roche.pharma.customerportal.core.models.ProductDetailNameModel"
+       data-sly-use.lib="/apps/roche/pharma/customerportal/components/productDetailName/productDetailName-template.html"
+       data-sly-call="${lib.productDetailName_template @ data=productDetailNameModel}" />

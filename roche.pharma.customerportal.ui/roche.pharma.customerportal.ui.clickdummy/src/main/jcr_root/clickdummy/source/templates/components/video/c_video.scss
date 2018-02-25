@@ -1,0 +1,305 @@
+// Overrides styling of Rangeslider.js's CSS available at
+// https://github.com/andreruffert/rangeslider.js/blob/develop/dist/rangeslider.css
+// as per Roche's video player requirements
+// As this is the very particular video module that's customizing slider as per player
+// requirements, vendor file is placed right beside it instead of vendor directory for easy
+// findability and customization
+@import "video-rangeslider";
+
+// Default styling for video component
+.c-video {
+  // Height constraints
+  position: relative;
+  min-height: 318px;
+  @media ($desktop){
+    min-height: 600px;
+  }
+  // Typography for configured labels
+  .h5 {
+    font-size: convert-in-rem(22);
+    line-height: convert-in-rem(28);
+    @media ($desktop){
+      font-size: convert-in-rem(32);
+      line-height: convert-in-rem(38);
+    }
+  }
+  .h6 {
+    font-size: convert-in-rem(18);
+    line-height: convert-in-rem(24);
+    @media ($desktop){
+      font-size: convert-in-rem(22);
+      line-height: convert-in-rem(28);
+    }
+  }
+  .jp-interface {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    visibility: hidden;
+    background-color: rgba(23, 49, 63, 0.4);
+  }
+  .jp-gui {
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 convert-in-rem(16);
+  }
+  .jp-progress {
+    width: 100%;
+    background-image: none;
+    padding: 0;
+    height: convert-in-rem(6);
+    background-color: $clr-white;
+    margin-top: 20px;
+    transition: all 0.3s;
+    .jp-seek-bar{
+      position: relative;
+      height: 100%;
+      cursor: pointer;
+      .jp-play-bar {
+        background-color: $clr-dark-pink;
+        height: 100%;
+      }
+    }
+    &:hover{
+      -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    }
+  }
+  .jp-video-play {
+    position: absolute;
+    width: convert-in-rem(80);
+    height: convert-in-rem(80);
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    background-color: #fff;
+    left: 50%;
+    border-radius: 50%;
+    background-image: url(/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/bigPlayButton.svg);
+    -moz-box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .jp-video-ctrl {
+    display: inline-block;
+    width: convert-in-rem(37);
+    height: 45px;
+    vertical-align: middle;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    outline: none;
+
+    &.vol-ctrl-view {
+      width: 40%;
+      position: relative;
+      .rangeslider--horizontal {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0,-50%);
+        transform: translate(0,-50%);
+      }
+    }
+
+    &.vid-play{
+      background-image: url(/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/vidPlay.svg);
+      &.pause{
+        background-image: url(/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/vidPause.svg);
+      }
+    }
+    &.vol-ctrl{
+      background-image: url(/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/vidVolOn.svg);
+      &.mute
+      {
+        background-image: url(/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/vidVolOff.svg);
+      }
+    }
+    &.vol-off{
+      background-image: url(/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/vidVolOff.svg);
+    }
+    &.full-scr{
+      background-image: url(/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/vidFullScr.svg);
+    }
+  }
+
+  .jp-play {
+    width: 0;
+    height: 0;
+    border-top: 11px solid transparent;
+    border-left: 16px solid #fff;
+    border-bottom: 11px solid transparent;
+    margin-top: convert-in-rem(5);
+    margin-left: convert-in-rem(22);
+  }
+  .jp-state-playing .jp-play {
+    width: 12px;
+    height: 16px;
+    border-right: 4px solid #fff;
+    border-left: 4px solid #fff;
+    border-top: 0;
+    border-bottom: 0;
+    margin-top: convert-in-rem(5);
+    margin-left: convert-in-rem(22);
+  }
+  .jp-heading-vid{
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    text-align: center;
+    width: 50%;
+  }
+
+  .jp-controls {
+    width: 50%;
+    display: inline-block;
+    padding-left: 15px;
+
+    &.controls-right {
+      float: right;
+      text-align: right;
+      padding-left: 0;
+      padding-right: 15px;
+    }
+
+    .jp-video-ctrl.jp-timer {
+      color: white;
+      width: auto;
+      height: auto;
+      white-space: nowrap;
+      font-size: convert-in-rem(18);
+      line-height: convert-in-rem(24);
+      font-family: $font-imagopro-light;
+    }
+    .c-toggles {
+      vertical-align: middle;
+      display: inline-block;
+      width: convert-in-rem(37);
+      height: convert-in-rem(45);
+      .full-scr {
+        background-image: url(/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/vidFullScr.svg);
+        margin-top: 8px;
+        display: inline-block;
+        width: convert-in-rem(24);
+        height: convert-in-rem(24);
+        cursor: pointer;
+        outline: 0;
+        margin-right: 5px;
+        @media ($tablet) {
+        width: 24px;
+        height: 24px;
+        margin-right: 0px;
+        }
+      }
+    }
+  }
+  .jp-details {
+    display: none;
+  }
+}
+
+// Breakpoint Specific Changes
+// Desktop
+@media ($desktop) {
+  // Video player interface adjustments
+  .c-video {
+    .jp-video-play {
+      width: convert-in-rem(160);
+      height: convert-in-rem(160);
+    }
+    .jp-play {
+      margin-top: convert-in-rem(10);
+    }
+    .jp-state-playing .jp-play {
+      margin-top: convert-in-rem(10);
+    }
+    .jp-controls .jp-video-ctrl.jp-timer {
+      font-size: convert-in-rem(14);
+      line-height: convert-in-rem(24);
+    }
+  }
+}
+
+// Container layer
+.layer-cnt{
+  &.video-info{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  &.with-opaque-img{
+    img{
+      background-color: white;
+      opacity: .6;
+    }
+  }
+}
+// Opaque layer
+.layer-opaque{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: .6;
+    pointer-events: none;
+}
+@media ($mobile) {
+  .c-video {
+    min-height: 200px;
+    .jp-video-play {
+      width: 2rem;
+      height: 2rem;
+    }
+    .jp-interface {
+      .jp-gui {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        .jp-controls {
+          padding: 0;
+          .controls-right {
+            width: 50%;
+          }
+        }
+        .jp-progress {
+          margin-top: 10px;
+        }
+      }
+     }
+     .jp-heading-vid {
+        width: 60%;
+     }
+  }
+}
+.jp-video-full {
+   position: relative;
+   width: 100%;
+  .jp-gui {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: $zindex-sm;
+  }
+  .jp-jplayer {
+    top: 0;
+    left: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .c-index-class {
+    div {
+      z-index: 9999999999;
+    }
+  }
+  .c-cross-button {
+    z-index: 9999999999;
+  }
+}

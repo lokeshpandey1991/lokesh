@@ -1,0 +1,130 @@
+.c-header {
+  @include clearfix;
+  height: convert-in-rem(60);
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  &__primary,
+  &__secondry {
+    display: inline-block;
+  }
+  &__secondry {
+    float: right;
+  }
+  &__wrapper {
+    border-bottom: 1px solid #efefef;
+    width: 100%;
+    background: #f5f5f5;
+    @include rel-padding(18, 18, 18, 18);
+    &--sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      max-width: 1920px;
+      z-index: 10;
+    }
+    &.js-scroll {
+      top: convert-in-rem(-100);
+    }
+  }
+  &__link {
+    font-size: convert-in-rem(11);
+    line-height: convert-in-rem(16);
+    letter-spacing: convert-in-rem(2);
+    text-transform: uppercase;
+    display: inline;
+    &--logo img {
+      height: 24.44px;
+      width: 46.97px;
+    }
+    &--search {
+      display: inline-block;
+      margin-left: convert-in-rem(16);
+    }
+  }
+  &__nav-link {
+    &:hover:after {
+      -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      transform: scaleX(0);
+    }
+  }
+  &__secondry {
+    .current-country,
+    .persona-link {
+      border-left: 1px solid #A3ADB2;
+      padding: 0 convert-in-rem(10);
+    }
+  }
+  .search {
+    padding-right: convert-in-rem(28);
+  }
+  @media ($tablet) {
+    &__wrapper {
+      &.js-scroll {
+        top: 0;
+      }
+    }
+    &__link {
+      font-size: convert-in-rem(13);
+      line-height: convert-in-rem(20);
+      margin-left: convert-in-rem(32);
+      padding-left: 0;
+      &--margin {
+        margin-left: 0;
+      }
+      &--logo {
+        margin-left: convert-in-rem(32);
+      }
+    }
+    &__nav-link {
+      &:after {
+        content: '';
+        border-bottom: 3px solid $clr-acnt-blue;
+        top: convert-in-rem(40);
+      }
+      &:hover {
+        color: $heading-color;
+        &:after {
+          -webkit-transform: scaleX(1);
+          -ms-transform: scaleX(1);
+          transform: scaleX(1);
+        }
+      }
+      &.active:hover:after {
+        -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        transform: scaleX(0);
+      }
+      &.active {
+        color: $clr-acnt-blue;
+      }
+    }
+    &__link--search {
+      margin-left: convert-in-rem(26);
+      &:after {
+        top: 2.9rem;
+      }
+    }
+  }
+  @media ($desktop) {
+    &__link {
+      margin-left: convert-in-rem(36);
+      position: relative;
+      display: inline-block;
+      padding: 0 convert-in-rem(10);
+      &--margin {
+        margin-left: 0;
+      }
+      &--logo {
+        margin-left: convert-in-rem(40);
+      }
+    }
+    &__link--search {
+      &:after {
+        top: 2.5rem;
+      }
+    }
+  }
+}

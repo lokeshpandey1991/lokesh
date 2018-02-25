@@ -1,0 +1,97 @@
+.c-product-desc {
+  @include clearfix;
+
+  padding: 0 convert-in-rem(15);
+  color: $heading-color;
+  display: block;
+  overflow: hidden;
+
+  &__name {
+    color: $heading-color;
+    font-family: $font-imagopro-book;
+    font-size: convert-in-rem(30);
+    line-height: convert-in-rem(36);
+  }
+
+  &__subtitle {
+    color: $heading-color;
+    font-family: $font-imagopro-book;
+    font-size: convert-in-rem(16);
+    line-height: convert-in-rem(22);
+    margin-top: 8px;
+  }
+
+  .row {
+    padding: 0 20px;
+  }
+
+  .col-left {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .col-right {
+    max-width: 100%;
+    height: auto;
+    padding-top: convert-in-rem(20);
+    text-align: center;
+
+    img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+@media ($tablet) {
+  .c-product-desc {
+    @include clearfix;
+
+    padding: 0 convert-in-rem(50);
+    color: $heading-color;
+    display: block;
+    overflow: hidden;
+
+    &__name {
+      color: $heading-color;
+      font-family: $font-imagopro-medium;
+      font-size: convert-in-rem(64);
+      font-weight: bold;
+      line-height: convert-in-rem(68);
+    }
+
+    &__subtitle {
+      color: $heading-color;
+      font-family: $font-imagopro-book;
+      font-size: convert-in-rem(16);
+      font-weight: normal;
+      line-height: convert-in-rem(22);
+    }
+
+    .col-left {
+      width: 58%;
+      float: left;
+      text-align: left;
+      padding-right: convert-in-rem(15);
+    }
+
+    .col-right {
+      max-width: 100%;
+      width: 40%;
+      height: auto;
+      max-height: 152px;
+      overflow: hidden;
+      float: right;
+      text-align: right;
+      padding: convert-in-rem(5) convert-in-rem(15);
+
+      img {
+        width: auto;
+        max-width: 100%;
+      }
+    }
+  }
+}

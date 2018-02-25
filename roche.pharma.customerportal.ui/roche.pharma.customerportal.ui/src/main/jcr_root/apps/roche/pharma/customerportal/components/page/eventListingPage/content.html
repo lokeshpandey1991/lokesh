@@ -1,0 +1,58 @@
+<!--/* Event Listing Page.
+ This is the component for Event listing page*/-->
+ 
+<sly data-sly-resource="${'dynamicsearchmedia' @ resourceType='roche/pharma/customerportal/components/dynamicsearchmedia'}"/>
+<div class="t-prod-listing" data-module="productlisting">
+<div class="js-page-props" data-listing="events"></div>
+	<section class="t-prod-listing__title">
+		<div data-sly-resource="${'title' @ resourceType='roche/pharma/customerportal/components/title'}" data-sly-unwrap></div>
+	</section>
+	<div class="t-prod-listing t-search-listing">
+		<section class="c-prod-listing-wrapper">
+			<div class="prod-search-results-tile">
+                <div class="t-prod-result-text">
+                    <div class="col-md-3">
+			            <span class="js-current-count" data-text="${'rdoe_searchResult.count' @ i18n}"></span>
+                    </div>
+                    <div class="col-md-6 js-facets-container">
+                    </div>
+                 </div>
+                <div class="c-filter filter-list-container visible-xs">
+                     <span class="c-filter-down-arrow j-filter-down-arrow"></span>
+                     <span class="c-filter__display-input js-filter-list">${'rdoe_search.Filter' @ i18n}</span>
+                     <div class="x-liipbox hidden c-filter__overlay js-filter-list-overlay">
+                      <div class="c-sort-overlay">
+                        <div class="x-liipbox__top-section js-liipbox-top-section">
+                          <div class="col-1 x-liipbox__left-s">
+                            <button class="cross-icon navbar-toggle translated js-cross-icon">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button>
+                          </div>
+                          <div class="col-2 x-liipbox__right-s">
+                            <span class="c-sort-title">${'rdoe_search.Filter' @ i18n}</span>
+                          </div>
+                        </div>
+                        <div class="visible-xs c-filter__content-section js-filter-content-section">
+                            <h3 class="c-filter__title js-filter-title"></h3>
+                            <div class="content-section c-content-section js-filter-facets-list c-filter">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-3 x-no-padding">
+                    <div class="sorting-list-container x-outer-margins remove-right-margin sorting-list-container-padding">
+				<sly data-sly-resource="${'listingsort' @ resourceType ='roche/pharma/customerportal/components/searchsort/version/listingsort'}"/>
+				</div>
+			</div>
+			</div>
+			<div class="visible-xs prod-filter-tab"></div>
+			<div class="hidden-xs prod-filter-container js-filter-container"></div>
+			<div class="prod-listing-container js-listing-container" data-listing-template="events" data-enable-template="true">
+				<sly data-sly-resource="${'listing-view' @ resourceType='roche/pharma/customerportal/components/listingview'}" />
+			</div>
+		</section>
+	</div>
+</div>

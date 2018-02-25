@@ -1,0 +1,3089 @@
+{
+	"jcr:primaryType": "cq:Page",
+	"jcr:mixinTypes": ["rep:AccessControllable"],
+	"jcr:createdBy": "admin",
+	"jcr:created": "Mon Sep 25 2017 16:51:40 GMT+0530",
+	"jcr:content": {
+		"jcr:primaryType": "cq:PageContent",
+		"jcr:mixinTypes": ["mix:versionable"],
+		"jcr:createdBy": "admin",
+		"jcr:title": "customerportal",
+		"cq:lastReplicationAction": "Activate",
+		"jcr:versionHistory": "9b813ae0-1bba-47d2-b914-2d2593f5f35d",
+		"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+		"cq:lastReplicatedBy": "sgaur8@sapient.com",
+		"jcr:predecessors": ["272b7b78-dbdd-41bb-b2ab-d930f7e0ba09"],
+		"jcr:created": "Mon Sep 25 2017 16:51:40 GMT+0530",
+		"cq:lastReplicated": "Fri Sep 22 2017 03:44:06 GMT-0400",
+		"cq:lastModified": "Fri Sep 15 2017 11:11:41 GMT-0400",
+		"jcr:baseVersion": "272b7b78-dbdd-41bb-b2ab-d930f7e0ba09",
+		"jcr:isCheckedOut": true,
+		"jcr:uuid": "b96ea191-97dd-4012-a2ed-df7b52d2b289",
+		"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+		"cq:allowedTemplates": ["/apps/roche/pharma/customerportal/templates/.*"],
+		"errorPages": "/content/customerportal/global/en/error",
+		"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com",
+		"par": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:mixinTypes": ["cq:ReplicationStatus"],
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "jenkins",
+			"cq:lastReplicated": "Wed Aug 30 2017 11:31:03 GMT-0400",
+			"sling:resourceType": "foundation/components/parsys",
+			"globalconfig": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:mixinTypes": ["cq:ReplicationStatus"],
+				"jcr:createdBy": "rocheuser",
+				"cq:lastReplicationAction": "Activate",
+				"elabURL": "https://pim-eservices.roche.com/eLD_SF/be/en/Documents",
+				"cq:lastReplicatedBy": "jenkins",
+				"jcr:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com",
+				"jcr:created": "Tue Aug 08 2017 08:56:20 GMT-0400",
+				"cq:lastReplicated": "Wed Aug 30 2017 11:31:05 GMT-0400",
+				"jcr:lastModified": "Fri Aug 18 2017 08:51:35 GMT-0400",
+				"sling:resourceType": "roche/customerportal/components/adminconfig/globalconfig"
+			}
+		}
+	},
+	"global-master-blueprint": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Mon Sep 25 2017 16:51:40 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:mixinTypes": ["mix:versionable"],
+			"jcr:createdBy": "admin",
+			"jcr:title": "global-master-blueprint",
+			"cq:lastReplicationAction": "Activate",
+			"jcr:versionHistory": "32468e16-2fa6-468e-a268-88eedee7c476",
+			"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+			"cq:lastReplicatedBy": "vaneet.ahuja@businesspartner.roche.com",
+			"jcr:predecessors": ["38a696b2-4ac3-4154-be46-5dbd7c2689b3"],
+			"jcr:created": "Mon Sep 25 2017 16:51:40 GMT+0530",
+			"cq:lastReplicated": "Wed Aug 30 2017 23:24:15 GMT-0400",
+			"cq:lastModified": "Wed Aug 02 2017 04:07:19 GMT-0400",
+			"jcr:baseVersion": "38a696b2-4ac3-4154-be46-5dbd7c2689b3",
+			"jcr:isCheckedOut": true,
+			"jcr:uuid": "67e20bbb-9538-4faf-b28d-f76d516b13ad",
+			"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+			"cq:lastModifiedBy": "dipti.chauhan@businesspartner.roche.com"
+		},
+		"en": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Mon Sep 25 2017 16:51:40 GMT+0530",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:mixinTypes": ["mix:versionable"],
+				"jcr:createdBy": "admin",
+				"jcr:title": "en",
+				"cq:lastReplicationAction": "Deactivate",
+				"jcr:versionHistory": "6b6023a3-3a45-4490-89b4-d8157b011929",
+				"cq:template": "/apps/roche/pharma/customerportal/templates/languagepage",
+				"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+				"jcr:lastModifiedBy": "sharmr42",
+				"jcr:predecessors": ["e90adc98-e6f0-4893-a22e-39229b91b33e"],
+				"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+				"jcr:created": "Mon Sep 25 2017 16:51:40 GMT+0530",
+				"cq:lastReplicated": "Sat Sep 16 2017 01:49:02 GMT-0400",
+				"cq:lastModified": "Wed Sep 27 2017 09:32:04 GMT+0530",
+				"cq:cloudserviceconfigs": ["[]"],
+				"jcr:baseVersion": "e90adc98-e6f0-4893-a22e-39229b91b33e",
+				"jcr:isCheckedOut": true,
+				"pageType": "News",
+				"jcr:lastModified": "Mon Aug 28 2017 09:28:55 GMT-0400",
+				"jcr:uuid": "0e530a92-6a4c-4190-9012-347f598e3e61",
+				"sling:resourceType": "roche/customerportal/components/page/languagepage",
+				"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+				"errorPages": "/content/customerportal/global-master-blueprint/en/error",
+				"cq:lastModifiedBy": "admin",
+				"headerfooterconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": ["cq:ReplicationStatus"],
+					"hamburgerMenuLeftLinks": ["{\"pageName\":\"Sign In\",\"pagePath\":\"/content/customerportal/global-master-blueprint/en/home\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Innovations\",\"pagePath\":\"/content/customerportal/global-master-blueprint/en/home/product-category-page\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Products\",\"pagePath\":\"https://www.facebook.com\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Documents\",\"pagePath\":\"/content/customerportal/global-master-blueprint/en/home\",\"linkBehaviour\":\"_self\"}"],
+					"cq:lastReplicationAction": "Activate",
+					"logoAltText": "roche",
+					"fileReference": "/content/dam/customerportal/blueRoche.svg",
+					"hamburgerMenuRightLinks": ["{\"pageName\":\"Events\",\"pagePath\":\"/content/customerportal/global-master-blueprint/en/home\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Careers\",\"pagePath\":\"http://www.roche.com/careers.htm\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Contact Us\",\"pagePath\":\"https://yahoo.com\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"News\",\"pagePath\":\"/content/customerportal/global-master-blueprint/en/home\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"COMPANY\",\"pagePath\":\"http://google.com\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Knowledge Center\",\"pagePath\":\"http://www.bbc.com\",\"linkBehaviour\":\"_self\"}"],
+					"cq:lastReplicatedBy": "admin",
+					"jcr:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"altText": "Roche Logo",
+					"cq:lastReplicated": "Fri Jul 28 2017 06:10:51 GMT-0400",
+					"disclaimerText": "This website contains information on products which is targeted to a wide range of audiences and could contain product details or information otherwise not accessible or valid in your country. Please be aware that we do not take any responsibility for accessing such information which may not comply with any legal process, regulation, registration or usage in the country of your origin.",
+					"tradeMark": "© 2017 F. Hoffman LA-Roche Ltd.",
+					"jcr:lastModified": "Mon Aug 28 2017 04:08:11 GMT-0400",
+					"footerLinks": ["{\"pageName\":\"Contact us\",\"pagePath\":\"/content/customerportal/global-master-blueprint/en/home\",\"isVisibleOnMobile\":\"true\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Roche.com\",\"pagePath\":\"/content/customerportal/global-master-blueprint/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Privacy Policy\",\"pagePath\":\"/content/customerportal/global-master-blueprint/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Legal Statement\",\"pagePath\":\"/content/roche/customerportal/global/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_self\"}"],
+					"headerLinks": ["{\"pageName\":\"Innovations\",\"pagePath\":\"/content/customerportal/global-master-blueprint/en/home/product-category-page\"}", "{\"pageName\":\"Products\",\"pagePath\":\"/content/customerportal/global-master-blueprint/en/home/product-category-page/product-listing-new/roche54353\"}"],
+					"sling:resourceType": "roche/customerportal/components/adminconfig/headerfooterconfig",
+					"homePagePath": "/content/customerportal/global-master-blueprint/en/home"
+				},
+				"languageconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"socialLinks": ["{\"socialMediaOption\":\"facebook\",\"socialLink\":\"https://www.facebook.com/RochecustomerportalUSA/\"}", "{\"socialMediaOption\":\"twitter\",\"socialLink\":\"https://twitter.com/rochediausa?lang=en\"}", "{\"socialMediaOption\":\"linkedin\",\"socialLink\":\"https://in.linkedin.com/company/roche\"}", "{\"socialMediaOption\":\"youtube\",\"socialLink\":\"https://www.youtube.com/user/RochecustomerportalUSA\"}", "{\"socialMediaOption\":\"wechat\",\"socialLink\":\"https://www.wechat.com/en/\"}", "{\"socialMediaOption\":\"kakoastory\",\"socialLink\":\"http://www.kakao.com/story\"}"],
+					"cookieDisclaimerLink": "/content/customerportal/global-master-blueprint/en/home/product-category-page/product-listing-new/pdp",
+					"isCookieNotificationDisabled":"true",
+					"searchPagePath": "/content/customerportal/global-master-blueprint/en/home/search-result-page",
+					"jcr:lastModifiedBy": "admin",
+					"countrySelectorPagePath": "/content/customerportal/global-master-blueprint/en/country-selector",
+					"searchLimit": "5",
+					"personaSelectorPagePath": "/content/customerportal/global-master-blueprint/en/personaselector",
+					"dateFormatPattern": "dd.MM.yyyy",
+					"jcr:lastModified": "Wed Sep 27 2017 09:32:04 GMT+0530",
+					"sling:resourceType": "roche/customerportal/components/adminconfig/languageconfig",
+					"searchUrl": "https://sp10015dbf.guided.ss-omtrdc.net"
+				}
+			},
+			"home": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:40 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["mix:lockable", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "home",
+					"cq:lastReplicationAction": "Deactivate",
+					"jcr:versionHistory": "51b03fda-84c8-461d-9bcf-748c940ccc80",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/landingpage",
+					"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+					"jcr:lastModifiedBy": "mamta.malasi@businesspartner.roche.com",
+					"jcr:predecessors": ["03e6adf8-d8dc-40eb-9157-b5ddc832c63e"],
+					"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+					"jcr:created": "Mon Sep 25 2017 16:51:40 GMT+0530",
+					"cq:lastReplicated": "Sat Sep 16 2017 01:49:02 GMT-0400",
+					"cq:lastModified": "Mon Sep 25 2017 03:38:14 GMT-0400",
+					"cq:cloudserviceconfigs": ["[]"],
+					"jcr:baseVersion": "03e6adf8-d8dc-40eb-9157-b5ddc832c63e",
+					"jcr:isCheckedOut": true,
+					"pageType": "Home",
+					"jcr:lastModified": "Tue Sep 19 2017 01:56:13 GMT-0400",
+					"jcr:uuid": "7fdf9cc6-a92a-4601-9dfe-e50e95db8dfc",
+					"sling:resourceType": "roche/customerportal/components/page/landingpage",
+					"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+					"cq:lastModifiedBy": "dipti.chauhan@businesspartner.roche.com"
+				},
+				"product-category-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:40 GMT+0530"
+				},
+				"landingpageview": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530"
+				},
+				"LandingPageView2": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530"
+				},
+				"LandingPageView3": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530"
+				},
+				"LandingPageView4": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530"
+				},
+				"LandingPageView5": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530"
+				},
+				"LandingPageView6": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530"
+				},
+				"Product_Category_View1": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530"
+				},
+				"Product_Category_View2": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530"
+				},
+				"Product_Category_View3": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530"
+				},
+				"new_landing": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530"
+				},
+				"legal-statement": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:33 GMT+0530"
+				},
+				"search-result-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:33 GMT+0530"
+				},
+				"event": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:33 GMT+0530"
+				},
+				"landingviewtest": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:33 GMT+0530"
+				},
+				"events-detail-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:33 GMT+0530"
+				},
+				"news": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:33 GMT+0530"
+				},
+				"Product-category": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:33 GMT+0530"
+				},
+				"contact": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:33 GMT+0530"
+				},
+				"career": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:33 GMT+0530"
+				},
+				"contact-_support": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:33 GMT+0530"
+				},
+				"test": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:33 GMT+0530"
+				},
+				"events-detail-page-new": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:33 GMT+0530"
+				},
+				"About-Us": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:33 GMT+0530"
+				}
+			},
+			"personaselector": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "personaselector",
+					"cq:lastReplicationAction": "Deactivate",
+					"jcr:versionHistory": "85e39828-a510-40f9-8cf1-c79bc21f927d",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+					"jcr:predecessors": ["e011768a-9147-4d05-bf0e-23dec6345bbc"],
+					"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530",
+					"cq:lastReplicated": "Sat Sep 16 2017 01:49:02 GMT-0400",
+					"cq:lastModified": "Wed Sep 13 2017 01:32:57 GMT-0400",
+					"jcr:baseVersion": "e011768a-9147-4d05-bf0e-23dec6345bbc",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "8f58b1e9-7110-49c9-b3a7-9d2971cdc30b",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:lastModifiedBy": "pritpal.singh@businesspartner.roche.com"
+				}
+			},
+			"country-selector": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Country Selector",
+					"cq:lastReplicationAction": "Deactivate",
+					"jcr:versionHistory": "d79c69a8-6a6c-4edc-8585-34dbc1fc0228",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+					"jcr:predecessors": ["ebcade61-4c9e-448d-9c2f-483a6704c77c"],
+					"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530",
+					"cq:lastReplicated": "Sat Sep 16 2017 01:49:02 GMT-0400",
+					"cq:lastModified": "Wed Aug 30 2017 23:30:06 GMT-0400",
+					"jcr:baseVersion": "ebcade61-4c9e-448d-9c2f-483a6704c77c",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "f2d71e40-9005-4b45-b8f3-5270782a7237",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:lastModifiedBy": "admin"
+				}
+			},
+			"error": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Error",
+					"cq:lastReplicationAction": "Deactivate",
+					"jcr:versionHistory": "7a8cd099-249c-47b9-9936-dfee6ed5a93a",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+					"jcr:predecessors": ["d5ee8d7f-d267-49a9-9d93-ac982de888a6"],
+					"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530",
+					"cq:lastReplicated": "Sat Sep 16 2017 01:49:02 GMT-0400",
+					"cq:lastModified": "Mon Aug 28 2017 09:24:53 GMT-0400",
+					"jcr:baseVersion": "d5ee8d7f-d267-49a9-9d93-ac982de888a6",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "9c7b1633-541d-41a9-88d5-3f0de1d2bd7a",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:designPath": "/etc/designs/roche",
+					"cq:lastModifiedBy": "sharmr42"
+				},
+				"404": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530"
+				},
+				"500": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530"
+				}
+			}
+		}
+	},
+	"global": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Mon Sep 25 2017 16:51:45 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:mixinTypes": ["mix:versionable"],
+			"jcr:createdBy": "admin",
+			"jcr:title": "Global",
+			"cq:lastReplicationAction": "Activate",
+			"jcr:versionHistory": "bf7a2e33-e01f-4fb3-b1e2-322592fd1181",
+			"cq:template": "/apps/roche/pharma/customerportal/templates/configurationpage",
+			"cq:lastReplicatedBy": "vaneet.ahuja@businesspartner.roche.com",
+			"jcr:predecessors": ["1299ef0f-80b9-44b9-8e8b-7426abc1c699"],
+			"jcr:created": "Mon Sep 25 2017 16:51:45 GMT+0530",
+			"cq:lastReplicated": "Wed Aug 30 2017 23:29:20 GMT-0400",
+			"cq:lastModified": "Wed Aug 30 2017 09:52:44 GMT-0400",
+			"jcr:baseVersion": "1299ef0f-80b9-44b9-8e8b-7426abc1c699",
+			"jcr:isCheckedOut": true,
+			"jcr:uuid": "4bb03199-3e87-4ac5-8c56-2be176588ce9",
+			"sling:resourceType": "roche/customerportal/components/page/configurationpage",
+			"cq:designPath": "/etc/designs/roche",
+			"cq:lastModifiedBy": "sharmr42"
+		},
+		"en": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Mon Sep 25 2017 16:51:45 GMT+0530",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:mixinTypes": ["cq:LiveRelationship", "cq:LiveSync", "mix:versionable"],
+				"jcr:createdBy": "admin",
+				"jcr:title": "English",
+				"cq:lastReplicationAction": "Activate",
+				"jcr:versionHistory": "2a003389-14dc-4e57-9b91-b7908611d15d",
+				"cq:template": "/apps/roche/pharma/customerportal/templates/languagepage",
+				"cq:lastReplicatedBy": "ritu.chaudhary",
+				"jcr:lastModifiedBy": "sharmr42",
+				"cq:lastRolledout": "Thu Sep 21 2017 00:51:29 GMT-0400",
+				"jcr:predecessors": ["2ba9a228-24a7-4ceb-ad39-c5a1fcd2ef56"],
+				"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+				"jcr:created": "Mon Sep 25 2017 16:51:45 GMT+0530",
+				"cq:lastReplicated": "Thu Sep 21 2017 00:52:43 GMT-0400",
+				"cq:lastModified": "Thu Sep 21 2017 00:51:29 GMT-0400",
+				"cq:cloudserviceconfigs": ["[]"],
+				"jcr:baseVersion": "2ba9a228-24a7-4ceb-ad39-c5a1fcd2ef56",
+				"jcr:isCheckedOut": true,
+				"pageType": "News",
+				"jcr:lastModified": "Mon Aug 28 2017 09:28:55 GMT-0400",
+				"jcr:uuid": "ddd688a9-e523-4460-9eb4-aebcf9ece93d",
+				"sling:resourceType": "roche/customerportal/components/page/languagepage",
+				"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+				"errorPages": "/content/customerportal/global/en/error",
+				"cq:lastRolledoutBy": "ritu.chaudhary",
+				"cq:lastModifiedBy": "ritu.chaudhary",
+				"headerfooterconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "cq:ReplicationStatus"],
+					"hamburgerMenuLeftLinks": ["{\"pageName\":\"Sign In\",\"pagePath\":\"/content/customerportal/global/en/home\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Innovations\",\"pagePath\":\"/content/customerportal/global/en/home/product-category-page\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Products\",\"pagePath\":\"https://www.facebook.com\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Documents\",\"pagePath\":\"/content/customerportal/global/en/home\",\"linkBehaviour\":\"_self\"}"],
+					"cq:lastReplicationAction": "Activate",
+					"logoAltText": "roche",
+					"fileReference": "/content/dam/customerportal/blueRoche.svg",
+					"hamburgerMenuRightLinks": ["{\"pageName\":\"Events\",\"pagePath\":\"/content/customerportal/global/en/home\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Careers\",\"pagePath\":\"http://www.roche.com/careers.htm\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Contact Us\",\"pagePath\":\"https://yahoo.com\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"News\",\"pagePath\":\"/content/customerportal/global/en/home\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"COMPANY\",\"pagePath\":\"http://google.com\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Knowledge Center\",\"pagePath\":\"http://www.bbc.com\",\"linkBehaviour\":\"_self\"}"],
+					"cq:lastReplicatedBy": "admin",
+					"jcr:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastRolledout": "Thu Sep 21 2017 00:51:29 GMT-0400",
+					"altText": "Roche Logo",
+					"cq:lastReplicated": "Fri Jul 28 2017 06:10:51 GMT-0400",
+					"disclaimerText": "This website contains information on products which is targeted to a wide range of audiences and could contain product details or information otherwise not accessible or valid in your country. Please be aware that we do not take any responsibility for accessing such information which may not comply with any legal process, regulation, registration or usage in the country of your origin.",
+					"tradeMark": "© 2017 F. Hoffman LA-Roche Ltd.",
+					"jcr:lastModified": "Thu Sep 21 2017 00:51:29 GMT-0400",
+					"footerLinks": ["{\"pageName\":\"Contact us\",\"pagePath\":\"/content/customerportal/global/en/home\",\"isVisibleOnMobile\":\"true\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Roche.com\",\"pagePath\":\"/content/customerportal/global/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Privacy Policy\",\"pagePath\":\"/content/customerportal/global/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Legal Statement\",\"pagePath\":\"/content/roche/customerportal/global/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_self\"}"],
+					"headerLinks": ["{\"pageName\":\"Innovations\",\"pagePath\":\"/content/customerportal/global/en/home/product-category-page\"}", "{\"pageName\":\"Products\",\"pagePath\":\"/content/customerportal/global/en/home/product-category-page/product-listing-new/roche54353\"}"],
+					"sling:resourceType": "roche/customerportal/components/adminconfig/headerfooterconfig",
+					"cq:lastRolledoutBy": "ritu.chaudhary",
+					"homePagePath": "/content/customerportal/global/en/home"
+				},
+				"languageconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": ["cq:LiveRelationship"],
+					"socialLinks": ["{\"socialMediaOption\":\"facebook\",\"socialLink\":\"https://www.facebook.com/RochecustomerportalUSA/\"}", "{\"socialMediaOption\":\"twitter\",\"socialLink\":\"https://twitter.com/rochediausa?lang=en\"}", "{\"socialMediaOption\":\"linkedin\",\"socialLink\":\"https://in.linkedin.com/company/roche\"}", "{\"socialMediaOption\":\"youtube\",\"socialLink\":\"https://www.youtube.com/user/RochecustomerportalUSA\"}", "{\"socialMediaOption\":\"wechat\",\"socialLink\":\"https://www.wechat.com/en/\"}", "{\"socialMediaOption\":\"kakoastory\",\"socialLink\":\"http://www.kakao.com/story\"}"],
+					"searchPagePath": "/content/customerportal/global/en/home/search-result-page",
+					"jcr:lastModifiedBy": "ritu.chaudhary",
+					"countrySelectorPagePath": "/content/customerportal/global/en/country-selector",
+					"cq:lastRolledout": "Thu Sep 21 2017 00:51:29 GMT-0400",
+					"searchLimit": "5",
+					"personaSelectorPagePath": "/content/customerportal/global/en/personaselector",
+					"dateFormatPattern": "dd.MM.yyyy",
+					"jcr:lastModified": "Thu Sep 21 2017 00:51:29 GMT-0400",
+					"sling:resourceType": "roche/customerportal/components/adminconfig/languageconfig",
+					"cq:lastRolledoutBy": "ritu.chaudhary",
+					"searchUrl": "https://sp10015dbf.guided.ss-omtrdc.net"
+				},
+				"cq:LiveSyncConfig": {
+					"jcr:primaryType": "cq:LiveCopy",
+					"cq:rolloutConfigs": ["/etc/msm/rolloutconfigs/default"],
+					"cq:isDeep": true,
+					"cq:master": "/content/customerportal/global-master-blueprint/en",
+					"cq:excludedPaths": ["home/event-detail-page-test"]
+				}
+			},
+			"home": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:45 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "home",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "eef412b7-be0a-4374-9084-fd9aef420ad5",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/landingpage",
+					"cq:lastReplicatedBy": "mamta.malasi@businesspartner.roche.com",
+					"jcr:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastRolledout": "Wed Sep 20 2017 09:42:56 GMT-0400",
+					"jcr:predecessors": ["973a9e22-2460-4bb9-bcfb-8b83ddb4a287"],
+					"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+					"jcr:created": "Mon Sep 25 2017 16:51:45 GMT+0530",
+					"cq:lastReplicated": "Wed Sep 20 2017 09:43:18 GMT-0400",
+					"cq:lastModified": "Wed Sep 20 2017 09:42:56 GMT-0400",
+					"cq:cloudserviceconfigs": ["[]"],
+					"jcr:baseVersion": "973a9e22-2460-4bb9-bcfb-8b83ddb4a287",
+					"jcr:isCheckedOut": true,
+					"pageType": "Home",
+					"jcr:lastModified": "Fri Aug 25 2017 06:41:33 GMT-0400",
+					"jcr:uuid": "47009aa5-fbf0-455b-9a33-e2832eeb8083",
+					"sling:resourceType": "roche/customerportal/components/page/landingpage",
+					"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+					"cq:lastRolledoutBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+				},
+				"product-category-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:45 GMT+0530"
+				},
+				"landingpageview": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:46 GMT+0530"
+				},
+				"LandingPageView2": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:46 GMT+0530"
+				},
+				"LandingPageView3": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:46 GMT+0530"
+				},
+				"LandingPageView4": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:46 GMT+0530"
+				},
+				"LandingPageView5": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:46 GMT+0530"
+				},
+				"LandingPageView6": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:46 GMT+0530"
+				},
+				"Product_Category_View1": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:46 GMT+0530"
+				},
+				"Product_Category_View2": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:46 GMT+0530"
+				},
+				"Product_Category_View3": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:46 GMT+0530"
+				},
+				"new_landing": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:46 GMT+0530"
+				},
+				"legal-statement": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:34 GMT+0530"
+				},
+				"search-result-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:34 GMT+0530"
+				},
+				"event": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:34 GMT+0530"
+				},
+				"landingviewtest": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:34 GMT+0530"
+				},
+				"events-detail-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:34 GMT+0530"
+				},
+				"page-title": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:34 GMT+0530"
+				},
+				"news": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:34 GMT+0530"
+				},
+				"contact": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:34 GMT+0530"
+				},
+				"events-detail-page-new": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:34 GMT+0530"
+				},
+				"About-Us": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:34 GMT+0530"
+				}
+			},
+			"personaselector": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:46 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "personaselector",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "df67c564-9ba0-47f6-81e1-23194a142737",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "pritpal.singh@businesspartner.roche.com",
+					"cq:lastRolledout": "Thu Aug 31 2017 05:08:50 GMT-0400",
+					"jcr:predecessors": ["4d85358a-28ec-4b78-b8bd-e7a247e63243"],
+					"jcr:created": "Mon Sep 25 2017 16:51:46 GMT+0530",
+					"cq:lastReplicated": "Fri Sep 01 2017 01:25:04 GMT-0400",
+					"cq:lastModified": "Thu Aug 31 2017 05:08:50 GMT-0400",
+					"jcr:baseVersion": "4d85358a-28ec-4b78-b8bd-e7a247e63243",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "88f36069-1814-4106-aa7f-7a838a9da9ed",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:lastRolledoutBy": "pritpal.singh@businesspartner.roche.com",
+					"cq:lastModifiedBy": "pritpal.singh@businesspartner.roche.com"
+				}
+			},
+			"country-selector": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:46 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Country Selector",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "919b31dd-b8d5-49e1-8786-1e2ea0064f9b",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "sharmr42",
+					"cq:lastRolledout": "Thu Aug 31 2017 02:49:14 GMT-0400",
+					"jcr:predecessors": ["1a027d4a-4b3d-4f4b-9a06-64de08c1362c"],
+					"jcr:created": "Mon Sep 25 2017 16:51:46 GMT+0530",
+					"cq:lastReplicated": "Thu Aug 31 2017 02:54:10 GMT-0400",
+					"cq:lastModified": "Wed Aug 30 2017 23:30:42 GMT-0400",
+					"jcr:baseVersion": "1a027d4a-4b3d-4f4b-9a06-64de08c1362c",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "d210782d-1db0-4f55-9cea-a5d0d0d3f851",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:lastRolledoutBy": "sharmr42",
+					"cq:lastModifiedBy": "admin"
+				}
+			},
+			"error": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:46 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Error",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "0a747cee-06a2-4a86-a070-0da08a04561c",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "sharmr42",
+					"cq:lastRolledout": "Thu Aug 31 2017 02:49:14 GMT-0400",
+					"jcr:predecessors": ["4fcf3ee8-3d4f-4b3f-88c1-5f7653dd2edc"],
+					"jcr:created": "Mon Sep 25 2017 16:51:46 GMT+0530",
+					"cq:lastReplicated": "Thu Aug 31 2017 02:54:10 GMT-0400",
+					"cq:lastModified": "Wed Aug 30 2017 10:37:06 GMT-0400",
+					"jcr:baseVersion": "4fcf3ee8-3d4f-4b3f-88c1-5f7653dd2edc",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "aded97b5-e0bc-40c6-b15e-563abeb64eb2",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:designPath": "/etc/designs/roche",
+					"cq:lastRolledoutBy": "sharmr42",
+					"cq:lastModifiedBy": "sharmr42"
+				},
+				"404": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:46 GMT+0530"
+				},
+				"500": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:46 GMT+0530"
+				}
+			}
+		}
+	},
+	"us": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:mixinTypes": ["mix:versionable"],
+			"jcr:createdBy": "admin",
+			"jcr:title": "us",
+			"cq:lastReplicationAction": "Activate",
+			"jcr:versionHistory": "2727ce24-d01c-43a3-8fe3-355a82b9d4b1",
+			"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+			"cq:lastReplicatedBy": "vaneet.ahuja@businesspartner.roche.com",
+			"jcr:predecessors": ["a13adf72-ffd4-4da7-b2c5-eae27cfa22ff"],
+			"jcr:created": "Mon Sep 25 2017 16:51:41 GMT+0530",
+			"cq:lastReplicated": "Wed Aug 30 2017 23:30:17 GMT-0400",
+			"cq:lastModified": "Wed Aug 30 2017 23:22:52 GMT-0400",
+			"jcr:baseVersion": "a13adf72-ffd4-4da7-b2c5-eae27cfa22ff",
+			"jcr:isCheckedOut": true,
+			"jcr:uuid": "84905b7b-8d4e-4b36-80b6-5bd6edcc67e0",
+			"sling:resourceType": "roche/customerportal/components/page/blankPage",
+			"cq:designPath": "/etc/designs/roche",
+			"cq:lastModifiedBy": "admin"
+		},
+		"en": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Mon Sep 25 2017 16:51:42 GMT+0530",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:mixinTypes": ["cq:LiveRelationship", "cq:LiveSync", "mix:versionable", "cq:PropertyLiveSyncCancelled"],
+				"jcr:createdBy": "admin",
+				"jcr:title": "en",
+				"cq:propertyInheritanceCancelled": ["jcr:language"],
+				"cq:lastReplicationAction": "Activate",
+				"jcr:versionHistory": "4dbd02b2-3263-4e14-bfed-0b01d2c14c0a",
+				"cq:template": "/apps/roche/pharma/customerportal/templates/languagepage",
+				"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+				"jcr:lastModifiedBy": "gagan.sharma@businesspartner.roche.com",
+				"jcr:language": "en_us",
+				"cq:lastRolledout": "Sat Sep 16 2017 01:50:19 GMT-0400",
+				"jcr:predecessors": ["636873b4-0817-4226-8592-b124910fee57"],
+				"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+				"jcr:created": "Mon Sep 25 2017 16:51:42 GMT+0530",
+				"cq:lastReplicated": "Mon Sep 18 2017 02:52:52 GMT-0400",
+				"cq:lastModified": "Mon Sep 18 2017 02:52:12 GMT-0400",
+				"cq:cloudserviceconfigs": ["[]"],
+				"jcr:baseVersion": "636873b4-0817-4226-8592-b124910fee57",
+				"jcr:isCheckedOut": true,
+				"pageType": "News",
+				"jcr:lastModified": "Mon Sep 18 2017 02:52:12 GMT-0400",
+				"jcr:uuid": "9ffd154b-83d0-40c0-bbc9-2a7af570b210",
+				"sling:resourceType": "roche/customerportal/components/page/languagepage",
+				"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+				"errorPages": "/content/customerportal/us/en/error",
+				"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+				"cq:lastModifiedBy": "gagan.sharma@businesspartner.roche.com",
+				"headerfooterconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "cq:ReplicationStatus"],
+					"hamburgerMenuLeftLinks": ["{\"pageName\":\"Sign In\",\"pagePath\":\"/content/customerportal/us/en/home\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Innovations\",\"pagePath\":\"/content/customerportal/us/en/home/product-category-page\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Products\",\"pagePath\":\"https://www.facebook.com\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Documents\",\"pagePath\":\"/content/customerportal/us/en/home\",\"linkBehaviour\":\"_self\"}"],
+					"cq:lastReplicationAction": "Activate",
+					"logoAltText": "roche",
+					"fileReference": "/content/dam/customerportal/blueRoche.svg",
+					"hamburgerMenuRightLinks": ["{\"pageName\":\"Events\",\"pagePath\":\"/content/customerportal/us/en/home\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Careers\",\"pagePath\":\"http://www.roche.com/careers.htm\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Contact Us\",\"pagePath\":\"https://yahoo.com\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"News\",\"pagePath\":\"/content/customerportal/us/en/home\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"COMPANY\",\"pagePath\":\"http://google.com\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Knowledge Center\",\"pagePath\":\"http://www.bbc.com\",\"linkBehaviour\":\"_self\"}"],
+					"cq:lastReplicatedBy": "admin",
+					"jcr:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastRolledout": "Sat Sep 16 2017 01:50:19 GMT-0400",
+					"altText": "Roche Logo",
+					"cq:lastReplicated": "Fri Jul 28 2017 06:10:51 GMT-0400",
+					"disclaimerText": "This website contains information on products which is targeted to a wide range of audiences and could contain product details or information otherwise not accessible or valid in your country. Please be aware that we do not take any responsibility for accessing such information which may not comply with any legal process, regulation, registration or usage in the country of your origin.",
+					"tradeMark": "© 2017 F. Hoffman LA-Roche Ltd.",
+					"jcr:lastModified": "Sat Sep 16 2017 01:50:18 GMT-0400",
+					"footerLinks": ["{\"pageName\":\"Contact us\",\"pagePath\":\"/content/customerportal/us/en/home\",\"isVisibleOnMobile\":\"true\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Roche.com\",\"pagePath\":\"/content/customerportal/us/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Privacy Policy\",\"pagePath\":\"/content/customerportal/us/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Legal Statement\",\"pagePath\":\"/content/roche/customerportal/global/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_self\"}"],
+					"headerLinks": ["{\"pageName\":\"Innovations\",\"pagePath\":\"/content/customerportal/us/en/home/product-category-page\"}", "{\"pageName\":\"Products\",\"pagePath\":\"/content/customerportal/us/en/home/product-category-page/product-listing-new/roche54353\"}"],
+					"sling:resourceType": "roche/customerportal/components/adminconfig/headerfooterconfig",
+					"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+					"homePagePath": "/content/customerportal/us/en/home"
+				},
+				"languageconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": ["cq:LiveRelationship"],
+					"socialLinks": ["{\"socialMediaOption\":\"facebook\",\"socialLink\":\"https://www.facebook.com/RochecustomerportalUSA/\"}", "{\"socialMediaOption\":\"twitter\",\"socialLink\":\"https://twitter.com/rochediausa?lang=en\"}", "{\"socialMediaOption\":\"linkedin\",\"socialLink\":\"https://in.linkedin.com/company/roche\"}", "{\"socialMediaOption\":\"youtube\",\"socialLink\":\"https://www.youtube.com/user/RochecustomerportalUSA\"}", "{\"socialMediaOption\":\"wechat\",\"socialLink\":\"https://www.wechat.com/en/\"}", "{\"socialMediaOption\":\"kakoastory\",\"socialLink\":\"http://www.kakao.com/story\"}"],
+					"searchPagePath": "/content/customerportal/us/en/home/search-result-page",
+					"jcr:lastModifiedBy": "gagan.sharma@businesspartner.roche.com",
+					"countrySelectorPagePath": "/content/customerportal/us/en/country-selector",
+					"cq:lastRolledout": "Sat Sep 16 2017 01:50:19 GMT-0400",
+					"searchLimit": "5",
+					"personaSelectorPagePath": "/content/customerportal/us/en/personaselector",
+					"dateFormatPattern": "dd.MM.yyyy",
+					"jcr:lastModified": "Sat Sep 16 2017 01:50:19 GMT-0400",
+					"sling:resourceType": "roche/customerportal/components/adminconfig/languageconfig",
+					"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+					"searchUrl": "https://sp10015dbf.guided.ss-omtrdc.net"
+				},
+				"cq:LiveSyncConfig": {
+					"jcr:primaryType": "cq:LiveCopy",
+					"cq:rolloutConfigs": ["/etc/msm/rolloutconfigs/default"],
+					"cq:isDeep": true,
+					"cq:master": "/content/customerportal/global-master-blueprint/en"
+				}
+			},
+			"home": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:42 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["mix:versionable", "cq:LiveRelationship"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "home",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "df03a091-50fa-4156-8b3a-3391e76dc100",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/landingpage",
+					"cq:lastReplicatedBy": "pritpal.singh@businesspartner.roche.com",
+					"jcr:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastRolledout": "Wed Sep 20 2017 09:43:02 GMT-0400",
+					"jcr:predecessors": ["708363cd-0f0b-4ce2-bc53-efd3935be1a2"],
+					"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+					"jcr:created": "Mon Sep 25 2017 16:51:42 GMT+0530",
+					"cq:lastReplicated": "Fri Sep 22 2017 03:05:53 GMT-0400",
+					"cq:lastModified": "Fri Sep 22 2017 03:05:29 GMT-0400",
+					"cq:cloudserviceconfigs": ["[]"],
+					"jcr:baseVersion": "708363cd-0f0b-4ce2-bc53-efd3935be1a2",
+					"jcr:isCheckedOut": true,
+					"pageType": "Home",
+					"jcr:lastModified": "Fri Aug 25 2017 06:41:33 GMT-0400",
+					"jcr:uuid": "583885fd-fb78-46a7-854d-d079c2fbecac",
+					"sling:resourceType": "roche/customerportal/components/page/landingpage",
+					"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+					"cq:lastRolledoutBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastModifiedBy": "pritpal.singh@businesspartner.roche.com"
+				},
+				"product-category-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:43 GMT+0530"
+				},
+				"landingpageview": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 17:04:57 GMT+0530"
+				},
+				"LandingPageView2": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 17:04:57 GMT+0530"
+				},
+				"LandingPageView3": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 17:04:57 GMT+0530"
+				},
+				"LandingPageView4": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 17:04:57 GMT+0530"
+				},
+				"LandingPageView5": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 17:04:57 GMT+0530"
+				},
+				"LandingPageView6": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 17:04:57 GMT+0530"
+				},
+				"Product_Category_View1": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 17:04:57 GMT+0530"
+				},
+				"Product_Category_View2": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 17:04:57 GMT+0530"
+				},
+				"Product_Category_View3": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 17:04:57 GMT+0530"
+				},
+				"new_landing": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 17:04:57 GMT+0530"
+				},
+				"legal-statement": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:35 GMT+0530"
+				},
+				"search-result-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:35 GMT+0530"
+				},
+				"product-category-page_msm_moved": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"event": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 17:39:00 GMT+0530"
+				},
+				"landingviewtest": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"events-detail-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"page-title": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"landingviewtest_msm_moved": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"new_landing_msm_moved": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"legal-statement_msm_moved": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"RelatedLink": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"news": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"LandingPageView2_msm_moved": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"landingpageview_msm_moved": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"LandingPageView3_msm_moved": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"Product_Category_View1_msm_moved": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"Product_Category_View3_msm_moved": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"LandingPageView5_msm_moved": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"LandingPageView4_msm_moved": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"Product_Category_View2_msm_moved": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"LandingPageView6_msm_moved": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"contact": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"PageDetailComponent": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				},
+				"About-Us": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:36 GMT+0530"
+				}
+			},
+			"personaselector": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:45 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["mix:versionable", "cq:LiveRelationship"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "personaselector",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "236cf9a0-5d8f-4ec3-86e1-ad4b793d5dd1",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "pritpal.singh@businesspartner.roche.com",
+					"jcr:predecessors": ["d026391e-de7e-48bd-ba4d-e18182c7d0b8"],
+					"jcr:created": "Mon Sep 25 2017 16:51:45 GMT+0530",
+					"cq:lastReplicated": "Thu Aug 31 2017 05:10:34 GMT-0400",
+					"cq:lastModified": "Mon Sep 18 2017 09:46:19 GMT-0400",
+					"jcr:baseVersion": "d026391e-de7e-48bd-ba4d-e18182c7d0b8",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "6ed9053f-615d-4970-8836-23a44278afe7",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:lastModifiedBy": "poonam.basliyal@businesspartner.roche.com"
+				}
+			},
+			"country-selector": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:45 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["mix:versionable", "cq:LiveRelationship"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Country Selector",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "96c6d61a-b9cf-4447-b5eb-70eb1636378b",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "admin",
+					"jcr:predecessors": ["14e11b73-8911-46f2-853a-611f6b8a773f"],
+					"jcr:created": "Mon Sep 25 2017 16:51:45 GMT+0530",
+					"cq:lastReplicated": "Wed Aug 30 2017 23:30:50 GMT-0400",
+					"cq:lastModified": "Mon Sep 18 2017 09:46:23 GMT-0400",
+					"jcr:baseVersion": "14e11b73-8911-46f2-853a-611f6b8a773f",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "c6a3c1da-1b17-450b-ad41-018b3b3c3170",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:lastModifiedBy": "poonam.basliyal@businesspartner.roche.com"
+				}
+			},
+			"error": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:45 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["mix:versionable", "cq:LiveRelationship"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Error",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "36c6477d-5bcb-49e4-bdb6-8d0b7c77dbb7",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"jcr:predecessors": ["474d4808-e43b-49ac-9f9f-2d430a5bf2fc"],
+					"jcr:created": "Mon Sep 25 2017 16:51:45 GMT+0530",
+					"cq:lastReplicated": "Wed Aug 30 2017 23:30:30 GMT-0400",
+					"cq:lastModified": "Mon Sep 18 2017 09:46:27 GMT-0400",
+					"jcr:baseVersion": "474d4808-e43b-49ac-9f9f-2d430a5bf2fc",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "3b603065-b3a5-485b-b06c-c439d2f46f13",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:designPath": "/etc/designs/roche",
+					"cq:lastModifiedBy": "poonam.basliyal@businesspartner.roche.com"
+				},
+				"500": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 17:04:57 GMT+0530"
+				},
+				"404": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:45 GMT+0530"
+				}
+			}
+		}
+	},
+	"ca": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Mon Sep 25 2017 16:51:54 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:mixinTypes": ["mix:versionable"],
+			"jcr:createdBy": "admin",
+			"jcr:title": "canada",
+			"cq:lastReplicationAction": "Activate",
+			"jcr:versionHistory": "1a377dfe-d04b-4924-b56b-4d45638b47e4",
+			"cq:template": "/apps/regent/templates/regent",
+			"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+			"jcr:predecessors": ["95726bf5-a862-46d6-bd4f-752b2cf1d0a0"],
+			"jcr:created": "Mon Sep 25 2017 16:51:54 GMT+0530",
+			"cq:lastReplicated": "Thu Aug 31 2017 05:44:07 GMT-0400",
+			"cq:lastModified": "Thu Aug 31 2017 05:16:40 GMT-0400",
+			"jcr:baseVersion": "95726bf5-a862-46d6-bd4f-752b2cf1d0a0",
+			"jcr:isCheckedOut": true,
+			"jcr:uuid": "446dafa2-137a-458e-b838-1f87f5f21683",
+			"sling:resourceType": "regent/components/page/regent",
+			"cq:lastModifiedBy": "pritpal.singh@businesspartner.roche.com"
+		},
+		"en": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Mon Sep 25 2017 16:51:54 GMT+0530",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:mixinTypes": ["cq:LiveRelationship", "cq:LiveSync", "mix:versionable"],
+				"jcr:createdBy": "admin",
+				"jcr:title": "en",
+				"cq:lastReplicationAction": "Activate",
+				"jcr:versionHistory": "96f2cf1e-ef1c-4723-9aeb-f486413b16a7",
+				"cq:template": "/apps/roche/pharma/customerportal/templates/languagepage",
+				"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+				"jcr:lastModifiedBy": "sharmr42",
+				"cq:lastRolledout": "Sat Sep 16 2017 01:50:18 GMT-0400",
+				"jcr:predecessors": ["57005249-9032-4481-835b-bacfaa517a88"],
+				"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+				"jcr:created": "Mon Sep 25 2017 16:51:54 GMT+0530",
+				"cq:lastReplicated": "Thu Aug 31 2017 05:49:32 GMT-0400",
+				"cq:lastModified": "Sat Sep 16 2017 01:50:18 GMT-0400",
+				"cq:cloudserviceconfigs": ["[]"],
+				"jcr:baseVersion": "57005249-9032-4481-835b-bacfaa517a88",
+				"jcr:isCheckedOut": true,
+				"pageType": "News",
+				"jcr:lastModified": "Mon Aug 28 2017 09:28:55 GMT-0400",
+				"jcr:uuid": "023d8666-487d-4f31-85d6-57deba490fe9",
+				"sling:resourceType": "roche/customerportal/components/page/languagepage",
+				"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+				"errorPages": "/content/customerportal/ca/en/error",
+				"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+				"cq:lastModifiedBy": "gagan.sharma@businesspartner.roche.com",
+				"headerfooterconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "cq:ReplicationStatus"],
+					"hamburgerMenuLeftLinks": ["{\"pageName\":\"Sign In\",\"pagePath\":\"/content/customerportal/ca/en/home\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Innovations\",\"pagePath\":\"/content/customerportal/ca/en/home/product-category-page\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Products\",\"pagePath\":\"https://www.facebook.com\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Documents\",\"pagePath\":\"/content/customerportal/ca/en/home\",\"linkBehaviour\":\"_self\"}"],
+					"cq:lastReplicationAction": "Activate",
+					"logoAltText": "roche",
+					"fileReference": "/content/dam/customerportal/blueRoche.svg",
+					"hamburgerMenuRightLinks": ["{\"pageName\":\"Events\",\"pagePath\":\"/content/customerportal/ca/en/home\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Careers\",\"pagePath\":\"http://www.roche.com/careers.htm\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Contact Us\",\"pagePath\":\"https://yahoo.com\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"News\",\"pagePath\":\"/content/customerportal/ca/en/home\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"COMPANY\",\"pagePath\":\"http://google.com\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Knowledge Center\",\"pagePath\":\"http://www.bbc.com\",\"linkBehaviour\":\"_self\"}"],
+					"cq:lastReplicatedBy": "admin",
+					"jcr:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastRolledout": "Sat Sep 16 2017 01:50:18 GMT-0400",
+					"altText": "Roche Logo",
+					"cq:lastReplicated": "Fri Jul 28 2017 06:10:51 GMT-0400",
+					"disclaimerText": "This website contains information on products which is targeted to a wide range of audiences and could contain product details or information otherwise not accessible or valid in your country. Please be aware that we do not take any responsibility for accessing such information which may not comply with any legal process, regulation, registration or usage in the country of your origin.",
+					"tradeMark": "© 2017 F. Hoffman LA-Roche Ltd.",
+					"jcr:lastModified": "Sat Sep 16 2017 01:50:18 GMT-0400",
+					"footerLinks": ["{\"pageName\":\"Contact us\",\"pagePath\":\"/content/customerportal/ca/en/home\",\"isVisibleOnMobile\":\"true\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Roche.com\",\"pagePath\":\"/content/customerportal/ca/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Privacy Policy\",\"pagePath\":\"/content/customerportal/ca/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Legal Statement\",\"pagePath\":\"/content/roche/customerportal/global/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_self\"}"],
+					"headerLinks": ["{\"pageName\":\"Innovations\",\"pagePath\":\"/content/customerportal/ca/en/home/product-category-page\"}", "{\"pageName\":\"Products\",\"pagePath\":\"/content/customerportal/ca/en/home/product-category-page/product-listing-new/roche54353\"}"],
+					"sling:resourceType": "roche/customerportal/components/adminconfig/headerfooterconfig",
+					"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+					"homePagePath": "/content/customerportal/ca/en/home"
+				},
+				"languageconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": ["cq:LiveRelationship"],
+					"socialLinks": ["{\"socialMediaOption\":\"facebook\",\"socialLink\":\"https://www.facebook.com/RochecustomerportalUSA/\"}", "{\"socialMediaOption\":\"twitter\",\"socialLink\":\"https://twitter.com/rochediausa?lang=en\"}", "{\"socialMediaOption\":\"linkedin\",\"socialLink\":\"https://in.linkedin.com/company/roche\"}", "{\"socialMediaOption\":\"youtube\",\"socialLink\":\"https://www.youtube.com/user/RochecustomerportalUSA\"}", "{\"socialMediaOption\":\"wechat\",\"socialLink\":\"https://www.wechat.com/en/\"}", "{\"socialMediaOption\":\"kakoastory\",\"socialLink\":\"http://www.kakao.com/story\"}"],
+					"searchPagePath": "/content/customerportal/ca/en/home/search-result-page",
+					"jcr:lastModifiedBy": "gagan.sharma@businesspartner.roche.com",
+					"countrySelectorPagePath": "/content/customerportal/ca/en/country-selector",
+					"cq:lastRolledout": "Sat Sep 16 2017 01:50:18 GMT-0400",
+					"searchLimit": "5",
+					"personaSelectorPagePath": "/content/customerportal/ca/en/personaselector",
+					"dateFormatPattern": "dd.MM.yyyy",
+					"jcr:lastModified": "Sat Sep 16 2017 01:50:18 GMT-0400",
+					"sling:resourceType": "roche/customerportal/components/adminconfig/languageconfig",
+					"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+					"searchUrl": "https://sp10015dbf.guided.ss-omtrdc.net"
+				},
+				"cq:LiveSyncConfig": {
+					"jcr:primaryType": "cq:LiveCopy",
+					"cq:rolloutConfigs": [],
+					"cq:isDeep": true,
+					"cq:master": "/content/customerportal/global-master-blueprint/en"
+				}
+			},
+			"home": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:54 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable", "cq:LiveSync", "cq:PropertyLiveSyncCancelled"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "home",
+					"cq:propertyInheritanceCancelled": ["pageTitle", "pageType"],
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "284c7aa5-f3ec-406d-8ace-ed9d92a06c6d",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/landingpage",
+					"cq:lastReplicatedBy": "pritpal.singh@businesspartner.roche.com",
+					"jcr:lastModifiedBy": "pritpal.singh@businesspartner.roche.com",
+					"cq:lastRolledout": "Fri Sep 08 2017 04:23:21 GMT-0400",
+					"jcr:predecessors": ["e20a8954-a2fa-497f-bcb8-ed6672130977"],
+					"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+					"jcr:created": "Mon Sep 25 2017 16:51:54 GMT+0530",
+					"cq:lastReplicated": "Fri Sep 08 2017 02:41:12 GMT-0400",
+					"cq:lastModified": "Fri Sep 08 2017 05:41:45 GMT-0400",
+					"cq:cloudserviceconfigs": ["[]"],
+					"jcr:baseVersion": "e20a8954-a2fa-497f-bcb8-ed6672130977",
+					"jcr:isCheckedOut": true,
+					"cq:target-ambits": ["/content/campaigns/brand10/master"],
+					"pageType": "News",
+					"pageTitle": "Page Title",
+					"jcr:lastModified": "Fri Sep 08 2017 03:28:03 GMT-0400",
+					"jcr:uuid": "c4c119ef-1b83-4066-82a9-ea9af057a626",
+					"sling:resourceType": "roche/customerportal/components/page/landingpage",
+					"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+					"cq:lastRolledoutBy": "pritpal.singh@businesspartner.roche.com",
+					"cq:lastModifiedBy": "pritpal.singh@businesspartner.roche.com"
+				},
+				"product-category-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:54 GMT+0530"
+				},
+				"landingpageview": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:55 GMT+0530"
+				},
+				"LandingPageView2": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:55 GMT+0530"
+				},
+				"LandingPageView3": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:55 GMT+0530"
+				},
+				"LandingPageView4": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:55 GMT+0530"
+				},
+				"LandingPageView5": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:55 GMT+0530"
+				},
+				"LandingPageView6": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:55 GMT+0530"
+				},
+				"Product_Category_View1": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:55 GMT+0530"
+				},
+				"Product_Category_View2": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:55 GMT+0530"
+				},
+				"Product_Category_View3": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:55 GMT+0530"
+				},
+				"new_landing": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:55 GMT+0530"
+				},
+				"new": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:55 GMT+0530"
+				},
+				"ss": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:55 GMT+0530"
+				},
+				"search-result": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:55 GMT+0530"
+				},
+				"landingpage": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:55 GMT+0530"
+				},
+				"plp_new": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:56 GMT+0530"
+				},
+				"rendition": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:37 GMT+0530"
+				},
+				"rendition1": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:37 GMT+0530"
+				}
+			},
+			"personaselector": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:56 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "personaselector",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "2ca49ec1-9e9e-4442-baad-112ee38a91c8",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+					"cq:lastRolledout": "Thu Aug 31 2017 05:48:02 GMT-0400",
+					"jcr:predecessors": ["c1c71d34-fddb-4e38-95be-e9d52f36046c"],
+					"jcr:created": "Mon Sep 25 2017 16:51:56 GMT+0530",
+					"cq:lastReplicated": "Thu Aug 31 2017 05:49:40 GMT-0400",
+					"cq:lastModified": "Thu Aug 31 2017 05:48:02 GMT-0400",
+					"jcr:baseVersion": "c1c71d34-fddb-4e38-95be-e9d52f36046c",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "a24f2a2e-1c20-487f-a6c4-e670f1a4b685",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+					"cq:lastModifiedBy": "gagan.sharma@businesspartner.roche.com"
+				}
+			},
+			"country-selector": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:56 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Country Selector",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "49822ee8-c55f-4916-bb43-f8d60f94d0e2",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+					"cq:lastRolledout": "Thu Aug 31 2017 05:48:02 GMT-0400",
+					"jcr:predecessors": ["4e1bfacd-017a-4f60-8552-360391ac95c2"],
+					"jcr:created": "Mon Sep 25 2017 16:51:56 GMT+0530",
+					"cq:lastReplicated": "Thu Aug 31 2017 05:49:41 GMT-0400",
+					"cq:lastModified": "Thu Aug 31 2017 05:48:02 GMT-0400",
+					"jcr:baseVersion": "4e1bfacd-017a-4f60-8552-360391ac95c2",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "547b19c7-a59a-4317-bd9f-86a120b9dee4",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+					"cq:lastModifiedBy": "gagan.sharma@businesspartner.roche.com"
+				}
+			},
+			"error": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:56 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Error",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "f5ff0e33-3465-4e3c-9585-02d07070fc24",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+					"cq:lastRolledout": "Thu Aug 31 2017 05:48:02 GMT-0400",
+					"jcr:predecessors": ["7eadac34-e0b8-4726-8b34-95cbfc61f20b"],
+					"jcr:created": "Mon Sep 25 2017 16:51:56 GMT+0530",
+					"cq:lastReplicated": "Thu Aug 31 2017 05:49:41 GMT-0400",
+					"cq:lastModified": "Thu Aug 31 2017 05:48:02 GMT-0400",
+					"jcr:baseVersion": "7eadac34-e0b8-4726-8b34-95cbfc61f20b",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "cf28b6ee-7c61-47c7-89a4-2321742409d8",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:designPath": "/etc/designs/roche",
+					"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+					"cq:lastModifiedBy": "gagan.sharma@businesspartner.roche.com"
+				},
+				"404": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:56 GMT+0530"
+				},
+				"500": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:56 GMT+0530"
+				}
+			},
+			"product-landing": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:56 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Product Landing",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "7a04ea00-0607-4761-8234-293fdb5e3783",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/landingpage",
+					"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+					"cq:lastRolledout": "Thu Aug 31 2017 05:48:02 GMT-0400",
+					"jcr:predecessors": ["ba4b2e97-32ea-41ef-9346-f359b516751e"],
+					"jcr:created": "Mon Sep 25 2017 16:51:56 GMT+0530",
+					"cq:lastReplicated": "Thu Aug 31 2017 05:49:42 GMT-0400",
+					"cq:lastModified": "Thu Aug 31 2017 05:48:02 GMT-0400",
+					"jcr:baseVersion": "ba4b2e97-32ea-41ef-9346-f359b516751e",
+					"jcr:isCheckedOut": true,
+					"pageType": "News",
+					"jcr:uuid": "6ee76caf-9669-450a-ac79-b3f6b3f625ff",
+					"sling:resourceType": "roche/customerportal/components/page/landingpage",
+					"cq:designPath": "/etc/designs/roche",
+					"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+					"cq:lastModifiedBy": "gagan.sharma@businesspartner.roche.com"
+				},
+				"product-category": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:56 GMT+0530"
+				},
+				"product-listing": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:56 GMT+0530"
+				}
+			}
+		}
+	},
+	"in": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Mon Sep 25 2017 16:51:56 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:mixinTypes": ["mix:versionable"],
+			"jcr:createdBy": "admin",
+			"jcr:title": "india",
+			"cq:lastReplicationAction": "Activate",
+			"jcr:versionHistory": "9ec6f17d-d98f-450c-8d03-0ef86a30d875",
+			"cq:template": "/apps/regent/templates/regent",
+			"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+			"jcr:predecessors": ["f44230c8-10c7-45ca-ac04-6421c2143c13"],
+			"jcr:created": "Mon Sep 25 2017 16:51:56 GMT+0530",
+			"cq:lastReplicated": "Thu Aug 31 2017 05:44:42 GMT-0400",
+			"cq:lastModified": "Thu Aug 31 2017 05:17:08 GMT-0400",
+			"jcr:baseVersion": "f44230c8-10c7-45ca-ac04-6421c2143c13",
+			"jcr:isCheckedOut": true,
+			"jcr:uuid": "c503d1ea-5b18-41e6-9735-558a139bb5d3",
+			"sling:resourceType": "regent/components/page/regent",
+			"cq:lastModifiedBy": "pritpal.singh@businesspartner.roche.com"
+		},
+		"en": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Mon Sep 25 2017 16:51:56 GMT+0530",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:mixinTypes": ["cq:LiveRelationship", "cq:LiveSync", "mix:versionable"],
+				"jcr:createdBy": "admin",
+				"jcr:title": "en",
+				"cq:lastReplicationAction": "Activate",
+				"jcr:versionHistory": "11189af2-0e8a-4152-bce5-970f8570740b",
+				"cq:template": "/apps/roche/pharma/customerportal/templates/languagepage",
+				"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+				"jcr:lastModifiedBy": "sharmr42",
+				"cq:lastRolledout": "Sat Sep 16 2017 01:50:18 GMT-0400",
+				"jcr:predecessors": ["d6ccff80-517c-4413-aba8-8b753042b6a9"],
+				"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+				"jcr:created": "Mon Sep 25 2017 16:51:57 GMT+0530",
+				"cq:lastReplicated": "Thu Aug 31 2017 05:50:03 GMT-0400",
+				"cq:lastModified": "Sat Sep 16 2017 01:50:18 GMT-0400",
+				"cq:cloudserviceconfigs": ["[]"],
+				"jcr:baseVersion": "d6ccff80-517c-4413-aba8-8b753042b6a9",
+				"jcr:isCheckedOut": true,
+				"pageType": "News",
+				"jcr:lastModified": "Mon Aug 28 2017 09:28:55 GMT-0400",
+				"jcr:uuid": "a5f095f1-e4c7-4066-a7b8-f79c9bb787ee",
+				"sling:resourceType": "roche/customerportal/components/page/languagepage",
+				"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+				"errorPages": "/content/customerportal/in/en/error",
+				"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+				"cq:lastModifiedBy": "gagan.sharma@businesspartner.roche.com",
+				"headerfooterconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "cq:ReplicationStatus"],
+					"hamburgerMenuLeftLinks": ["{\"pageName\":\"Sign In\",\"pagePath\":\"/content/customerportal/in/en/home\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Innovations\",\"pagePath\":\"/content/customerportal/in/en/home/product-category-page\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Products\",\"pagePath\":\"https://www.facebook.com\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Documents\",\"pagePath\":\"/content/customerportal/in/en/home\",\"linkBehaviour\":\"_self\"}"],
+					"cq:lastReplicationAction": "Activate",
+					"logoAltText": "roche",
+					"fileReference": "/content/dam/customerportal/blueRoche.svg",
+					"hamburgerMenuRightLinks": ["{\"pageName\":\"Events\",\"pagePath\":\"/content/customerportal/in/en/home\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Careers\",\"pagePath\":\"http://www.roche.com/careers.htm\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Contact Us\",\"pagePath\":\"https://yahoo.com\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"News\",\"pagePath\":\"/content/customerportal/in/en/home\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"COMPANY\",\"pagePath\":\"http://google.com\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Knowledge Center\",\"pagePath\":\"http://www.bbc.com\",\"linkBehaviour\":\"_self\"}"],
+					"cq:lastReplicatedBy": "admin",
+					"jcr:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastRolledout": "Sat Sep 16 2017 01:50:18 GMT-0400",
+					"altText": "Roche Logo",
+					"cq:lastReplicated": "Fri Jul 28 2017 06:10:51 GMT-0400",
+					"disclaimerText": "This website contains information on products which is targeted to a wide range of audiences and could contain product details or information otherwise not accessible or valid in your country. Please be aware that we do not take any responsibility for accessing such information which may not comply with any legal process, regulation, registration or usage in the country of your origin.",
+					"tradeMark": "© 2017 F. Hoffman LA-Roche Ltd.",
+					"jcr:lastModified": "Sat Sep 16 2017 01:50:18 GMT-0400",
+					"footerLinks": ["{\"pageName\":\"Contact us\",\"pagePath\":\"/content/customerportal/in/en/home\",\"isVisibleOnMobile\":\"true\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Roche.com\",\"pagePath\":\"/content/customerportal/in/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Privacy Policy\",\"pagePath\":\"/content/customerportal/in/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Legal Statement\",\"pagePath\":\"/content/roche/customerportal/global/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_self\"}"],
+					"headerLinks": ["{\"pageName\":\"Innovations\",\"pagePath\":\"/content/customerportal/in/en/home/product-category-page\"}", "{\"pageName\":\"Products\",\"pagePath\":\"/content/customerportal/in/en/home/product-category-page/product-listing-new/roche54353\"}"],
+					"sling:resourceType": "roche/customerportal/components/adminconfig/headerfooterconfig",
+					"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+					"homePagePath": "/content/customerportal/in/en/home"
+				},
+				"languageconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": ["cq:LiveRelationship"],
+					"socialLinks": ["{\"socialMediaOption\":\"facebook\",\"socialLink\":\"https://www.facebook.com/RochecustomerportalUSA/\"}", "{\"socialMediaOption\":\"twitter\",\"socialLink\":\"https://twitter.com/rochediausa?lang=en\"}", "{\"socialMediaOption\":\"linkedin\",\"socialLink\":\"https://in.linkedin.com/company/roche\"}", "{\"socialMediaOption\":\"youtube\",\"socialLink\":\"https://www.youtube.com/user/RochecustomerportalUSA\"}", "{\"socialMediaOption\":\"wechat\",\"socialLink\":\"https://www.wechat.com/en/\"}", "{\"socialMediaOption\":\"kakoastory\",\"socialLink\":\"http://www.kakao.com/story\"}"],
+					"searchPagePath": "/content/customerportal/in/en/home/search-result-page",
+					"jcr:lastModifiedBy": "gagan.sharma@businesspartner.roche.com",
+					"countrySelectorPagePath": "/content/customerportal/in/en/country-selector",
+					"cq:lastRolledout": "Sat Sep 16 2017 01:50:18 GMT-0400",
+					"searchLimit": "5",
+					"personaSelectorPagePath": "/content/customerportal/in/en/personaselector",
+					"dateFormatPattern": "dd.MM.yyyy",
+					"jcr:lastModified": "Sat Sep 16 2017 01:50:18 GMT-0400",
+					"sling:resourceType": "roche/customerportal/components/adminconfig/languageconfig",
+					"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+					"searchUrl": "https://sp10015dbf.guided.ss-omtrdc.net"
+				},
+				"cq:LiveSyncConfig": {
+					"jcr:primaryType": "cq:LiveCopy",
+					"cq:rolloutConfigs": [],
+					"cq:isDeep": true,
+					"cq:master": "/content/customerportal/global-master-blueprint/en",
+					"cq:excludedPaths": ["home/product-category-page/product-listing-new/roche54353112", "home/product-category-page/product-listing-new/Accu-Chek-Lancing-Devices", "home/product-category-page/product-listing-new/roche54353113", "home/product-category-page/product-listing-new/accu-chek-aviva-2-meter1", "home/product-category-page/product-listing-new/COBAS-AmpliPrep", "home/product-category-page/product-listing-new/reflotron--plus--sprint-system", "home/product-category-page/product-listing-new/Accu-Chek-Performa", "home/product-category-page/product-listing-new/ROCHE54352", "home/product-category-page/product-listing-new/roche-cardiac-trop-t-sensitive-test--visual-", "home/product-category-page/product-listing-new/roche543531", "home/product-category-page/product-listing-new/roche5435311", "home/product-category-page/product-listing-new/Chemstrip-Test-scripts", "home/product-category-page/product-listing-new/roche54353", "home/product-category-page/product-listing-new/Accu-Chek-Softclix", "home/product-category-page/product-listing-new/cobas-8000", "home/product-category-page/product-listing-new/roche-custombiotech", "home/product-category-page/product-listing-new/diabetes-management-system", "home/product-category-page/product-listing-new/cobas-8100"]
+				}
+			},
+			"home": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:57 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "home",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "9c7665a1-cd6a-45fc-99cd-89f663688122",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/landingpage",
+					"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+					"jcr:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastRolledout": "Fri Sep 08 2017 04:23:19 GMT-0400",
+					"jcr:predecessors": ["abe1ba9c-810d-4c06-ba8b-bfdf410ba58c"],
+					"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+					"jcr:created": "Mon Sep 25 2017 16:51:57 GMT+0530",
+					"cq:lastReplicated": "Thu Aug 31 2017 05:50:03 GMT-0400",
+					"cq:lastModified": "Fri Sep 08 2017 04:23:19 GMT-0400",
+					"cq:cloudserviceconfigs": ["[]"],
+					"jcr:baseVersion": "abe1ba9c-810d-4c06-ba8b-bfdf410ba58c",
+					"jcr:isCheckedOut": true,
+					"cq:target-ambits": ["/content/campaigns/brand10/master"],
+					"pageType": "News",
+					"jcr:lastModified": "Fri Aug 25 2017 06:41:33 GMT-0400",
+					"jcr:uuid": "7f9e21b8-3416-4c84-a6db-ae4f25a451fb",
+					"sling:resourceType": "roche/customerportal/components/page/landingpage",
+					"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+					"cq:lastRolledoutBy": "pritpal.singh@businesspartner.roche.com",
+					"cq:lastModifiedBy": "pritpal.singh@businesspartner.roche.com"
+				},
+				"product-category-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:57 GMT+0530"
+				},
+				"landingpageview": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				},
+				"LandingPageView2": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				},
+				"LandingPageView3": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				},
+				"LandingPageView4": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				},
+				"LandingPageView5": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				},
+				"LandingPageView6": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				},
+				"Product_Category_View1": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				},
+				"Product_Category_View2": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				},
+				"Product_Category_View3": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				},
+				"new_landing": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				},
+				"new": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				},
+				"ss": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				},
+				"search-result": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				},
+				"landingpage": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				},
+				"plp_new": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				},
+				"legal-statement": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:37 GMT+0530"
+				},
+				"landingviewtest": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:37 GMT+0530"
+				},
+				"search-result-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:37 GMT+0530"
+				},
+				"news0": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:37 GMT+0530"
+				},
+				"news": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:37 GMT+0530"
+				},
+				"contact": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:38 GMT+0530"
+				},
+				"About-Us": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:38 GMT+0530"
+				}
+			},
+			"personaselector": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "personaselector",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "cce623ae-515e-458f-8ab5-1c06d00da614",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+					"cq:lastRolledout": "Thu Aug 31 2017 05:48:26 GMT-0400",
+					"jcr:predecessors": ["4a679904-403c-43e9-ab4a-d28d9cba4390"],
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530",
+					"cq:lastReplicated": "Thu Aug 31 2017 05:50:18 GMT-0400",
+					"cq:lastModified": "Thu Aug 31 2017 05:48:26 GMT-0400",
+					"jcr:baseVersion": "4a679904-403c-43e9-ab4a-d28d9cba4390",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "f415c345-cf24-46be-9db7-f15d61198269",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+					"cq:lastModifiedBy": "gagan.sharma@businesspartner.roche.com"
+				}
+			},
+			"country-selector": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Country Selector",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "6dd5ff09-a51f-4f96-8fb7-7d562f1c52ae",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+					"cq:lastRolledout": "Thu Aug 31 2017 05:48:26 GMT-0400",
+					"jcr:predecessors": ["1b8a0631-9180-4e5d-98eb-0bff7bb23dd9"],
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530",
+					"cq:lastReplicated": "Thu Aug 31 2017 05:50:19 GMT-0400",
+					"cq:lastModified": "Thu Aug 31 2017 05:48:26 GMT-0400",
+					"jcr:baseVersion": "1b8a0631-9180-4e5d-98eb-0bff7bb23dd9",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "77bc0909-be1d-4a24-8798-4a8839671d1a",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+					"cq:lastModifiedBy": "gagan.sharma@businesspartner.roche.com"
+				}
+			},
+			"error": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Error",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "c8a2012b-c55c-45a6-8027-c95347da063b",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+					"cq:lastRolledout": "Thu Aug 31 2017 05:48:26 GMT-0400",
+					"jcr:predecessors": ["07418655-9fd7-413e-9411-ea603fe511c4"],
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530",
+					"cq:lastReplicated": "Thu Aug 31 2017 05:50:20 GMT-0400",
+					"cq:lastModified": "Thu Aug 31 2017 05:48:26 GMT-0400",
+					"jcr:baseVersion": "07418655-9fd7-413e-9411-ea603fe511c4",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "d325f996-5749-412c-a90d-3de82e32dbbe",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:designPath": "/etc/designs/roche",
+					"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+					"cq:lastModifiedBy": "gagan.sharma@businesspartner.roche.com"
+				},
+				"404": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				},
+				"500": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				}
+			},
+			"product-landing": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Product Landing",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "f0cb2f4c-1f76-4199-af03-2ebd7c631e18",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/landingpage",
+					"cq:lastReplicatedBy": "gagan.sharma@businesspartner.roche.com",
+					"cq:lastRolledout": "Thu Aug 31 2017 05:48:26 GMT-0400",
+					"jcr:predecessors": ["b1ab837e-a8e6-4656-96b3-1b74578247d7"],
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530",
+					"cq:lastReplicated": "Thu Aug 31 2017 05:50:21 GMT-0400",
+					"cq:lastModified": "Thu Aug 31 2017 05:48:26 GMT-0400",
+					"jcr:baseVersion": "b1ab837e-a8e6-4656-96b3-1b74578247d7",
+					"jcr:isCheckedOut": true,
+					"pageType": "News",
+					"jcr:uuid": "cdb1b3bc-3360-49d3-a3ef-4a98ff552fc9",
+					"sling:resourceType": "roche/customerportal/components/page/landingpage",
+					"cq:designPath": "/etc/designs/roche",
+					"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+					"cq:lastModifiedBy": "gagan.sharma@businesspartner.roche.com"
+				},
+				"product-category": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				},
+				"product-listing": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Mon Sep 25 2017 16:51:58 GMT+0530"
+				}
+			}
+		}
+	},
+	"global-master-bp": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Tue Sep 26 2017 17:36:38 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:mixinTypes": ["mix:versionable"],
+			"jcr:createdBy": "admin",
+			"jcr:title": "global-master-bp",
+			"jcr:versionHistory": "c1f9143d-b5b8-4787-9112-e5833c77b985",
+			"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+			"jcr:predecessors": ["2da93243-8a88-4808-a97d-f80b022a5d3b"],
+			"jcr:created": "Tue Sep 26 2017 17:36:38 GMT+0530",
+			"cq:lastModified": "Fri Sep 15 2017 10:54:12 GMT-0400",
+			"jcr:baseVersion": "2da93243-8a88-4808-a97d-f80b022a5d3b",
+			"jcr:isCheckedOut": true,
+			"jcr:uuid": "64144c76-8f39-4d77-aa69-e91d243630e8",
+			"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+			"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+		},
+		"en": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Tue Sep 26 2017 17:36:38 GMT+0530",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:mixinTypes": ["mix:versionable"],
+				"jcr:createdBy": "admin",
+				"jcr:title": "en",
+				"jcr:versionHistory": "5775b45b-1145-4c85-b539-dc63ec1b2f8b",
+				"cq:template": "/apps/roche/pharma/customerportal/templates/languagepage",
+				"jcr:lastModifiedBy": "sharmr42",
+				"jcr:predecessors": ["9d02c62f-0dc7-4393-85e7-06de42884e4a"],
+				"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+				"jcr:created": "Tue Sep 26 2017 17:36:38 GMT+0530",
+				"cq:lastModified": "Fri Sep 15 2017 10:54:08 GMT-0400",
+				"cq:cloudserviceconfigs": ["[]"],
+				"jcr:baseVersion": "9d02c62f-0dc7-4393-85e7-06de42884e4a",
+				"jcr:isCheckedOut": true,
+				"pageType": "News",
+				"jcr:lastModified": "Mon Aug 28 2017 09:28:55 GMT-0400",
+				"jcr:uuid": "f19a5f42-a415-4e12-b8c0-a7099c0eb62e",
+				"sling:resourceType": "roche/customerportal/components/page/languagepage",
+				"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+				"errorPages": "/content/customerportal/global-master-bp/en/error",
+				"cq:lastModifiedBy": "reference-adjustment-service",
+				"headerfooterconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": ["cq:ReplicationStatus"],
+					"hamburgerMenuLeftLinks": ["{\"pageName\":\"Sign In\",\"pagePath\":\"/content/customerportal/global-master-bp/en/home\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Innovations\",\"pagePath\":\"/content/customerportal/global-master-bp/en/home/product-category-page\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Products\",\"pagePath\":\"https://www.facebook.com\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Documents\",\"pagePath\":\"/content/customerportal/global-master-bp/en/home\",\"linkBehaviour\":\"_self\"}"],
+					"cq:lastReplicationAction": "Activate",
+					"logoAltText": "roche",
+					"fileReference": "/content/dam/customerportal/blueRoche.svg",
+					"hamburgerMenuRightLinks": ["{\"pageName\":\"Events\",\"pagePath\":\"/content/customerportal/global-master-bp/en/home\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Careers\",\"pagePath\":\"http://www.roche.com/careers.htm\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Contact Us\",\"pagePath\":\"https://yahoo.com\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"News\",\"pagePath\":\"/content/customerportal/global-master-bp/en/home\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"COMPANY\",\"pagePath\":\"http://google.com\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Knowledge Center\",\"pagePath\":\"http://www.bbc.com\",\"linkBehaviour\":\"_self\"}"],
+					"cq:lastReplicatedBy": "admin",
+					"jcr:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"altText": "Roche Logo",
+					"cq:lastReplicated": "Fri Jul 28 2017 06:10:51 GMT-0400",
+					"disclaimerText": "This website contains information on products which is targeted to a wide range of audiences and could contain product details or information otherwise not accessible or valid in your country. Please be aware that we do not take any responsibility for accessing such information which may not comply with any legal process, regulation, registration or usage in the country of your origin.",
+					"tradeMark": "© 2017 F. Hoffman LA-Roche Ltd.",
+					"jcr:lastModified": "Mon Aug 28 2017 04:08:11 GMT-0400",
+					"footerLinks": ["{\"pageName\":\"Contact us\",\"pagePath\":\"/content/customerportal/global-master-bp/en/home\",\"isVisibleOnMobile\":\"true\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Roche.com\",\"pagePath\":\"/content/customerportal/global-master-bp/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Privacy Policy\",\"pagePath\":\"/content/customerportal/global-master-bp/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Legal Statement\",\"pagePath\":\"/content/roche/customerportal/global/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_self\"}"],
+					"headerLinks": ["{\"pageName\":\"Innovations\",\"pagePath\":\"/content/customerportal/global-master-bp/en/home/product-category-page\"}", "{\"pageName\":\"Products\",\"pagePath\":\"/content/customerportal/global-master-bp/en/home/product-category-page/product-listing-new/roche54353\"}"],
+					"sling:resourceType": "roche/customerportal/components/adminconfig/headerfooterconfig",
+					"homePagePath": "/content/customerportal/global-master-bp/en/home"
+				},
+				"languageconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"socialLinks": ["{\"socialMediaOption\":\"facebook\",\"socialLink\":\"https://www.facebook.com/RochecustomerportalUSA/\"}", "{\"socialMediaOption\":\"twitter\",\"socialLink\":\"https://twitter.com/rochediausa?lang=en\"}", "{\"socialMediaOption\":\"linkedin\",\"socialLink\":\"https://in.linkedin.com/company/roche\"}", "{\"socialMediaOption\":\"youtube\",\"socialLink\":\"https://www.youtube.com/user/RochecustomerportalUSA\"}", "{\"socialMediaOption\":\"wechat\",\"socialLink\":\"https://www.wechat.com/en/\"}", "{\"socialMediaOption\":\"kakoastory\",\"socialLink\":\"http://www.kakao.com/story\"}"],
+					"searchPagePath": "/content/customerportal/global-master-bp/en/home/search-result-page",
+					"jcr:lastModifiedBy": "gagan.sharma@businesspartner.roche.com",
+					"countrySelectorPagePath": "/content/customerportal/global-master-bp/en/country-selector",
+					"searchLimit": "5",
+					"personaSelectorPagePath": "/content/customerportal/global-master-bp/en/personaselector",
+					"dateFormatPattern": "dd.MM.yyyy",
+					"jcr:lastModified": "Fri Sep 15 2017 10:14:58 GMT-0400",
+					"sling:resourceType": "roche/customerportal/components/adminconfig/languageconfig",
+					"searchUrl": "https://sp10015dbf.guided.ss-omtrdc.net"
+				}
+			},
+			"home": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Tue Sep 26 2017 17:36:38 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["mix:lockable", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "home",
+					"jcr:versionHistory": "675b2026-12c1-4179-8122-bd5325b8970a",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/landingpage",
+					"jcr:lastModifiedBy": "admin",
+					"jcr:predecessors": ["c4399344-46f0-459f-9985-2392ab8e8db6"],
+					"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+					"jcr:created": "Tue Sep 26 2017 17:36:38 GMT+0530",
+					"cq:lastModified": "Fri Sep 15 2017 10:54:08 GMT-0400",
+					"cq:cloudserviceconfigs": ["[]"],
+					"jcr:baseVersion": "c4399344-46f0-459f-9985-2392ab8e8db6",
+					"jcr:isCheckedOut": true,
+					"cq:target-ambits": ["/content/campaigns/brand10/master"],
+					"pageType": "News",
+					"jcr:lastModified": "Fri Sep 15 2017 06:42:37 GMT-0400",
+					"jcr:uuid": "70d1f9d1-18cb-4802-96d2-95d69c97b88d",
+					"sling:resourceType": "roche/customerportal/components/page/landingpage",
+					"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+					"cq:lastModifiedBy": "reference-adjustment-service"
+				},
+				"product-category-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:38 GMT+0530"
+				},
+				"landingpageview": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:38 GMT+0530"
+				},
+				"LandingPageView2": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:38 GMT+0530"
+				},
+				"LandingPageView3": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:38 GMT+0530"
+				},
+				"LandingPageView4": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:38 GMT+0530"
+				},
+				"LandingPageView5": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:38 GMT+0530"
+				},
+				"LandingPageView6": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:38 GMT+0530"
+				},
+				"Product_Category_View1": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530"
+				},
+				"Product_Category_View2": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530"
+				},
+				"Product_Category_View3": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530"
+				},
+				"new_landing": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530"
+				},
+				"legal-statement": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530"
+				},
+				"search-result-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530"
+				},
+				"ProductThumbnailPage": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530"
+				},
+				"contactus": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530"
+				},
+				"EventDetailsPage": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530"
+				}
+			},
+			"personaselector": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "personaselector",
+					"jcr:versionHistory": "5e179116-da10-4663-b0f9-89fead51a293",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"jcr:predecessors": ["f9a3c4ba-1e4f-4c73-9f90-31086903c59e"],
+					"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530",
+					"cq:lastModified": "Fri Sep 15 2017 10:52:51 GMT-0400",
+					"jcr:baseVersion": "f9a3c4ba-1e4f-4c73-9f90-31086903c59e",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "271c134e-258b-441a-b285-a1852d438b2e",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+				}
+			},
+			"country-selector": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Country Selector",
+					"jcr:versionHistory": "908e0e6c-4dd6-4b33-9277-87c9e2a14a4d",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"jcr:predecessors": ["1d8091ec-fb39-424f-8381-35754dcf3cd6"],
+					"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530",
+					"cq:lastModified": "Fri Sep 15 2017 10:52:52 GMT-0400",
+					"jcr:baseVersion": "1d8091ec-fb39-424f-8381-35754dcf3cd6",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "f1311f02-de2f-4207-9802-d65086314afc",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+				}
+			},
+			"error": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Error",
+					"jcr:versionHistory": "53710c9f-543f-462c-b50a-ba72ee2d9aff",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"jcr:predecessors": ["e8a47867-39d7-4c56-8d10-6960b4825316"],
+					"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530",
+					"cq:lastModified": "Fri Sep 15 2017 10:52:52 GMT-0400",
+					"jcr:baseVersion": "e8a47867-39d7-4c56-8d10-6960b4825316",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "9640ecd2-1010-4129-8079-0fc3301edd23",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:designPath": "/etc/designs/roche",
+					"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+				},
+				"404": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530"
+				},
+				"500": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530"
+				}
+			}
+		}
+	},
+	"au": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:mixinTypes": ["mix:versionable"],
+			"jcr:createdBy": "admin",
+			"jcr:title": "Australia",
+			"cq:lastReplicationAction": "Activate",
+			"jcr:versionHistory": "16b6fb2f-abf0-4929-82ce-4bcc1010f641",
+			"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+			"cq:lastReplicatedBy": "vaneet.ahuja@businesspartner.roche.com",
+			"jcr:predecessors": ["04780296-b6fa-4974-83d8-9fbbaef5e8f9"],
+			"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530",
+			"cq:lastReplicated": "Fri Sep 15 2017 11:12:23 GMT-0400",
+			"cq:lastModified": "Fri Sep 15 2017 11:11:41 GMT-0400",
+			"jcr:baseVersion": "04780296-b6fa-4974-83d8-9fbbaef5e8f9",
+			"jcr:isCheckedOut": true,
+			"pageType": "News",
+			"jcr:uuid": "30cd3b52-7461-49c3-a7e9-115c61e3efe1",
+			"sling:resourceType": "roche/customerportal/components/page/blankPage",
+			"cq:designPath": "/etc/designs/roche",
+			"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+		},
+		"en-au": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:mixinTypes": ["cq:LiveRelationship", "cq:LiveSync", "mix:versionable"],
+				"jcr:createdBy": "admin",
+				"jcr:title": "en-au",
+				"cq:lastReplicationAction": "Activate",
+				"jcr:versionHistory": "d9c04a91-3a73-4db2-9cfe-b27921556588",
+				"cq:template": "/apps/roche/pharma/customerportal/templates/languagepage",
+				"cq:lastReplicatedBy": "vaneet.ahuja@businesspartner.roche.com",
+				"jcr:lastModifiedBy": "sharmr42",
+				"cq:lastRolledout": "Sat Sep 16 2017 01:50:18 GMT-0400",
+				"jcr:predecessors": ["65657412-f041-4951-9547-cfd677e978e2"],
+				"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+				"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530",
+				"cq:lastReplicated": "Fri Sep 15 2017 11:12:23 GMT-0400",
+				"cq:lastModified": "Sat Sep 16 2017 01:50:18 GMT-0400",
+				"cq:cloudserviceconfigs": ["[]"],
+				"jcr:baseVersion": "65657412-f041-4951-9547-cfd677e978e2",
+				"jcr:isCheckedOut": true,
+				"pageType": "News",
+				"jcr:lastModified": "Mon Aug 28 2017 09:28:55 GMT-0400",
+				"jcr:uuid": "0385d825-af96-4120-a375-72365e63ed23",
+				"sling:resourceType": "roche/customerportal/components/page/languagepage",
+				"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+				"errorPages": "/content/customerportal/au/en-au/error",
+				"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+				"cq:lastModifiedBy": "gagan.sharma@businesspartner.roche.com",
+				"headerfooterconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "cq:ReplicationStatus"],
+					"hamburgerMenuLeftLinks": ["{\"pageName\":\"Sign In\",\"pagePath\":\"/content/customerportal/au/en-au/home\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Innovations\",\"pagePath\":\"/content/customerportal/au/en-au/home/product-category-page\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Products\",\"pagePath\":\"https://www.facebook.com\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Documents\",\"pagePath\":\"/content/customerportal/au/en-au/home\",\"linkBehaviour\":\"_self\"}"],
+					"cq:lastReplicationAction": "Activate",
+					"logoAltText": "roche",
+					"fileReference": "/content/dam/customerportal/blueRoche.svg",
+					"hamburgerMenuRightLinks": ["{\"pageName\":\"Events\",\"pagePath\":\"/content/customerportal/au/en-au/home\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Careers\",\"pagePath\":\"http://www.roche.com/careers.htm\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Contact Us\",\"pagePath\":\"https://yahoo.com\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"News\",\"pagePath\":\"/content/customerportal/au/en-au/home\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"COMPANY\",\"pagePath\":\"http://google.com\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Knowledge Center\",\"pagePath\":\"http://www.bbc.com\",\"linkBehaviour\":\"_self\"}"],
+					"cq:lastReplicatedBy": "admin",
+					"jcr:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastRolledout": "Sat Sep 16 2017 01:50:18 GMT-0400",
+					"altText": "Roche Logo",
+					"cq:lastReplicated": "Fri Jul 28 2017 06:10:51 GMT-0400",
+					"disclaimerText": "This website contains information on products which is targeted to a wide range of audiences and could contain product details or information otherwise not accessible or valid in your country. Please be aware that we do not take any responsibility for accessing such information which may not comply with any legal process, regulation, registration or usage in the country of your origin.",
+					"tradeMark": "© 2017 F. Hoffman LA-Roche Ltd.",
+					"jcr:lastModified": "Sat Sep 16 2017 01:50:18 GMT-0400",
+					"footerLinks": ["{\"pageName\":\"Contact us\",\"pagePath\":\"/content/customerportal/au/en-au/home\",\"isVisibleOnMobile\":\"true\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Roche.com\",\"pagePath\":\"/content/customerportal/au/en-au/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Privacy Policy\",\"pagePath\":\"/content/customerportal/au/en-au/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Legal Statement\",\"pagePath\":\"/content/roche/customerportal/global/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_self\"}"],
+					"headerLinks": ["{\"pageName\":\"Innovations\",\"pagePath\":\"/content/customerportal/au/en-au/home/product-category-page\"}", "{\"pageName\":\"Products\",\"pagePath\":\"/content/customerportal/au/en-au/home/product-category-page/product-listing-new/roche54353\"}"],
+					"sling:resourceType": "roche/customerportal/components/adminconfig/headerfooterconfig",
+					"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+					"homePagePath": "/content/customerportal/au/en-au/home"
+				},
+				"languageconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": ["cq:LiveRelationship"],
+					"socialLinks": ["{\"socialMediaOption\":\"facebook\",\"socialLink\":\"https://www.facebook.com/RochecustomerportalUSA/\"}", "{\"socialMediaOption\":\"twitter\",\"socialLink\":\"https://twitter.com/rochediausa?lang=en\"}", "{\"socialMediaOption\":\"linkedin\",\"socialLink\":\"https://in.linkedin.com/company/roche\"}", "{\"socialMediaOption\":\"youtube\",\"socialLink\":\"https://www.youtube.com/user/RochecustomerportalUSA\"}", "{\"socialMediaOption\":\"wechat\",\"socialLink\":\"https://www.wechat.com/en/\"}", "{\"socialMediaOption\":\"kakoastory\",\"socialLink\":\"http://www.kakao.com/story\"}"],
+					"searchPagePath": "/content/customerportal/au/en-au/home/search-result-page",
+					"jcr:lastModifiedBy": "gagan.sharma@businesspartner.roche.com",
+					"countrySelectorPagePath": "/content/customerportal/au/en-au/country-selector",
+					"cq:lastRolledout": "Sat Sep 16 2017 01:50:18 GMT-0400",
+					"searchLimit": "5",
+					"personaSelectorPagePath": "/content/customerportal/au/en-au/personaselector",
+					"dateFormatPattern": "dd.MM.yyyy",
+					"jcr:lastModified": "Sat Sep 16 2017 01:50:18 GMT-0400",
+					"sling:resourceType": "roche/customerportal/components/adminconfig/languageconfig",
+					"cq:lastRolledoutBy": "gagan.sharma@businesspartner.roche.com",
+					"searchUrl": "https://sp10015dbf.guided.ss-omtrdc.net"
+				},
+				"cq:LiveSyncConfig": {
+					"jcr:primaryType": "cq:LiveCopy",
+					"cq:rolloutConfigs": ["/etc/msm/rolloutconfigs/default"],
+					"cq:isDeep": true,
+					"cq:master": "/content/customerportal/global-master-bp/en"
+				}
+			},
+			"home": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:lockable", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "home",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "2dc68fd4-7c18-4383-b57b-79aa21db6105",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/landingpage",
+					"cq:lastReplicatedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"jcr:lastModifiedBy": "admin",
+					"cq:lastRolledout": "Fri Sep 15 2017 11:01:54 GMT-0400",
+					"jcr:predecessors": ["ce3c4852-7792-4d48-98e7-564c52b102d2"],
+					"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+					"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530",
+					"cq:lastReplicated": "Fri Sep 15 2017 11:12:23 GMT-0400",
+					"cq:lastModified": "Fri Sep 15 2017 11:01:54 GMT-0400",
+					"cq:cloudserviceconfigs": ["[]"],
+					"jcr:baseVersion": "ce3c4852-7792-4d48-98e7-564c52b102d2",
+					"jcr:isCheckedOut": true,
+					"cq:target-ambits": ["/content/campaigns/brand10/master"],
+					"pageType": "News",
+					"jcr:lastModified": "Fri Sep 15 2017 06:42:37 GMT-0400",
+					"jcr:uuid": "b7651883-dba5-4584-9283-cb0b14427b6a",
+					"sling:resourceType": "roche/customerportal/components/page/landingpage",
+					"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+					"cq:lastRolledoutBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+				},
+				"product-category-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:39 GMT+0530"
+				},
+				"landingpageview": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:41 GMT+0530"
+				},
+				"LandingPageView2": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:41 GMT+0530"
+				},
+				"LandingPageView3": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:41 GMT+0530"
+				},
+				"LandingPageView4": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:41 GMT+0530"
+				},
+				"LandingPageView5": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:41 GMT+0530"
+				},
+				"LandingPageView6": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:41 GMT+0530"
+				},
+				"Product_Category_View1": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:41 GMT+0530"
+				},
+				"Product_Category_View2": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:41 GMT+0530"
+				},
+				"Product_Category_View3": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:41 GMT+0530"
+				},
+				"new_landing": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:41 GMT+0530"
+				},
+				"legal-statement": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:41 GMT+0530"
+				},
+				"search-result-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:41 GMT+0530"
+				},
+				"landingviewtest": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:41 GMT+0530"
+				},
+				"news": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:41 GMT+0530"
+				},
+				"contact": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:41 GMT+0530"
+				},
+				"contactus": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:41 GMT+0530"
+				},
+				"EventDetailsPage": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				}
+			},
+			"personaselector": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "personaselector",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "2559a42a-3506-4d55-8b88-8dda20e3355a",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastRolledout": "Fri Sep 15 2017 11:01:56 GMT-0400",
+					"jcr:predecessors": ["0488dfd5-0c13-4912-b6cb-97013da4785d"],
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+					"cq:lastReplicated": "Fri Sep 15 2017 11:12:32 GMT-0400",
+					"cq:lastModified": "Fri Sep 15 2017 11:01:56 GMT-0400",
+					"jcr:baseVersion": "0488dfd5-0c13-4912-b6cb-97013da4785d",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "6dd342da-370f-4541-a501-74d8777bd635",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:lastRolledoutBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+				}
+			},
+			"country-selector": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Country Selector",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "42a75ccf-046f-4de0-95df-fd41a514e2d3",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastRolledout": "Fri Sep 15 2017 11:01:56 GMT-0400",
+					"jcr:predecessors": ["c0931246-71f1-4b12-8dde-8ebb7fdb9f2f"],
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+					"cq:lastReplicated": "Fri Sep 15 2017 11:12:32 GMT-0400",
+					"cq:lastModified": "Fri Sep 15 2017 11:01:56 GMT-0400",
+					"jcr:baseVersion": "c0931246-71f1-4b12-8dde-8ebb7fdb9f2f",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "750ad5a4-6e72-4ba8-9498-ba40be54d788",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:lastRolledoutBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+				}
+			},
+			"error": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Error",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "f7a4a63c-9d18-49ac-b2af-3a695aa474cc",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastRolledout": "Fri Sep 15 2017 11:01:56 GMT-0400",
+					"jcr:predecessors": ["90a9d4ba-d46f-45fe-8ba8-6bab0a0d9475"],
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+					"cq:lastReplicated": "Fri Sep 15 2017 11:12:32 GMT-0400",
+					"cq:lastModified": "Fri Sep 15 2017 11:01:56 GMT-0400",
+					"jcr:baseVersion": "90a9d4ba-d46f-45fe-8ba8-6bab0a0d9475",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "d39d5d4f-4b36-4373-a08e-4d0cc7f20b45",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:designPath": "/etc/designs/roche",
+					"cq:lastRolledoutBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+				},
+				"404": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"500": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				}
+			},
+			"product-landing-page": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Product Landing Page",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "62e0e763-adfe-47da-bce2-a9c4ab63d3cb",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/productLandingTemplate",
+					"cq:lastReplicatedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"jcr:lastModifiedBy": "dipti.chauhan@businesspartner.roche.com",
+					"isPageTypeDisabled": "true",
+					"cq:lastRolledout": "Fri Sep 15 2017 11:01:56 GMT-0400",
+					"jcr:predecessors": ["c984f2bc-807b-4ae9-8f83-cfa8d9c515a6"],
+					"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+					"cq:lastReplicated": "Fri Sep 15 2017 11:12:34 GMT-0400",
+					"cq:lastModified": "Fri Sep 15 2017 11:01:56 GMT-0400",
+					"jcr:baseVersion": "c984f2bc-807b-4ae9-8f83-cfa8d9c515a6",
+					"jcr:isCheckedOut": true,
+					"pageType": "News",
+					"jcr:lastModified": "Thu Sep 14 2017 00:48:06 GMT-0400",
+					"jcr:uuid": "ec3e7717-3e19-4e4b-8c52-d3519dd05d4e",
+					"sling:resourceType": "roche/customerportal/components/page/productLandingPage",
+					"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+					"cq:designPath": "/etc/designs/roche",
+					"cq:lastRolledoutBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+				}
+			}
+		}
+	},
+	"global-master": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:mixinTypes": ["mix:versionable"],
+			"jcr:createdBy": "admin",
+			"jcr:title": "global-master",
+			"jcr:versionHistory": "e748bae1-379e-43be-bc3f-4acfd0121a40",
+			"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+			"jcr:predecessors": ["682a4091-af59-4658-a38c-df2f7a24287b"],
+			"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+			"cq:lastModified": "Fri Sep 15 2017 10:56:14 GMT-0400",
+			"jcr:baseVersion": "682a4091-af59-4658-a38c-df2f7a24287b",
+			"jcr:isCheckedOut": true,
+			"jcr:uuid": "7caa7399-3750-4d85-83c9-963e786e19ef",
+			"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+			"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+		},
+		"en": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:mixinTypes": ["mix:versionable"],
+				"jcr:createdBy": "admin",
+				"jcr:title": "en",
+				"jcr:versionHistory": "4b9c40dd-0364-4531-816f-f249031ec6c6",
+				"cq:template": "/apps/roche/pharma/customerportal/templates/languagepage",
+				"jcr:lastModifiedBy": "sharmr42",
+				"jcr:predecessors": ["d9931bde-6312-4b6f-9109-841b49a3237a"],
+				"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+				"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+				"cq:lastModified": "Mon Sep 25 2017 04:23:48 GMT-0400",
+				"cq:cloudserviceconfigs": ["[]"],
+				"jcr:baseVersion": "d9931bde-6312-4b6f-9109-841b49a3237a",
+				"jcr:isCheckedOut": true,
+				"pageType": "News",
+				"jcr:lastModified": "Mon Aug 28 2017 09:28:55 GMT-0400",
+				"jcr:uuid": "e2377c6c-50d0-486f-ac20-3cc5cbfbd85b",
+				"sling:resourceType": "roche/customerportal/components/page/languagepage",
+				"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+				"errorPages": "/content/customerportal/global-master/en/error",
+				"cq:lastModifiedBy": "mhussain4@sapient.com",
+				"headerfooterconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": ["cq:ReplicationStatus"],
+					"hamburgerMenuLeftLinks": ["{\"pageName\":\"Sign In\",\"pagePath\":\"/content/customerportal/global-master/en/home\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Innovations\",\"pagePath\":\"/content/customerportal/global-master/en/home/product-category-page\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Products\",\"pagePath\":\"https://www.facebook.com\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Documents\",\"pagePath\":\"/content/customerportal/global-master/en/home\",\"linkBehaviour\":\"_self\"}"],
+					"cq:lastReplicationAction": "Activate",
+					"logoAltText": "roche",
+					"fileReference": "/content/dam/customerportal/blueRoche.svg",
+					"hamburgerMenuRightLinks": ["{\"pageName\":\"Events\",\"pagePath\":\"/content/customerportal/global-master/en/home/Events\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Careers\",\"pagePath\":\"http://www.roche.com/careers.htm\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Contact Us\",\"pagePath\":\"https://yahoo.com\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"News\",\"pagePath\":\"/content/customerportal/global-master/en/home/NewsListing\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"COMPANY\",\"pagePath\":\"http://google.com\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Knowledge Center\",\"pagePath\":\"http://www.bbc.com\",\"linkBehaviour\":\"_self\"}"],
+					"cq:lastReplicatedBy": "admin",
+					"jcr:lastModifiedBy": "mhussain4@sapient.com",
+					"altText": "Roche Logo",
+					"cq:lastReplicated": "Fri Jul 28 2017 06:10:51 GMT-0400",
+					"disclaimerText": "This website contains information on products which is targeted to a wide range of audiences and could contain product details or information otherwise not accessible or valid in your country. Please be aware that we do not take any responsibility for accessing such information which may not comply with any legal process, regulation, registration or usage in the country of your origin.",
+					"tradeMark": "© 2017 F. Hoffman LA-Roche Ltd.",
+					"jcr:lastModified": "Mon Sep 25 2017 04:23:48 GMT-0400",
+					"footerLinks": ["{\"pageName\":\"Contact us\",\"pagePath\":\"/content/customerportal/global-master/en/home\",\"isVisibleOnMobile\":\"true\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Roche.com\",\"pagePath\":\"/content/customerportal/global-master/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Privacy Policy\",\"pagePath\":\"/content/customerportal/global-master/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Legal Statement\",\"pagePath\":\"/content/roche/customerportal/global/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_self\"}"],
+					"headerLinks": ["{\"pageName\":\"Innovations\",\"pagePath\":\"/content/customerportal/global-master/en/home/product-category-page\"}", "{\"pageName\":\"Products\",\"pagePath\":\"/content/customerportal/global-master/en/home/product-category-page/product-listing-new/roche54353\"}"],
+					"sling:resourceType": "roche/customerportal/components/adminconfig/headerfooterconfig",
+					"homePagePath": "/content/customerportal/global-master/en/home"
+				},
+				"languageconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"socialLinks": ["{\"socialMediaOption\":\"facebook\",\"socialLink\":\"https://www.facebook.com/RochecustomerportalUSA/\"}", "{\"socialMediaOption\":\"twitter\",\"socialLink\":\"https://twitter.com/rochediausa?lang=en\"}", "{\"socialMediaOption\":\"linkedin\",\"socialLink\":\"https://in.linkedin.com/company/roche\"}", "{\"socialMediaOption\":\"youtube\",\"socialLink\":\"https://www.youtube.com/user/RochecustomerportalUSA\"}", "{\"socialMediaOption\":\"wechat\",\"socialLink\":\"https://www.wechat.com/en/\"}", "{\"socialMediaOption\":\"kakoastory\",\"socialLink\":\"http://www.kakao.com/story\"}"],
+					"searchPagePath": "/content/customerportal/global-master/en/home/search-result-page",
+					"jcr:lastModifiedBy": "gagan.sharma@businesspartner.roche.com",
+					"countrySelectorPagePath": "/content/customerportal/global-master/en/country-selector",
+					"searchLimit": "5",
+					"personaSelectorPagePath": "/content/customerportal/global-master/en/personaselector",
+					"dateFormatPattern": "dd.MM.yyyy",
+					"jcr:lastModified": "Fri Sep 15 2017 10:14:58 GMT-0400",
+					"sling:resourceType": "roche/customerportal/components/adminconfig/languageconfig",
+					"searchUrl": "https://sp10015dbf.guided.ss-omtrdc.net"
+				}
+			},
+			"home": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["mix:lockable", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "home",
+					"jcr:versionHistory": "7a0e9aad-648c-4728-99d9-b9ec85075372",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/landingpage",
+					"jcr:lastModifiedBy": "admin",
+					"jcr:predecessors": ["753f99ad-c956-403d-961d-031d103ba65f"],
+					"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+					"cq:lastModified": "Fri Sep 15 2017 10:56:10 GMT-0400",
+					"cq:cloudserviceconfigs": ["[]"],
+					"jcr:baseVersion": "753f99ad-c956-403d-961d-031d103ba65f",
+					"jcr:isCheckedOut": true,
+					"cq:target-ambits": ["/content/campaigns/brand10/master"],
+					"pageType": "News",
+					"jcr:lastModified": "Fri Sep 15 2017 06:42:37 GMT-0400",
+					"jcr:uuid": "0fe81fa0-4b48-4ebf-ae0c-806b59fc025b",
+					"sling:resourceType": "roche/customerportal/components/page/landingpage",
+					"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+					"cq:lastModifiedBy": "reference-adjustment-service"
+				},
+				"product-category-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"landingpageview": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"LandingPageView2": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"LandingPageView3": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"LandingPageView4": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"LandingPageView5": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"LandingPageView6": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"Product_Category_View1": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"Product_Category_View2": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"Product_Category_View3": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"new_landing": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"legal-statement": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"search-result-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"NewsListing": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"career": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"Events": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				}
+			},
+			"personaselector": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "personaselector",
+					"jcr:versionHistory": "333dc246-e779-42a5-9ebf-0949e5e8233d",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"jcr:predecessors": ["b96c6097-82d8-4c09-a880-686d6c166742"],
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+					"cq:lastModified": "Fri Sep 15 2017 10:55:44 GMT-0400",
+					"jcr:baseVersion": "b96c6097-82d8-4c09-a880-686d6c166742",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "b72d8f7f-f928-42db-a688-19087b54d239",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+				}
+			},
+			"country-selector": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Country Selector",
+					"jcr:versionHistory": "6f02c357-df04-4ee7-b761-4efb599096b3",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"jcr:predecessors": ["42d9a4d6-122d-4ca4-b3bb-4a6a2e228b5f"],
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+					"cq:lastModified": "Fri Sep 15 2017 10:55:44 GMT-0400",
+					"jcr:baseVersion": "42d9a4d6-122d-4ca4-b3bb-4a6a2e228b5f",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "45c37044-6785-4470-acf9-9364031cda2f",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+				}
+			},
+			"error": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Error",
+					"jcr:versionHistory": "a8734d8d-fe1a-4432-aa3e-ed1ae382c891",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"jcr:predecessors": ["fdec3ebb-dcab-4be3-90f2-098261b13d0f"],
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+					"cq:lastModified": "Fri Sep 15 2017 10:55:44 GMT-0400",
+					"jcr:baseVersion": "fdec3ebb-dcab-4be3-90f2-098261b13d0f",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "1e25aee7-2455-4dec-bef4-efe328135499",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:designPath": "/etc/designs/roche",
+					"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+				},
+				"404": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"500": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				}
+			}
+		}
+	},
+	"gb": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:mixinTypes": ["mix:versionable"],
+			"jcr:createdBy": "admin",
+			"jcr:title": "United Kingdom",
+			"cq:lastReplicationAction": "Activate",
+			"jcr:versionHistory": "07616252-8b18-4926-8d0d-7cf0e95a4af4",
+			"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+			"cq:lastReplicatedBy": "vaneet.ahuja@businesspartner.roche.com",
+			"jcr:predecessors": ["1e9f7549-d949-4365-9fa9-c5cfd0f3317d"],
+			"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+			"cq:lastReplicated": "Mon Sep 18 2017 00:13:11 GMT-0400",
+			"cq:lastModified": "Fri Sep 15 2017 11:02:28 GMT-0400",
+			"jcr:baseVersion": "1e9f7549-d949-4365-9fa9-c5cfd0f3317d",
+			"jcr:isCheckedOut": true,
+			"jcr:uuid": "8e8dbb1d-7e9d-4352-b27a-117d1083ebea",
+			"sling:resourceType": "roche/customerportal/components/page/blankPage",
+			"cq:designPath": "/etc/designs/roche",
+			"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+		},
+		"en-gb": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:mixinTypes": ["cq:LiveRelationship", "cq:LiveSync", "mix:versionable"],
+				"jcr:createdBy": "admin",
+				"jcr:title": "en-gb",
+				"cq:lastReplicationAction": "Activate",
+				"jcr:versionHistory": "05ddb3bc-bba1-4bb6-b5b2-5c04d74b48a1",
+				"cq:template": "/apps/roche/pharma/customerportal/templates/languagepage",
+				"cq:lastReplicatedBy": "mhussain4@sapient.com",
+				"jcr:lastModifiedBy": "sharmr42",
+				"cq:lastRolledout": "Mon Sep 25 2017 04:25:48 GMT-0400",
+				"jcr:predecessors": ["acb367a5-e0af-4399-8ec5-69821562cbcd"],
+				"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+				"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+				"cq:lastReplicated": "Mon Sep 25 2017 04:26:16 GMT-0400",
+				"cq:lastModified": "Mon Sep 25 2017 04:25:48 GMT-0400",
+				"cq:cloudserviceconfigs": ["[]"],
+				"jcr:baseVersion": "acb367a5-e0af-4399-8ec5-69821562cbcd",
+				"jcr:isCheckedOut": true,
+				"pageType": "News",
+				"jcr:lastModified": "Mon Aug 28 2017 09:28:55 GMT-0400",
+				"jcr:uuid": "6b87e1a7-9f5c-4a3c-b9a3-5d0ffed6a0a6",
+				"sling:resourceType": "roche/customerportal/components/page/languagepage",
+				"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+				"errorPages": "/content/customerportal/gb/en-gb/error",
+				"cq:lastRolledoutBy": "mhussain4@sapient.com",
+				"cq:lastModifiedBy": "mhussain4@sapient.com",
+				"headerfooterconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "cq:ReplicationStatus"],
+					"hamburgerMenuLeftLinks": ["{\"pageName\":\"Sign In\",\"pagePath\":\"/content/customerportal/gb/en-gb/home\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Innovations\",\"pagePath\":\"/content/customerportal/gb/en-gb/home/product-category-page\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Products\",\"pagePath\":\"https://www.facebook.com\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Documents\",\"pagePath\":\"/content/customerportal/gb/en-gb/home\",\"linkBehaviour\":\"_self\"}"],
+					"cq:lastReplicationAction": "Activate",
+					"logoAltText": "roche",
+					"fileReference": "/content/dam/customerportal/blueRoche.svg",
+					"hamburgerMenuRightLinks": ["{\"pageName\":\"Events\",\"pagePath\":\"/content/customerportal/gb/en-gb/home/Events\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Careers\",\"pagePath\":\"http://www.roche.com/careers.htm\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Contact Us\",\"pagePath\":\"https://yahoo.com\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"News\",\"pagePath\":\"/content/customerportal/gb/en-gb/home/NewsListing\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"COMPANY\",\"pagePath\":\"http://google.com\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Knowledge Center\",\"pagePath\":\"http://www.bbc.com\",\"linkBehaviour\":\"_self\"}"],
+					"cq:lastReplicatedBy": "admin",
+					"jcr:lastModifiedBy": "mhussain4@sapient.com",
+					"cq:lastRolledout": "Mon Sep 25 2017 04:25:48 GMT-0400",
+					"altText": "Roche Logo",
+					"cq:lastReplicated": "Fri Jul 28 2017 06:10:51 GMT-0400",
+					"disclaimerText": "This website contains information on products which is targeted to a wide range of audiences and could contain product details or information otherwise not accessible or valid in your country. Please be aware that we do not take any responsibility for accessing such information which may not comply with any legal process, regulation, registration or usage in the country of your origin.",
+					"tradeMark": "© 2017 F. Hoffman LA-Roche Ltd.",
+					"jcr:lastModified": "Mon Sep 25 2017 04:25:48 GMT-0400",
+					"footerLinks": ["{\"pageName\":\"Contact us\",\"pagePath\":\"/content/customerportal/gb/en-gb/home\",\"isVisibleOnMobile\":\"true\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Roche.com\",\"pagePath\":\"/content/customerportal/gb/en-gb/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_self\"}", "{\"pageName\":\"Privacy Policy\",\"pagePath\":\"/content/customerportal/gb/en-gb/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_blank\"}", "{\"pageName\":\"Legal Statement\",\"pagePath\":\"/content/roche/customerportal/global/en/home\",\"isVisibleOnMobile\":\"\",\"linkBehaviour\":\"_self\"}"],
+					"headerLinks": ["{\"pageName\":\"Innovations\",\"pagePath\":\"/content/customerportal/gb/en-gb/home/product-category-page\"}", "{\"pageName\":\"Products\",\"pagePath\":\"/content/customerportal/gb/en-gb/home/product-category-page/product-listing-new/roche54353\"}"],
+					"sling:resourceType": "roche/customerportal/components/adminconfig/headerfooterconfig",
+					"cq:lastRolledoutBy": "mhussain4@sapient.com",
+					"homePagePath": "/content/customerportal/gb/en-gb/home"
+				},
+				"languageconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": ["cq:LiveRelationship"],
+					"socialLinks": ["{\"socialMediaOption\":\"facebook\",\"socialLink\":\"https://www.facebook.com/RochecustomerportalUSA/\"}", "{\"socialMediaOption\":\"twitter\",\"socialLink\":\"https://twitter.com/rochediausa?lang=en\"}", "{\"socialMediaOption\":\"linkedin\",\"socialLink\":\"https://in.linkedin.com/company/roche\"}", "{\"socialMediaOption\":\"youtube\",\"socialLink\":\"https://www.youtube.com/user/RochecustomerportalUSA\"}", "{\"socialMediaOption\":\"wechat\",\"socialLink\":\"https://www.wechat.com/en/\"}", "{\"socialMediaOption\":\"kakoastory\",\"socialLink\":\"http://www.kakao.com/story\"}"],
+					"searchPagePath": "/content/customerportal/gb/en-gb/home/search-result-page",
+					"jcr:lastModifiedBy": "gagan.sharma@businesspartner.roche.com",
+					"countrySelectorPagePath": "/content/customerportal/gb/en-gb/country-selector",
+					"cq:lastRolledout": "Mon Sep 25 2017 04:25:48 GMT-0400",
+					"searchLimit": "5",
+					"personaSelectorPagePath": "/content/customerportal/gb/en-gb/personaselector",
+					"dateFormatPattern": "dd.MM.yyyy",
+					"jcr:lastModified": "Mon Sep 25 2017 04:25:48 GMT-0400",
+					"sling:resourceType": "roche/customerportal/components/adminconfig/languageconfig",
+					"cq:lastRolledoutBy": "mhussain4@sapient.com",
+					"searchUrl": "https://sp10015dbf.guided.ss-omtrdc.net"
+				},
+				"cq:LiveSyncConfig": {
+					"jcr:primaryType": "cq:LiveCopy",
+					"cq:rolloutConfigs": ["/etc/msm/rolloutconfigs/default"],
+					"cq:isDeep": true,
+					"cq:master": "/content/customerportal/global-master/en"
+				}
+			},
+			"home": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:lockable", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "home",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "1e3cf40f-e912-4167-a281-659d2d5d46e8",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/landingpage",
+					"cq:lastReplicatedBy": "mhussain4@sapient.com",
+					"jcr:lastModifiedBy": "admin",
+					"cq:lastRolledout": "Wed Sep 20 2017 02:48:37 GMT-0400",
+					"jcr:predecessors": ["e5ab5d10-42e6-422f-976b-e2064ec180f5"],
+					"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530",
+					"cq:lastReplicated": "Wed Sep 20 2017 02:52:47 GMT-0400",
+					"cq:lastModified": "Wed Sep 20 2017 02:48:37 GMT-0400",
+					"cq:cloudserviceconfigs": ["[]"],
+					"jcr:baseVersion": "e5ab5d10-42e6-422f-976b-e2064ec180f5",
+					"jcr:isCheckedOut": true,
+					"cq:target-ambits": ["/content/campaigns/brand10/master"],
+					"pageType": "News",
+					"jcr:lastModified": "Fri Sep 15 2017 06:42:37 GMT-0400",
+					"jcr:uuid": "a706a6c2-e362-4cf5-9166-77777e80f4a3",
+					"sling:resourceType": "roche/customerportal/components/page/landingpage",
+					"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+					"cq:lastRolledoutBy": "mhussain4@sapient.com",
+					"cq:lastModifiedBy": "mhussain4@sapient.com"
+				},
+				"product-category-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"landingpageview": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:42 GMT+0530"
+				},
+				"LandingPageView2": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530"
+				},
+				"LandingPageView3": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530"
+				},
+				"LandingPageView4": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530"
+				},
+				"LandingPageView5": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530"
+				},
+				"LandingPageView6": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530"
+				},
+				"Product_Category_View1": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530"
+				},
+				"Product_Category_View2": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530"
+				},
+				"Product_Category_View3": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530"
+				},
+				"new_landing": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530"
+				},
+				"legal-statement": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530"
+				},
+				"search-result-page": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530"
+				},
+				"NewsListing": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530"
+				},
+				"Events": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530"
+				}
+			},
+			"personaselector": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "personaselector",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "68b89b4c-4925-4042-b0c0-c29aeeebc4ca",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastRolledout": "Fri Sep 15 2017 11:03:01 GMT-0400",
+					"jcr:predecessors": ["321f5494-8a11-4b5c-842b-5d47eac1b072"],
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530",
+					"cq:lastReplicated": "Mon Sep 18 2017 00:13:53 GMT-0400",
+					"cq:lastModified": "Fri Sep 15 2017 11:03:01 GMT-0400",
+					"jcr:baseVersion": "321f5494-8a11-4b5c-842b-5d47eac1b072",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "7be2d86c-be74-4d13-aa0b-723b40b4c95c",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:lastRolledoutBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+				}
+			},
+			"country-selector": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Country Selector",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "9204b724-2124-44a7-9cdb-42570286204b",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastRolledout": "Fri Sep 15 2017 11:03:01 GMT-0400",
+					"jcr:predecessors": ["1cd31257-f256-4c46-8577-127a87e8c43b"],
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530",
+					"cq:lastReplicated": "Mon Sep 18 2017 00:13:16 GMT-0400",
+					"cq:lastModified": "Fri Sep 15 2017 11:03:01 GMT-0400",
+					"jcr:baseVersion": "1cd31257-f256-4c46-8577-127a87e8c43b",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "634a2f20-cf54-46d9-8da7-11b62da25645",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:lastRolledoutBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+				}
+			},
+			"error": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Error",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "c213c02a-fea4-4788-ab74-e1ed769f8216",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+					"cq:lastReplicatedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastRolledout": "Fri Sep 15 2017 11:03:01 GMT-0400",
+					"jcr:predecessors": ["0dafe764-7b58-4473-981d-6641de491dc3"],
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530",
+					"cq:lastReplicated": "Mon Sep 18 2017 00:13:17 GMT-0400",
+					"cq:lastModified": "Fri Sep 15 2017 11:03:01 GMT-0400",
+					"jcr:baseVersion": "0dafe764-7b58-4473-981d-6641de491dc3",
+					"jcr:isCheckedOut": true,
+					"jcr:uuid": "1ecdb29f-5da0-44f9-b01d-b1a4bd410eea",
+					"sling:resourceType": "/apps/roche/pharma/customerportal/components/page/blankPage",
+					"cq:designPath": "/etc/designs/roche",
+					"cq:lastRolledoutBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+				},
+				"404": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530"
+				},
+				"500": {
+					"jcr:primaryType": "cq:Page",
+					"jcr:createdBy": "admin",
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530"
+				}
+			},
+			"product-landing-page": {
+				"jcr:primaryType": "cq:Page",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530",
+				"jcr:content": {
+					"jcr:primaryType": "cq:PageContent",
+					"jcr:mixinTypes": ["cq:LiveRelationship", "mix:versionable"],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Product Landing Page",
+					"cq:lastReplicationAction": "Activate",
+					"jcr:versionHistory": "1f4d5e6d-74ee-4f26-b691-f0436d1fc7e6",
+					"cq:template": "/apps/roche/pharma/customerportal/templates/productLandingTemplate",
+					"cq:lastReplicatedBy": "vaneet.ahuja@businesspartner.roche.com",
+					"jcr:lastModifiedBy": "dipti.chauhan@businesspartner.roche.com",
+					"isPageTypeDisabled": "true",
+					"cq:lastRolledout": "Fri Sep 15 2017 11:03:01 GMT-0400",
+					"jcr:predecessors": ["23a4b5f0-dd03-4777-908d-f115abdb62c5"],
+					"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+					"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530",
+					"cq:lastReplicated": "Mon Sep 18 2017 00:13:53 GMT-0400",
+					"cq:lastModified": "Fri Sep 15 2017 11:03:01 GMT-0400",
+					"jcr:baseVersion": "23a4b5f0-dd03-4777-908d-f115abdb62c5",
+					"jcr:isCheckedOut": true,
+					"pageType": "News",
+					"jcr:lastModified": "Thu Sep 14 2017 00:48:06 GMT-0400",
+					"jcr:uuid": "d58ff4e1-a214-42a8-b0c1-3e80eee332e5",
+					"sling:resourceType": "roche/customerportal/components/page/productLandingPage",
+					"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+					"cq:designPath": "/etc/designs/roche",
+					"cq:lastRolledoutBy": "vaneet.ahuja@businesspartner.roche.com",
+					"cq:lastModifiedBy": "vaneet.ahuja@businesspartner.roche.com"
+				}
+			}
+		}
+	},
+	"author-product-logos": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:createdBy": "admin",
+			"jcr:title": "author-product-logos",
+			"cq:template": "/apps/roche/pharma/customerportal/templates/blankPageTemplate",
+			"jcr:created": "Tue Sep 26 2017 17:36:43 GMT+0530",
+			"cq:lastModified": "Thu Sep 21 2017 07:00:58 GMT-0400",
+			"pageType": "News",
+			"sling:resourceType": "roche/customerportal/components/page/blankPage",
+			"cq:designPath": "/etc/designs/roche",
+			"cq:lastModifiedBy": "gagan.sharma@businesspartner.roche.com",
+			"par": {
+				"jcr:primaryType": "nt:unstructured",
+				"sling:resourceType": "foundation/components/parsys",
+				"productlogo": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:createdBy": "gagan.sharma@businesspartner.roche.com",
+					"logoStatus": "true",
+					"jcr:lastModifiedBy": "gagan.sharma@businesspartner.roche.com",
+					"jcr:created": "Mon Sep 18 2017 02:55:19 GMT-0400",
+					"logoReference": "/content/dam/customerportal/L_6F65.tmp.PNG",
+					"logoDescription": "Roche logo for cobas",
+					"jcr:lastModified": "Thu Sep 21 2017 02:17:28 GMT-0400",
+					"sling:resourceType": "roche/customerportal/components/productlogo",
+					"logoName": "R_Logo1"
+				},
+				"productlogo_210045406": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:createdBy": "gagan.sharma@businesspartner.roche.com",
+					"logoStatus": "true",
+					"jcr:lastModifiedBy": "gagan.sharma@businesspartner.roche.com",
+					"jcr:created": "Mon Sep 18 2017 03:45:57 GMT-0400",
+					"logoReference": "/content/dam/customerportal/accutrend-logo2.png",
+					"logoDescription": "Roche Accutrend Product Logo",
+					"jcr:lastModified": "Thu Sep 21 2017 06:08:53 GMT-0400",
+					"sling:resourceType": "roche/customerportal/components/productlogo",
+					"logoName": "R_Logo2"
+				},
+				"productlogo_2136356560": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:createdBy": "gagan.sharma@businesspartner.roche.com",
+					"logoStatus": "true",
+					"jcr:lastModifiedBy": "gagan.sharma@businesspartner.roche.com",
+					"jcr:created": "Thu Sep 21 2017 06:57:50 GMT-0400",
+					"logoReference": "/content/dam/customerportal/L_6F65.tmp.PNG",
+					"logoDescription": "Roche logo for cobas 2",
+					"jcr:lastModified": "Thu Sep 21 2017 07:00:58 GMT-0400",
+					"sling:resourceType": "roche/customerportal/components/productlogo",
+					"logoName": "R_Logo3"
+				}
+			}
+		}
+	}
+}

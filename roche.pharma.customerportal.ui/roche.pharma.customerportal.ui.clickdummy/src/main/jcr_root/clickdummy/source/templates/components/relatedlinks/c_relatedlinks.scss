@@ -1,0 +1,40 @@
+.c-related-links {
+  font-family: $font-imagopro-book;
+  &__title {
+  font-size: convert-in-rem(32);
+  line-height: convert-in-rem(38);
+  }
+  &__link-list {
+    ul  {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        margin: convert-in-rem(12) 0;
+        .related-links {
+          font-size: convert-in-rem(18);
+          line-height: convert-in-rem(24);
+          cursor: pointer;
+          max-width: 100%;
+          overflow-x: hidden;
+          text-overflow: ellipsis;
+          .c-truncated-text {
+            overflow-x: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: calc(100% - 30px);
+            float: left;
+          }
+          &:hover,
+          &:active {
+            color:$heading-color;
+          }          
+        }
+        .related-links__secondary-cta {
+          margin-left: 10px;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+}

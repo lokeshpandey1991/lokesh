@@ -1,0 +1,34 @@
+<div class="c-filter x-left-margins">
+    <div class="hidden-xs col-sm-12 x-no-padding">
+        <h3 class="c-filter__title">{{i18keyToValue 'rdoe_search.searchFilter'}}</h3>
+        <div class="js-filter-facet-list">
+        {{#each this}}
+            <div class="panel-heading c-filter__heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-target="#collapse{{@index}}" class="c-filter__heading-link x-sub-hover">
+                        <span class="c-filter__collapse-cta"></span>{{i18keyToValue labelDisplayKey}}
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse{{@index}}" class="panel-collapse collapse in" >
+                <ul class="list-group c-filter__list">
+                    {{#each values}}
+
+                    {{{equalToFive @index}}}
+
+                    <li class="list-group-item {{greaterThanFive @index}}">
+                        <div class="radio">
+                            <label class="c-filter__label js-filter-radio">
+                                <input type="radio" name="{{../label}}" value="{{value}}" data-text="{{i18keyToValue displayKey}}">
+                                <span class="customRadio"></span>
+                                    {{i18keyToValue displayKey}}
+                            </label>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        {{/each}}
+        </div>
+    </div>
+</div>

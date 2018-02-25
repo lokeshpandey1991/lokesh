@@ -1,0 +1,40 @@
+<sly data-sly-template.listingsort_template="${@ data, flag}">
+  <div class="c-sort-Bar" data-module="searhSortCmp">
+    <div class="c-sort-dropdown j-sort-Bar" tabindex="0">
+      <span class="c-sort-down-arrow j-sort-down-arrow"></span>
+      <input type="text" class="c-sort-dropdown--input j-sort-input hidden-xs" tabindex="-1" data-selected-option="" placeholder="${'rdoe_searchsort.sortBy' @ i18n}" aria-label="${'rdoe_searchsort.sortBy' @ i18n}" readonly unselectable="on"/>
+      <span class="c-sort-dropdown--input visible-xs">${'rdoe_searchsort.sort' @ i18n}</span>
+      <div class="c-sort-dropdown--container j-dropdown-container hide hidden-xs">
+        <ul data-sly-test="${data.sortList}" data-sly-list="${data.sortList}">
+          <li class="js-sort-item ${item.searchValue == data.defaultSort ? 'selected active' : ''}" data-value="${item.searchValue}">${item.searchLabel @ i18n}
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="sort-list-xs x-liipbox hidden c-sort-dropdown-mobile js-sort-dropdown-mobile">
+        <div class="c-sort-overlay">
+          <div class="x-liipbox__top-section js-liipbox-top-section">
+            <div class="col-1 x-liipbox__left-s">
+              <button class="cross-icon navbar-toggle translated js-cross-icon">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="col-2 x-liipbox__right-s">
+              <span class="c-sort-title">${'rdoe_searchsort.sortBy' @ i18n}</span>
+            </div>
+          </div>
+          <div class="content-section c-content-section">
+            <ul data-sly-test="${data.sortList}" data-sly-list="${data.sortList}">
+              <li class="js-content-link ${item.searchValue == data.defaultSort ? 'selected' : ''}" data-value="${item.searchValue}">
+                <input name="sort" type="radio" aria-label="${item.searchLabel @ i18n}">
+                <span class="customRadio"></span>
+                <span class="text">${item.searchLabel @ i18n}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+</sly>

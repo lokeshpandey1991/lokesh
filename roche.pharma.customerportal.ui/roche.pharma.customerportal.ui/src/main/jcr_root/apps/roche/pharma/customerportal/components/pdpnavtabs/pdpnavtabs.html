@@ -1,0 +1,17 @@
+<!--/*
+
+	PDP Navigation Tabs Component
+	
+	This is Roche PDP Navigation Tabs Component
+	
+*/-->
+
+
+<sly data-sly-test.emptyContent="${wcmmode.edit}"> 
+	<div data-emptytext="Configure Navigation tabs" class="cq-placeholder">
+		Click here for PDP Navigation Tabs
+	</div>
+</sly>
+<sly data-sly-use.pdpNavModel="com.roche.pharma.customerportal.core.models.PDPNavTabsModel"
+       data-sly-use.lib="/apps/roche/pharma/customerportal/components/pdpnavtabs/pdpnavtabs-template.html"
+       data-sly-call="${lib.pdpnavtabs_template @ data=pdpNavModel}" />

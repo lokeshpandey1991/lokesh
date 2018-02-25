@@ -1,0 +1,22 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:mixinTypes": [
+		"cq:Taggable",
+		"cq:ReplicationStatus"
+	],
+	"jcr:title": "Instrument12456233388900",
+	"cq:lastReplicationAction": "Activate",
+	"identifier": "INS_1231223232349",
+	"cq:lastReplicatedBy": "roche",
+	"jcr:title.fr": "sdadasd36880089990",
+	"productModified": "Mon Oct 09 2017 03:19:00 GMT+0530",
+	"cq:lastReplicated": "Thu Oct 12 2017 13:54:17 GMT+0530",
+	"jcr:description": "Instrument Product1235309",
+	"cq:tags": [
+		"customerportal:channels/instruments",
+		"customerportal:country/us"
+	],
+	"jcr:lastModified": "Wed Oct 04 2017 12:15:00 GMT+0530",
+	"sling:resourceType": "commerce/components/product",
+	"cq:commerceType": "product"
+}

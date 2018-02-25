@@ -1,0 +1,9 @@
+{
+  "categoryFilter": [{
+    "filterTitle": "Products",
+    "filterTag": "product"
+  }, {
+    "filterTitle": "Health Topic",
+    "filterTag": "health"
+  }]
+}

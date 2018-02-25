@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Page Detail"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <section
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Page Description"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <viewtype
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        class="cq-dialog-dropdown-showhide"
+                                        cq-dialog-dropdown-showhide-target=".option-listtype-showhide-target-view"
+                                        fieldDescription="Please Select View Type"
+                                        fieldLabel="View Type"
+                                        name="./viewType">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <eventpage
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Page Detail Component"
+                                                value="event"/>
+                                            <newtab
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Pre event Detail component"
+                                                value="preevent"/>
+                                        </items>
+                                    </viewtype>
+                                    <preevent
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container"
+                                        class="option-listtype-showhide-target-view"
+                                        showhidetargetvalue="preevent">
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                            <image
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                fieldDescription="Please select Image"
+                                                fieldLabel="Image Path"
+                                                name="./fileReference"
+                                                rootPath="/content/dam/customerportal"/>
+                                            <alttext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="Enter Image alt Text"
+                                                fieldLabel="Alt Text"
+                                                name="./altText"/>
+                                        </items>
+                                    </preevent>
+                                    <eventname
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldDescription="Enter event name"
+                                        fieldLabel="Event name"
+                                        name="./titleThree"/>
+                                    <headlineone
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldDescription="Enter the Headline"
+                                        fieldLabel="Headline"
+                                        name="./titleOne"/>
+                                    <descriptionone
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                        fieldDescription="Enter Page description"
+                                        fieldLabel="First Column Text"
+                                        name="./pageDescriptionOne">
+                                        <rtePlugins jcr:primaryType="nt:unstructured">
+                                            <links jcr:primaryType="nt:unstructured">
+                                                <linkDialogConfig
+                                                    jcr:primaryType="nt:unstructured"
+                                                    height="{Long}316">
+                                                    <linkAttributes jcr:primaryType="cq:WidgetCollection"/>
+                                                </linkDialogConfig>
+                                            </links>
+                                            <format
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                            <lists
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                            <justify
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                            <keys
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                            <paraformat
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                            <misctools
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                            <subsuperscript
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                            <findreplace
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                            <edit
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                            <undo
+                                                jcr:primaryType="nt:unstructured"
+                                                features="*"/>
+                                        </rtePlugins>
+                                        <uiSettings jcr:primaryType="nt:unstructured">
+                                            <cui jcr:primaryType="nt:unstructured">
+                                                <inline
+                                                    jcr:primaryType="nt:unstructured"
+                                                    toolbar="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript,edit#cut,edit#copy,edit#paste-default,edit#paste-plaintext,edit#paste-wordhtml,links#modifylink,links#unlink,findreplace#find,findreplace#replace,undo#undo,undo#redo,justify#justifyleft,justify#justifycenter,justify#justifyright,lists#unordered,lists#ordered,lists#outdent,lists#indent,table#createoredit,table#removetable,misctools#sourceedit,misctools#specialchars,#paraformat,#styles]">
+                                                    <popovers jcr:primaryType="nt:unstructured">
+                                                        <styles
+                                                            jcr:primaryType="nt:unstructured"
+                                                            items="styles:getStyles:styles-pulldown"
+                                                            ref="styles"/>
+                                                        <paraformat
+                                                            jcr:primaryType="nt:unstructured"
+                                                            items="paraformat:getFormats:paraformat-pulldown"
+                                                            ref="paraformat"/>
+                                                    </popovers>
+                                                </inline>
+                                            </cui>
+                                        </uiSettings>
+                                    </descriptionone>
+                                    <viewFlag
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                        name="./twoColumnView"
+                                        text="Show Two Column"
+                                        value="{Boolean}true"/>
+                                    <eventdescriptiontwo
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container"
+                                        class="option-listtype-showhide-target-view"
+                                        showhidetargetvalue="event">
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                            <headlinetwo
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="Enter the subTitle"
+                                                fieldLabel="Sub Headline"
+                                                name="./titleTwo"/>
+                                            <descriptiontwo
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldDescription="Enter Page description"
+                                                fieldLabel="Second Column Description"
+                                                name="./pageDescriptionTwo">
+                                                <rtePlugins jcr:primaryType="nt:unstructured">
+                                                    <links jcr:primaryType="nt:unstructured">
+                                                        <linkDialogConfig
+                                                            jcr:primaryType="nt:unstructured"
+                                                            height="{Long}316">
+                                                            <linkAttributes jcr:primaryType="cq:WidgetCollection"/>
+                                                        </linkDialogConfig>
+                                                    </links>
+                                                    <format
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                    <lists
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                    <justify
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                    <keys
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                    <paraformat
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                    <misctools
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                    <subsuperscript
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                    <findreplace
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                    <edit
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                    <undo
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                </rtePlugins>
+                                                <uiSettings jcr:primaryType="nt:unstructured">
+                                                    <cui jcr:primaryType="nt:unstructured">
+                                                        <inline
+                                                            jcr:primaryType="nt:unstructured"
+                                                            toolbar="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript,edit#cut,edit#copy,edit#paste-default,edit#paste-plaintext,edit#paste-wordhtml,links#modifylink,links#unlink,findreplace#find,findreplace#replace,undo#undo,undo#redo,justify#justifyleft,justify#justifycenter,justify#justifyright,lists#unordered,lists#ordered,lists#outdent,lists#indent,table#createoredit,table#removetable,misctools#sourceedit,misctools#specialchars,#paraformat,#styles]">
+                                                            <popovers jcr:primaryType="nt:unstructured">
+                                                                <styles
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="styles:getStyles:styles-pulldown"
+                                                                    ref="styles"/>
+                                                                <paraformat
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="paraformat:getFormats:paraformat-pulldown"
+                                                                    ref="paraformat"/>
+                                                            </popovers>
+                                                        </inline>
+                                                    </cui>
+                                                </uiSettings>
+                                            </descriptiontwo>
+                                        </items>
+                                    </eventdescriptiontwo>
+                                    <label
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldDescription="Enter CTA Label"
+                                        fieldLabel="CTA label"
+                                        name="./label"/>
+                                    <url
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldDescription="Please select page url"
+                                        fieldLabel="CTA URL"
+                                        name="./url"
+                                        rootPath="/content/customerportal"/>
+                                    <target
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        fieldDescription="Please select target"
+                                        fieldLabel="Open Page In"
+                                        name="./target">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <sametab
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Same Tab"
+                                                value="_self"/>
+                                            <newtab
+                                                jcr:primaryType="nt:unstructured"
+                                                text="New Tab"
+                                                value="_blank"/>
+                                        </items>
+                                    </target>
+                                </items>
+                            </column>
+                        </items>
+                    </column>
+                </items>
+            </section>
+        </items>
+    </content>
+</jcr:root>

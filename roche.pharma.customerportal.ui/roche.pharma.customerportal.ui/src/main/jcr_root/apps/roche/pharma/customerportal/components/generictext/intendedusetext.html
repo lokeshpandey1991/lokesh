@@ -1,0 +1,11 @@
+<sly data-sly-test.emptyContent="${wcmmode.edit}">
+<div data-emptytext="configure Intended use text"
+	class="cq-placeholder"></div>
+</sly>
+
+<div class="clearfix">
+		<sly data-sly-test="${properties.bodyText}">
+		<div data-sly-test="${properties.bodyText}" class="js-pdp-intended-use">${properties.bodyText
+			@ context='html'}</div>
+		</sly>
+</div>

@@ -1,0 +1,9 @@
+
+<sly data-sly-test.emptyContent="${wcmmode.edit}">
+<div data-emptytext="configure ${component.title}"
+	class="cq-placeholder"></div>
+</sly>
+
+<sly data-sly-use.faq="com.roche.pharma.customerportal.core.models.FaqModel"
+     data-sly-use.lib="faq-template.html"
+     data-sly-call="${lib.faq_template @ data=faq}" />

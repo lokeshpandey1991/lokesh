@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <navsection
+                jcr:primaryType="nt:unstructured"
+                jcr:title="PDP Navigation tabs"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <listTabs
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        fieldDescription="Values under this tab will be visible only, if page contains no other tabs"
+                                        fieldLabel="Select default tab"
+                                        name="./defaultTab">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <tab1
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Tab 1"
+                                                value="tab1"/>
+                                            <tab2
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Tab 2"
+                                                value="tab2"/>
+                                            <tab3
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Tab 3"
+                                                value="tab3"/>
+                                            <querybuilder
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Tab 4"
+                                                value="tab4"/>
+                                        </items>
+                                    </listTabs>
+                                    <tab1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldDescription="Default title is Product Information"
+                                        fieldLabel="Title for First Tab"
+                                        name="./titleTab1"/>
+                                    <tab1check
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                        name="./hideTab1"
+                                        text="Hide First Tab"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                    <tab2
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldDescription="Default title is System Specifications"
+                                        fieldLabel="Title for Second Tab"
+                                        name="./titleTab2"/>
+                                    <tab2check
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                        name="./hideTab2"
+                                        text="Hide second Tab"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                    <tab3
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldDescription="Default title is Documentation"
+                                        fieldLabel="Title for Third Tab"
+                                        name="./titleTab3"/>
+                                    <tab3check
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                        name="./hideTab3"
+                                        text="Hide Third Tab"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                    <tab4
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldDescription="Default title is Related Products"
+                                        fieldLabel="Title for Fourth Tab"
+                                        name="./titleTab4"/>
+                                    <tab4check
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                        name="./hideTab4"
+                                        text="Hide Fourth Tab"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                </items>
+                            </column>
+                        </items>
+                    </column>
+                </items>
+            </navsection>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,122 @@
+.c-search-results-bar {
+   min-width: 448px;
+  .header-search-overlay {
+    margin-top: 30px;
+    .x-liipbox__top-section {
+      border-bottom: none;
+    }
+  }
+  
+  .roche-header-search-box {
+    width: 100%;
+    float: left;
+    .roche-header-search-input {
+      font-size: 32px;
+      line-height: 38px;
+      padding-left: convert-in-rem(8);
+      height: 56px;
+    }
+    .header-search-result-container {
+      .header-search-result {
+        padding: 0 convert-in-rem(10);
+        background: $clr-blue;
+        z-index: $zindex-xss;
+      }
+    }
+  }
+  .search-results-tab-component {
+    width: 50%;
+    float: left;
+    .search-tabs-container {
+      width: 100%;
+      .search-tabs-list {
+        position:relative;
+        margin-bottom:0;
+        font-size: 0px;
+        .search-tab-list-item {
+          width: 33%;
+          text-align: center;
+          font-size: 14px;
+          padding: 18px 20px;
+          border: 1px solid $clr-white;
+          border-left: 0px;
+          display: inline-block;
+          text-transform: uppercase;
+          cursor:pointer;
+          &.selected {
+            background-color: $clr-white;
+            a {
+              opacity: 1;
+              color: $clr-black;
+            }
+          }
+          &:first-child {
+            border-left: 1px solid $clr-white;
+          }
+          a {
+            letter-spacing: 1px;
+            color: $clr-white;
+          }
+        }
+      }
+    }
+  }
+  .x-liipbox {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+  }
+}
+@media ($tablet-min) and ($tablet-max) {
+.c-search-results-bar {
+  .roche-header-search-box {
+    width: 100%;
+    float: left;
+  }
+  .search-results-tab-component {
+    width: 60%;
+    float: left;
+    .search-tabs-container {
+      .search-tabs-list {
+        padding-left: 20px;
+        .search-tab-list-item  {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+}
+
+@media ($mobile) {
+  .c-search-results-bar {
+    .header-search-overlay {
+      margin: 10px 0;
+    }
+    .search-results-tab-component {
+      width: 100%;
+      .search-tabs-container {
+        .search-tabs-list {
+        padding: 0;
+        .search-tab-list-item {
+          border: 0;
+          &.selected {
+            border-bottom: 2px solid $clr-white;
+            background: none;
+            a {
+              opacity: 1;
+            }
+          }
+          &:first-child {
+            border-left: 0;
+          }
+        }
+      }
+      }
+      
+    }
+    .x-liipbox {
+      background: $clr-white;
+    }
+  }
+}

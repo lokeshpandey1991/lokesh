@@ -1,0 +1,27 @@
+
+<div
+	data-sly-use.global="com.roche.pharma.customerportal.core.models.LanguageConfigurationsModel">
+	<h1>Global configurations</h1>
+	searchPath : ${global.searchPagePath} <br> relatedProductsSearchPagePath
+	: ${global.relatedProductsSearchPagePath} <br> countrySelectorPagePath
+	: ${global.countrySelectorPagePath} <br> personaSelectorPagePath :
+	${global.personaSelectorPagePath} isPersonaDisabled :
+	${global.isPersonaDisabled}<br> socialList
+	<table>
+		<tr>
+			<th>Social media</th>
+			<th>Social media link</th>
+		</tr>
+		<div data-sly-unwrap data-sly-test="${global.socialList}"
+			data-sly-list="${global.socialList}">
+		<tr>
+			<td>${item.socialMediaOption}</td>
+			<td>${item.socialLink}</td>
+		</tr>
+		</div>
+	</table>
+	<br> cookieDisclaimerLink :
+	${global.cookieDisclaimerLink} isCookieNotificationDisabled :
+	${global.isCookieNotificationDisabled}
+	  <div>Captcha Disable : ${global.isCaptchaDisabled}</div>
+</div>

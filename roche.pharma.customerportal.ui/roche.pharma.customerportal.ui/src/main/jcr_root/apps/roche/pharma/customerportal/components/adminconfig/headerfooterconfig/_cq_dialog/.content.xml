@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+	xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="nt:unstructured"
+	jcr:title="Global header footer configuration" sling:resourceType="cq/gui/components/authoring/dialog">
+	<content jcr:primaryType="nt:unstructured"
+		sling:resourceType="granite/ui/components/foundation/container">
+		<items jcr:primaryType="nt:unstructured">
+			<tabs jcr:primaryType="nt:unstructured"
+				sling:resourceType="granite/ui/components/foundation/container">
+				<layout jcr:primaryType="nt:unstructured"
+					sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+					type="nav" />
+				<items jcr:primaryType="nt:unstructured">
+					<globalHeaderTab jcr:primaryType="nt:unstructured"
+						jcr:title="Header" sling:resourceType="granite/ui/components/foundation/section">
+						<layout jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" />
+						<items jcr:primaryType="nt:unstructured">
+							<column jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/foundation/container">
+								<items jcr:primaryType="nt:unstructured">
+									<globalHeader jcr:primaryType="nt:unstructured"
+										jcr:title="Header" sling:resourceType="granite/ui/components/foundation/form/fieldset">
+										<items jcr:primaryType="nt:unstructured">
+											<logo jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/foundation/form/fileupload"
+												autoStart="{Boolean}false" allowUpload="{Boolean}false" class="cq-droptarget" fieldLabel="Home page logo"
+												fileNameParameter="./headerLogo" fileReferenceParameter="./fileReference"
+												mimeTypes="[image,video/.*]" multiple="{Boolean}false" name="./headerLogo"
+												title="Upload Image" uploadUrl="${suffix.path}"
+												useHTML5="{Boolean}true" />
+											<altText jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/foundation/form/textfield"
+												fieldLabel="Logo alt text"  name="./altText" />
+											<path jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+												fieldLabel="Home page link" required="{Boolean}true" name="./homePagePath" rootPath="/content/customerportal" />
+											<pages jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/foundation/form/multifield"
+												class="full-width" fieldDescription="Click '+' to add a new link"
+												fieldLabel="Header links">
+												<field jcr:primaryType="nt:unstructured"
+													sling:resourceType="granite/ui/components/foundation/form/fieldset"
+													acs-commons-nested="JSON_STORE" name="./headerLinks">
+													<layout jcr:primaryType="nt:unstructured"
+														sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+														method="absolute" />
+													<items jcr:primaryType="nt:unstructured">
+														<column jcr:primaryType="nt:unstructured"
+															sling:resourceType="granite/ui/components/foundation/container">
+															<items jcr:primaryType="nt:unstructured">
+																<page jcr:primaryType="nt:unstructured"
+																	sling:resourceType="granite/ui/components/foundation/form/textfield"
+																	fieldDescription="Enter link name" fieldLabel="Link name"
+																	name="./pageName" />
+																<path jcr:primaryType="nt:unstructured"
+																	sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+																	fieldDescription="Select path" fieldLabel="Link path"
+																	name="./pagePath" rootPath="/content/customerportal" />
+															</items>
+														</column>
+													</items>
+												</field>
+											</pages>
+										</items>
+									</globalHeader>
+									<menu cq:showOnCreate="{Boolean}true" jcr:primaryType="nt:unstructured"
+										jcr:title="Hamburger Menu" sling:resourceType="granite/ui/components/foundation/form/fieldset">
+										<items jcr:primaryType="nt:unstructured">
+											<leftMenu jcr:primaryType="nt:unstructured"
+												jcr:title="Hamburger Menu Left Items" sling:resourceType="granite/ui/components/foundation/form/fieldset">
+												<layout jcr:primaryType="nt:unstructured"
+													sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" />
+												<items jcr:primaryType="nt:unstructured">
+													<column jcr:primaryType="nt:unstructured"
+														sling:resourceType="granite/ui/components/foundation/container">
+														<items jcr:primaryType="nt:unstructured">
+															<pages jcr:primaryType="nt:unstructured"
+																sling:resourceType="granite/ui/components/foundation/form/multifield"
+																class="full-width" fieldDescription="Click '+' to add a new item"
+																fieldLabel="Hamburger menu item">
+																<field jcr:primaryType="nt:unstructured"
+																	sling:resourceType="granite/ui/components/foundation/form/fieldset"
+																	acs-commons-nested="JSON_STORE" name="./hamburgerMenuLeftLinks">
+																	<layout jcr:primaryType="nt:unstructured"
+																		sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+																		method="absolute" />
+																	<items jcr:primaryType="nt:unstructured">
+																		<column jcr:primaryType="nt:unstructured"
+																			sling:resourceType="granite/ui/components/foundation/container">
+																			<items jcr:primaryType="nt:unstructured">
+																				<page jcr:primaryType="nt:unstructured"
+																					sling:resourceType="granite/ui/components/foundation/form/textfield"
+																					fieldLabel="Item name" name="./pageName" />
+																				<path jcr:primaryType="nt:unstructured"
+																					sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+																					fieldLabel="Item path" name="./pagePath" rootPath="/content/customerportal" />
+																				<leftMenuLinkBehaviour jcr:primaryType="nt:unstructured"
+																								sling:resourceType="granite/ui/components/foundation/form/select"
+																								fieldLabel="Link behaviour" name="./linkBehaviour">
+																						   <items jcr:primaryType="nt:unstructured">
+																								<sameWindow jcr:primaryType="nt:unstructured"
+																											text="Same window" value="_self" />
+																								<newWindow jcr:primaryType="nt:unstructured"
+																											text="New window" value="_blank" />
+															  								</items>
+											  								</leftMenuLinkBehaviour>	
+																			</items>
+																		</column>
+																	</items>
+																</field>
+															</pages>
+														</items>
+													</column>
+												</items>
+											</leftMenu>
+											<rightMenu jcr:primaryType="nt:unstructured"
+												jcr:title="Hamburger Menu Right Items" sling:resourceType="granite/ui/components/foundation/form/fieldset">
+												<layout jcr:primaryType="nt:unstructured"
+													sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" />
+												<items jcr:primaryType="nt:unstructured">
+													<column jcr:primaryType="nt:unstructured"
+														sling:resourceType="granite/ui/components/foundation/container">
+														<items jcr:primaryType="nt:unstructured">
+															<pages jcr:primaryType="nt:unstructured"
+																sling:resourceType="granite/ui/components/foundation/form/multifield"
+																class="full-width" fieldDescription="Click '+' to add a new item"
+																fieldLabel="Hamburger Menu Item">
+																<field jcr:primaryType="nt:unstructured"
+																	sling:resourceType="granite/ui/components/foundation/form/fieldset"
+																	acs-commons-nested="JSON_STORE" name="./hamburgerMenuRightLinks">
+																	<layout jcr:primaryType="nt:unstructured"
+																		sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+																		method="absolute" />
+																	<items jcr:primaryType="nt:unstructured">
+																		<column jcr:primaryType="nt:unstructured"
+																			sling:resourceType="granite/ui/components/foundation/container">
+																			<items jcr:primaryType="nt:unstructured">
+																				<page jcr:primaryType="nt:unstructured"
+																					sling:resourceType="granite/ui/components/foundation/form/textfield"
+																					fieldLabel="Item name" name="./pageName" />
+																				<path jcr:primaryType="nt:unstructured"
+																					sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+																					fieldLabel="Item path" name="./pagePath" rootPath="/content/customerportal" />
+																					<rightMenuLinkBehaviour jcr:primaryType="nt:unstructured"
+																								sling:resourceType="granite/ui/components/foundation/form/select"
+																								fieldLabel="Link behaviour" name="./linkBehaviour">
+																						   <items jcr:primaryType="nt:unstructured">
+																								<sameWindow jcr:primaryType="nt:unstructured"
+																											text="Same window" value="_self" />
+																								<newWindow jcr:primaryType="nt:unstructured"
+																											text="New window" value="_blank" />
+															  								</items>
+											  										</rightMenuLinkBehaviour>
+																			</items>
+																		</column>
+																	</items>
+																</field>
+															</pages>
+														</items>
+													</column>
+												</items>
+											</rightMenu>
+										</items>
+									</menu>
+								</items>
+							</column>
+						</items>
+					</globalHeaderTab>
+					<globalfooterTab jcr:primaryType="nt:unstructured"
+						jcr:title="Footer" sling:resourceType="granite/ui/components/foundation/section">
+						<layout jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" />
+						<items jcr:primaryType="nt:unstructured">
+							<column jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/foundation/container">
+								<items jcr:primaryType="nt:unstructured">
+									<globalfooter jcr:primaryType="nt:unstructured"
+										jcr:title="Footer" sling:resourceType="granite/ui/components/foundation/form/fieldset">
+										<items jcr:primaryType="nt:unstructured">
+											<legalText jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/foundation/form/textfield"
+												fieldLabel="Disclaimer text" name="./disclaimerText" />
+											<copyRight jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/foundation/form/textfield"
+												fieldLabel="Trademark" name="./tradeMark" />
+										</items>
+									</globalfooter>
+									<footerMenu cq:showOnCreate="{Boolean}true" jcr:primaryType="nt:unstructured"
+										jcr:title="Footer links" sling:resourceType="granite/ui/components/foundation/form/fieldset">
+										<items jcr:primaryType="nt:unstructured">
+											<footerPages jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/foundation/form/multifield"
+												class="full-width" fieldDescription="Click '+' to add a new link"
+												fieldLabel="Footer links">
+												<field jcr:primaryType="nt:unstructured"
+													sling:resourceType="granite/ui/components/foundation/form/fieldset"
+													acs-commons-nested="JSON_STORE" name="./footerLinks">
+													<layout jcr:primaryType="nt:unstructured"
+														sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+														method="absolute" />
+													<items jcr:primaryType="nt:unstructured">
+														<column jcr:primaryType="nt:unstructured"
+															sling:resourceType="granite/ui/components/foundation/container">
+															<items jcr:primaryType="nt:unstructured">
+																<page jcr:primaryType="nt:unstructured"
+																	sling:resourceType="granite/ui/components/foundation/form/textfield"
+																	fieldDescription="Enter link name" fieldLabel="Link name"
+																	name="./pageName" />
+																<path jcr:primaryType="nt:unstructured"
+																	sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+																	fieldDescription="Select path" fieldLabel="Link path"
+																	name="./pagePath" rootPath="/content/customerportal" />
+																<show jcr:primaryType="nt:unstructured"
+																	sling:resourceType="granite/ui/components/foundation/form/checkbox"
+																	name="./isVisibleOnMobile" text="Show in hamburger menu"
+																	value="true" />
+																<showType
+																    jcr:primaryType="nt:unstructured"
+																    sling:resourceType="granite/ui/components/foundation/form/hidden"
+																    name="./isVisibleOnMobile@TypeHint"/>	
+																<linkBehaviour jcr:primaryType="nt:unstructured"
+																	sling:resourceType="granite/ui/components/foundation/form/select"
+																	fieldLabel="Link behaviour" name="./linkBehaviour">
+																	   <items jcr:primaryType="nt:unstructured">
+																			<sameWindow jcr:primaryType="nt:unstructured"
+																				text="Same window" value="_self" />
+																			<newWindow jcr:primaryType="nt:unstructured"
+																				text="New window" value="_blank" />
+										  								</items>
+								  								</linkBehaviour>     
+															</items>
+														</column>
+													</items>
+												</field>
+											</footerPages>
+										</items>
+									</footerMenu>
+								</items>
+							</column>
+						</items>
+					</globalfooterTab>
+				</items>
+			</tabs>
+		</items>
+	</content>
+</jcr:root>

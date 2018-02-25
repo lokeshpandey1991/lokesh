@@ -1,0 +1,13 @@
+---
+{
+	  "layout"	   : "app.hbs",
+    "title"      : "feature Table",
+    "fsdId"      : "featuretable",
+    "categories" : "components",
+    "description": "Main navigation on top of the page, including sub-menu functionality",
+    "components" : "featuretable",
+    "hiddenUX"   : true
+}
+---
+
+<sly data-sly-call="${lib.featuretable_template @ data=featureTableModel}" />

@@ -1,0 +1,36 @@
+---
+{
+"layout"	 : "fw-index.hbs",
+"categories" : "admin-pages",
+"lead"       : "Welcome to our website!",
+"title"      : "Ux Library Components Page"
+}
+---
+<sly data-sly-use.headerModel="/apps/roche/pharma/customerportal/components/header/ux-model.js"
+       data-sly-use.lib1="/apps/roche/pharma/customerportal/components/header/header-template.html" />
+
+<sly data-sly-use.hamburgermenuModel="/apps/roche/pharma/customerportal/components/hamburgermenu/ux-model.js"
+         data-sly-use.lib="/apps/roche/pharma/customerportal/components/hamburgermenu/hamburgermenu-template.html"/>
+
+<sly data-sly-use.footerModel="/apps/roche/pharma/customerportal/components/footer/ux-model.js"
+       data-sly-use.lib4="/apps/roche/pharma/customerportal/components/footer/footer-template.html" />
+
+ <sly data-sly-use.heroMediaModel="/apps/roche/pharma/customerportal/components/heroMedia/ux-model.js"
+       data-sly-use.lib2="/apps/roche/pharma/customerportal/components/heroMedia/heroMedia-template.html" />
+
+<sly data-sly-use.headlinebodyModel="/apps/roche/pharma/customerportal/components/headlinebody/ux-model.js"
+       data-sly-use.lib3="/apps/roche/pharma/customerportal/components/headlinebody/headlinebody-template.html" />
+
+<sly data-sly-use.socialFeedModel="/apps/roche/pharma/customerportal/components/socialfeed/ux-model.js"
+       data-sly-use.lib5="/apps/roche/pharma/customerportal/components/socialfeed/socialfeed-template.html" />
+
+<sly data-sly-call="${lib1.header_template @ data=headerModel}" />
+<sly data-sly-call="${lib.hamburgermenu_template @ data=hamburgermenuModel}" />
+    <div class="x-content-wrapper">
+     <sly data-sly-call="${lib2.heroMedia_template @ data=heroMediaModel}" />
+     <sly data-sly-call="${lib3.headlinebody_template @ data=headlinebodyModel}" />
+     <sly data-sly-call="${lib5.socialfeed_template @ data=socialFeedModel}" />
+    </div>
+<sly data-sly-call="${lib4.footer_template @ data=footerModel}" />
+
+

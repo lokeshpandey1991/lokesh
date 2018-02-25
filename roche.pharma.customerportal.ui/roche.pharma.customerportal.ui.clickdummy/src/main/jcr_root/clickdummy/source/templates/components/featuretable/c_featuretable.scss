@@ -1,0 +1,288 @@
+.c-feature-table {
+  font-family: $font-imagopro-book;
+  .row {
+    margin: 0;
+  }
+
+  &__btn {
+    background-color: $clr-blue;
+    width: 100%;
+    display: inline-block;
+    padding: convert-in-rem(27);
+    text-align: center;
+
+    &__titletext {
+      color: $clr-white;
+      font-size: convert-in-rem(22);
+      line-height: convert-in-rem(22);
+      font-family: $font-imagopro-medium;
+      text-transform: uppercase;
+    }
+
+    .view-btn {
+      background-color: $clr-blue;
+      border: 1px solid $clr-white;
+      width: 100%;
+      color: $clr-white;
+      font-size: convert-in-rem(16);
+      line-height: convert-in-rem(22);
+      padding: convert-in-rem(15);
+      display: inline-block;
+    }
+  }
+
+  &__wrapper {
+    background: $clr-white;
+    z-index: $zindex-xlg;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: none;
+    overflow-y: auto;
+
+    &__header {
+      @include clearfix;
+
+      z-index: $zindex-xlg;
+      position: fixed;
+      width: 100%;
+      height: 60px;
+      top: 0;
+      overflow: hidden;
+      display: block;
+      background: $clr-blue;
+
+      .right-col {
+        padding-left: convert-in-rem(16);
+        display: table-cell;
+
+        &__row {
+          display: table;
+          font-size: convert-in-rem(13);
+          letter-spacing: convert-in-rem(2);
+          line-height: convert-in-rem(18);
+          text-transform: uppercase;
+          color: $clr-white;
+          vertical-align: middle;
+          height: 60px;
+        }
+
+        .table-title {
+          color: $clr-white;
+          font-size: convert-in-rem(16);
+          padding: convert-in-rem(5) 0;
+          text-transform: uppercase;
+          height: auto;
+          vertical-align: middle;
+          margin: auto;
+          display: table-cell;
+        }
+
+        .table-description {
+          display: none;
+          text-transform: none;
+        }
+      }
+
+      .left-col {
+        width: 60px;
+        height: 60px;
+        float: left;
+        border-right: 1px solid $clr-white;
+        position: relative;
+      }
+    }
+
+    &__body {
+      @include clearfix;
+      padding: convert-in-rem(60) convert-in-rem(20) 0;
+      position: relative;
+      transform: translateY(0);
+      overflow-y: hidden;
+
+      &__inner {
+        overflow: auto;
+        transform: translateY(20px);
+        padding-bottom: convert-in-rem(20);
+      }
+
+      caption {
+        display: none;
+      }
+
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: auto;
+        overflow: hidden;
+        display: inline-block;
+        border: 1px solid $clr-black;
+      }
+
+      tr {
+        width: auto;
+
+        th {
+          background: rgba($clr-dark-pink, 0.5);
+          border-top: 1px solid $clr-black;
+          color: $heading-color;
+          font-size: convert-in-rem(16);
+          padding: convert-in-rem(15) convert-in-rem(29);
+          max-width: 250px;
+          display: table-cell;
+          top: 0;
+          left: 0;
+          position: relative;
+          font-weight: 100;
+
+          &::before {
+            @include transition(all 0.8s ease-in-out);
+
+            content: '';
+            position: absolute;
+            top: 0;
+            overflow: hidden;
+            left: 0;
+            width: 0px;
+            height: 100%;
+            background-color: $clr-light-pink;
+            z-index: -1;
+          }
+
+          &.animaterow {
+            &::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 2500px;
+            }
+          }
+        }
+      }
+
+      td {
+        border-top: 1px solid $clr-black;
+        border-left: 1px solid $clr-black;
+        color: $heading-color;
+        font-size: convert-in-rem(16);
+        padding: convert-in-rem(15) convert-in-rem(29);
+        width: auto;
+        max-width: 300px;
+      }
+
+      tr:first-child {
+        th {
+          background-color: $clr-light-blue;
+          font-size: convert-in-rem(12);
+          padding: convert-in-rem(15) convert-in-rem(29);
+          color: $heading-color;
+          border-top: none;
+          border-left: 1px solid $clr-black;
+          text-transform: uppercase;
+          z-index: -1;
+
+          &:first-child {
+            background-color: $clr-dark-pink;
+            border-left: none;
+          }
+
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .disclaimer {
+      color: $heading-color;
+      display: inline-block;
+      font-size: convert-in-rem(14);
+      padding: convert-in-rem(10) 0 0 convert-in-rem(20);
+      text-transform: none;
+    }
+  }
+}
+
+@media ($tablet) {
+  .c-feature-table {
+    padding: 0 convert-in-rem(5);
+
+    &__wrapper {
+      display: block;
+      z-index: $zindex-none;
+      position: relative;
+      width: 100%;
+      height: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+
+      &__header {
+        background: none;
+        border: 0;
+        height: auto;
+        position: static;
+        overflow: visible;
+
+        .left-col {
+          display: none;
+        }
+
+        .right-col {
+          width: 100%;
+          padding: 0;
+          display: block;
+
+          .row {
+            padding: 0;
+            margin: 0;
+          }
+
+          &__row {
+            display: inline-block;
+            height: auto;
+          }
+
+          .table-title {
+            color: $heading-color;
+            font-size: convert-in-rem(38);
+            line-height: convert-in-rem(44);
+            padding-top: convert-in-rem(15);
+            text-transform: none;
+            display: block;
+          }
+
+          .table-description {
+            color: $heading-color;
+            display: inline-block;
+            font-size: convert-in-rem(16);
+            line-height: convert-in-rem(22);
+            padding: convert-in-rem(5) 0 convert-in-rem(15);
+          }
+        }
+      }
+
+      &__body {
+        padding: 0 convert-in-rem(20) 0 0;
+        transform: translateY(0);
+
+        &__inner {
+          overflow-x: auto;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    .disclaimer {
+      padding: convert-in-rem(5) 0 0 0;
+    }
+
+    &__btn {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+
+<div data-eloqua-enabled="${pageProperties.isEloquaEnabled}" class="c-contact-form clearfix js-contact-form">
+	<div class="js-page-notification c-page-notification hidden" data-module="pageNotification">
+		<div class="js-notification-type">
+		  <div class="c-page-notification__left-col">
+			<div class="left-wrapper">
+			  <div class="c-page-notification__title js-title">
+
+			  </div>
+			  <div class="c-page-notification__description js-description">
+
+			  </div>
+			</div>
+			<a class="CTA-link x-sub-hover js-link" href="#">
+			  <span>text</span>
+
+			</a>
+		  </div>
+		  <div class="c-page-notification__right-col right">
+			<a href="javascript:void(0)" class="close js-close notification--close x-sub-hover" role="button">close
+			</a>
+		  </div>
+		</div>
+	</div>
+	<div class="c-contact-form__form-title clearfix">
+	<sly data-sly-resource="${'titlepar' @ resourceType='roche/pharma/customerportal/components/generictext'}"/>
+	</div>
+
+    <div class="c-contact-form__form-section col-xs-12 col-sm-6">
+    <sly data-sly-resource="${'aemform' @ resourceType='fd/af/components/aemform'}" />
+    </div>
+    </div>
+    <div class="c-contact-form__support-section col-xs-12 col-sm-4 col-sm-offset-2">
+    <sly data-sly-resource="${'par' @ resourceType='foundation/components/parsys'}" />
+    </div>
+</div>
+<div>
+	<sly data-sly-resource="${'mappar' @ resourceType='foundation/components/parsys'}" />
+</div>

@@ -1,0 +1,209 @@
+{
+	"jcr:primaryType": "cq:Tag",
+	"jcr:createdBy": "admin",
+	"jcr:title": "customerportal",
+	"jcr:created": "Thu Aug 03 2017 14:01:20 GMT+0530",
+	"jcr:description": "",
+	"sling:resourceType": "cq/tagging/components/tag",
+	"pim": {
+		"jcr:primaryType": "cq:Tag",
+		"jcr:createdBy": "admin",
+		"jcr:title": "PIM tags",
+		"jcr:created": "Thu Aug 03 2017 14:01:20 GMT+0530",
+		"jcr:description": "",
+		"sling:resourceType": "cq/tagging/components/tag",
+		"product": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:createdBy": "admin",
+			"jcr:title": "Product",
+			"jcr:lastModifiedBy": "admin",
+			"jcr:created": "Thu Aug 03 2017 14:01:20 GMT+0530",
+			"jcr:description": "",
+			"jcr:lastModified": "Thu Jul 27 2017 14:56:44 GMT+0530",
+			"sling:resourceType": "cq/tagging/components/tag",
+			"healthTopics": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:createdBy": "admin",
+				"jcr:title": "Health Topics",
+				"jcr:created": "Thu Aug 03 2017 14:01:20 GMT+0530",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			},
+			"researchTopics": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:createdBy": "admin",
+				"jcr:title": "Research Topics",
+				"jcr:created": "Thu Aug 03 2017 14:01:20 GMT+0530",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			},
+			"diseaseAreas": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:createdBy": "admin",
+				"jcr:title": "Disease Areas",
+				"jcr:created": "Thu Aug 03 2017 14:01:20 GMT+0530",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			},
+			"productSolutions": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:createdBy": "admin",
+				"jcr:title": "Product Solution",
+				"jcr:created": "Thu Aug 03 2017 14:01:20 GMT+0530",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag",
+				"molecular": {
+					"jcr:primaryType": "cq:Tag",
+					"jcr:mixinTypes": [
+						"cq:ReplicationStatus"
+					],
+					"jcr:createdBy": "admin",
+					"jcr:title": "Molecular",
+					"cq:lastReplicationAction": "Activate",
+					"cq:lastReplicatedBy": "sharmr42",
+					"jcr:created": "Wed Sep 06 2017 02:34:45 GMT-0400",
+					"cq:lastReplicated": "Wed Aug 30 2017 10:17:16 GMT-0400",
+					"jcr:description": "",
+					"sling:resourceType": "cq/tagging/components/tag"
+				}
+			}
+		}
+	},
+	"persona": {
+		"jcr:primaryType": "cq:Tag",
+		"jcr:mixinTypes": [
+			"cq:ReplicationStatus"
+		],
+		"jcr:createdBy": "admin",
+		"jcr:title": "Personas",
+		"cq:lastReplicationAction": "Activate",
+		"cq:lastReplicatedBy": "admin",
+		"jcr:created": "Thu Aug 03 2017 14:01:20 GMT+0530",
+		"cq:lastReplicated": "Thu Mar 02 2017 08:15:36 GMT-0500",
+		"jcr:description": "",
+		"sling:resourceType": "cq/tagging/components/tag",
+		"healthcare": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "healthcare",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "admin",
+			"jcr:created": "Thu Aug 03 2017 14:01:20 GMT+0530",
+			"cq:lastReplicated": "Thu Mar 02 2017 08:15:36 GMT-0500",
+			"jcr:description": "",
+			"sling:resourceType": "cq/tagging/components/tag"
+		},
+		"researcher": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "researcher",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "admin",
+			"jcr:created": "Thu Aug 03 2017 14:01:20 GMT+0530",
+			"cq:lastReplicated": "Thu Mar 02 2017 08:15:36 GMT-0500",
+			"jcr:description": "",
+			"sling:resourceType": "cq/tagging/components/tag"
+		},
+		"patient": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "patient",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "admin",
+			"jcr:created": "Thu Aug 03 2017 14:01:20 GMT+0530",
+			"cq:lastReplicated": "Thu Mar 02 2017 08:15:37 GMT-0500",
+			"jcr:description": "",
+			"sling:resourceType": "cq/tagging/components/tag"
+		}
+	},
+	"continent": {
+		"jcr:primaryType": "cq:Tag",
+		"jcr:createdBy": "admin",
+		"jcr:title": "Continent",
+		"jcr:created": "Thu Aug 03 2017 14:02:24 GMT+0530",
+		"jcr:description": "",
+		"sling:resourceType": "cq/tagging/components/tag",
+		"eu": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:createdBy": "admin",
+			"jcr:title": "Europe",
+			"jcr:lastModifiedBy": "admin",
+			"jcr:created": "Thu Aug 03 2017 14:02:24 GMT+0530",
+			"jcr:lastModified": "Wed Jul 26 2017 17:53:31 GMT+0530",
+			"sling:resourceType": "cq/tagging/components/tag",
+			"fr": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:createdBy": "admin",
+				"jcr:title": "France",
+				"jcr:created": "Thu Aug 03 2017 14:02:24 GMT+0530",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag",
+				"en": {
+					"jcr:primaryType": "cq:Tag",
+					"jcr:createdBy": "admin",
+					"jcr:title": "English",
+					"jcr:created": "Thu Aug 03 2017 14:02:24 GMT+0530",
+					"jcr:description": "",
+					"sling:resourceType": "cq/tagging/components/tag"
+				},
+				"fr": {
+					"jcr:primaryType": "cq:Tag",
+					"jcr:createdBy": "admin",
+					"jcr:title": "French",
+					"jcr:created": "Thu Aug 03 2017 14:02:24 GMT+0530",
+					"jcr:description": "",
+					"sling:resourceType": "cq/tagging/components/tag"
+				}
+			}
+		},
+		"na": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:createdBy": "admin",
+			"jcr:title": "North America",
+			"jcr:created": "Thu Aug 03 2017 14:02:24 GMT+0530",
+			"jcr:description": "",
+			"sling:resourceType": "cq/tagging/components/tag",
+			"us": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:createdBy": "admin",
+				"jcr:title": "United States",
+				"jcr:created": "Thu Aug 03 2017 14:02:24 GMT+0530",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag",
+				"en": {
+					"jcr:primaryType": "cq:Tag",
+					"jcr:createdBy": "admin",
+					"jcr:title": "English",
+					"jcr:created": "Thu Aug 03 2017 14:02:24 GMT+0530",
+					"jcr:description": "",
+					"sling:resourceType": "cq/tagging/components/tag"
+				}
+			},
+			"ca": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:createdBy": "admin",
+				"jcr:title": "Canada",
+				"jcr:created": "Thu Aug 03 2017 14:02:24 GMT+0530",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag",
+				"en": {
+					"jcr:primaryType": "cq:Tag",
+					"jcr:createdBy": "admin",
+					"jcr:title": "English",
+					"jcr:created": "Thu Aug 03 2017 14:02:24 GMT+0530",
+					"jcr:description": "",
+					"sling:resourceType": "cq/tagging/components/tag"
+				}
+			}
+		}
+	}
+}

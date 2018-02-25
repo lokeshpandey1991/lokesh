@@ -1,0 +1,24 @@
+.t-search-listing {
+  &__search-row {
+    width: 100%;
+    @include MQ(tablet) {
+      display: table;
+      background-color: $clr-blue;
+    }
+  }
+  .search-results-tab-component {
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    padding-right: 1rem;
+    @include MQ(tablet) {
+      display: table-cell;
+      background-color: $clr-blue;
+    }
+  }
+  &+.c-footer {
+    @include MQ(mobileonly) {
+      margin-top: 0;
+    }
+  }
+}

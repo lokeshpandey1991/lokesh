@@ -1,0 +1,32 @@
+.c-related-products{
+	.c-listingTile__productWrapper, &__heading{
+		padding-left:convert-in-rem(16);
+		padding-right:convert-in-rem(16);
+	}
+	&__heading{
+		margin-bottom:convert-in-rem(20);
+	}
+	&__wrapper{
+		width:100%;
+		overflow-y:hidden;
+		overflow-x:auto;
+	}
+	&__wrapper::-webkit-scrollbar{
+		display:none;
+	}
+	&__container{
+		@media ($mobile){
+			display:table;
+			min-width:100%;
+		}
+	}
+	@media ($tablet) {
+		.c-listingTile__productWrapper, &__heading{
+			padding-left:11%;
+			padding-right:11%;
+		}
+		&__heading{
+			margin-bottom:convert-in-rem(30);
+		}
+	}
+}

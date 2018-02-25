@@ -1,0 +1,22 @@
+<!--/* 
+	Ancillary Listing page Component .
+	This is the component for ancillary listing page.
+	*/-->
+ 
+<sly data-sly-resource="${'dynamicsearchmedia' @ resourceType='roche/pharma/customerportal/components/dynamicsearchmedia'}"/>
+<div class="t-prod-listing" data-module="productlisting">
+<div class="js-page-props" data-listing="news"></div>
+    <section class="t-prod-listing__title">
+        <div data-sly-resource="${'title' @ resourceType='roche/pharma/customerportal/components/title'}" data-sly-unwrap></div>
+    </section>
+    <section class="t-prod-listing__banner">
+        <sly data-sly-resource="${'heroBanner' @ resourceType='roche/pharma/customerportal/components/heroMedia'}"/>
+    </section>
+	<div class="t-prod-listing t-search-listing">
+		<section class="c-prod-listing-wrapper">
+			<div class="prod-listing-container__fw js-listing-container" data-listing-template="news" data-enable-template="true">
+				<sly data-sly-resource="${'listing-view' @ resourceType='roche/pharma/customerportal/components/listingview'}" />
+			</div>
+		</section>
+	</div>
+</div>

@@ -1,0 +1,23 @@
+<!--
+    Footer  Component .
+
+    This is the  component for Footer
+
+    -->
+<sly data-sly-template.footer_template="${@ data, flag}">
+  <footer class="c-footer js-footer x-component-spacing" data-module="footerCmp">
+    <div class="c-footer__wrapper">
+      <div class="col-xs-12">  
+        <div style="text-align: center; width: 100%;">Footer</div>
+        <div class="c-footer__legal-content c-footer__text" itemprop="description" data-sly-test="${data.disclaimer}">
+          ${data.disclaimer}
+        </div>
+        <div class="c-footer__copyright c-footer__text" data-sly-test="${data.tradeMark}">
+          ${data.tradeMark}
+        </div>
+        <div class="c-footer__timestamp c-footer__text js-timestamp"></div>
+      </div>
+    
+    </div>
+  </footer>
+</sly>

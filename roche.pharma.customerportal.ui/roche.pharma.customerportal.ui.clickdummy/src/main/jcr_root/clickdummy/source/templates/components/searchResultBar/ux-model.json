@@ -1,0 +1,12 @@
+{
+  "categoryFilter": [{
+    "filterTag": "products",
+    "filterTitle": "Products"
+  }, {
+    "filterTag": "documentation",
+    "filterTitle": "Documentation"
+  }, {
+    "filterTag": "more",
+    "filterTitle": "More"
+  }]
+}

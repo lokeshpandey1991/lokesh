@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <selector
+                jcr:primaryType="nt:unstructured"
+                jcr:title="General Map"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <fieldset
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="General Map Inputs"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <heading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldLabel="Heading"
+                                                name="./heading"/>
+                                            <address
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldLabel="Address"
+                                                name="./address"/>
+                                            <phone
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="Enter Phone Number Details"
+                                                fieldLabel="Phone Number"
+                                                name="./phoneNumber"/>
+                                            <email
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="Enter Email Address"
+                                                fieldLabel="Email"
+                                                name="./email"/>
+                                            <timings
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                                class="full-width"
+                                                fieldDescription="Click 'Add field' to add a new time detail"
+                                                fieldLabel="Timings">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                                    acs-commons-nested="JSON_STORE"
+                                                    name="./timings">
+                                                    <layout
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                                        method="absolute"/>
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <timedetails
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                    fieldDescription="Enter Time Details"
+                                                                    fieldLabel="Time Details"
+                                                                    name="./timeDetails"/>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </timings>
+                                            <ctalabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                class="ctaLabelValidation"
+                                                fieldLabel="CTA Label"
+                                                name="./ctaLabel"/>
+                                            <ctalink
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                class="ctaLinkValidation"
+                                                fieldLabel="CTA Link"
+                                                rootPath="/content/customerportal"
+                                                name="./ctaLink"/>
+                                            <linkBehaviour 
+                                            	jcr:primaryType="nt:unstructured" 
+                                                fieldLabel="Link behaviour" 
+                                                name="./linkBehaviour" 
+                                                sling:resourceType="granite/ui/components/foundation/form/select">
+                                                	<items jcr:primaryType="nt:unstructured">
+                                                		<sameWindow 
+                                                		jcr:primaryType="nt:unstructured" 
+                                                		text="Same window" value="_self"/>
+                                                		<newWindow 
+                                            			jcr:primaryType="nt:unstructured" 
+                                            			text="New window" value="_blank"/>
+                                                	</items>
+                                            </linkBehaviour>    
+                                            <latitude
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldLabel="Latitude"
+                                                name="./latitude"
+                                                required="true"/>
+                                            <longitude
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldLabel="Longitude"
+                                                name="./longitude"
+                                                required="true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </fieldset>
+                        </items>
+                    </column>
+                </items>
+            </selector>
+        </items>
+    </content>
+</jcr:root>

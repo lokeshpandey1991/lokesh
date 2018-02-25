@@ -1,0 +1,111 @@
+{
+	"jcr:primaryType": "cq:Page",
+	"jcr:createdBy": "admin",
+	"jcr:created": "Sat Aug 26 2017 18:17:26 GMT+0530",
+	"jcr:content": {
+		"jcr:primaryType": "cq:PageContent",
+		"jcr:mixinTypes": [
+			"mix:versionable"
+		],
+		"jcr:createdBy": "admin",
+		"jcr:title": "home",
+		"pageTitle": "home page",
+		"cq:lastReplicationAction": "Activate",
+		"jcr:versionHistory": "9f119f19-a6a2-4fc0-abb2-e7e009bd629a",
+		"cq:template": "/apps/roche/pharma/customerportal/templates/landingpage",
+		"cq:lastReplicatedBy": "admin"
+	},
+	"page1": {
+		"jcr:primaryType": "cq:PageContent",
+		"jcr:mixinTypes": [
+			"mix:versionable"
+		],
+		"jcr:createdBy": "admin",
+		"jcr:title": "NewPCP1",
+		"cq:lastReplicationAction": "Activate",
+		"jcr:versionHistory": "fbac70a3-11d9-44c1-85cf-374c6476f6a3",
+		"cq:template": "/apps/roche/pharma/customerportal/templates/productCategoryTemplate",
+		"cq:lastReplicatedBy": "admin",
+		"jcr:lastModifiedBy": "admin",
+		"expirationTime": "Thu Feb 12 2018 00:00:00 GMT+0530",
+		"jcr:predecessors": [
+			"f8373979-8773-4063-8e6a-1d71e968efdc"
+		],
+		"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+		"jcr:created": "Sat Aug 26 2017 18:17:26 GMT+0530",
+		"cq:lastReplicated": "Tue Oct 10 2017 11:11:36 GMT+0530",
+		"cq:lastModified": "Tue Oct 10 2017 14:59:44 GMT+0530",
+		"jcr:baseVersion": "f8373979-8773-4063-8e6a-1d71e968efdc",
+		"jcr:isCheckedOut": true,
+		"pageType": "News",
+		"jcr:lastModified": "Tue Oct 10 2017 14:59:44 GMT+0530",
+		"jcr:uuid": "7fe5c325-71ff-4dbf-a8fc-d90bbedae10b",
+		"pcapNumber": "45678",
+		"sling:resourceType": "roche/customerportal/components/page/productCategoryPage",
+		"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+		"cq:lastModifiedBy": "admin",
+		"body-parsys": {
+			"jcr:primaryType": "nt:unstructured",
+			"sling:resourceType": "foundation/components/parsys"
+		},
+		"image": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:lastModifiedBy": "admin",
+			"jcr:lastModified": "Tue Oct 10 2017 14:59:44 GMT+0530"
+		}
+	},
+	"page2": {
+		"jcr:primaryType": "cq:PageContent",
+		"jcr:mixinTypes": [
+			"cq:LiveRelationship",
+			"cq:LiveSync",
+			"mix:versionable",
+			"cq:PropertyLiveSyncCancelled"
+		],
+		"jcr:createdBy": "admin",
+		"jcr:title": "product-category-page1",
+		"cq:propertyInheritanceCancelled": [
+			"onTime"
+		],
+		"cq:lastReplicationAction": "Activate",
+		"jcr:versionHistory": "bafeae72-1f12-462a-81ca-2ef6e3bc74a5",
+		"cq:template": "/apps/roche/pharma/customerportal/templates/productCategoryTemplate",
+		"cq:lastReplicatedBy": "admin",
+		"jcr:lastModifiedBy": "admin",
+		"cq:lastRolledout": "Thu Aug 10 2017 23:53:18 GMT-0400",
+		"expirationTime": "Tue Jan 10 2018 00:00:00 GMT+0530",
+		"jcr:predecessors": [
+			"3ac260d5-144e-4e02-85b9-131faf2ea77f"
+		],
+		"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+		"jcr:created": "Sat Aug 26 2017 18:17:26 GMT+0530",
+		"cq:lastReplicated": "Tue Oct 10 2017 15:51:52 GMT+0530",
+		"cq:lastModified": "Tue Oct 10 2017 14:59:57 GMT+0530",
+		"cq:cloudserviceconfigs": [
+			"[]"
+		],
+		"jcr:baseVersion": "3ac260d5-144e-4e02-85b9-131faf2ea77f",
+		"jcr:isCheckedOut": true,
+		"jcr:lastModified": "Tue Oct 10 2017 14:59:57 GMT+0530",
+		"jcr:uuid": "487dc4a1-016b-4f20-9b38-7187da0c4315",
+		"pcapNumber": "123456",
+		"sling:resourceType": "roche/customerportal/components/page/productCategoryPage",
+		"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+		"cq:lastRolledoutBy": "admin",
+		"cq:lastModifiedBy": "admin",
+		"body-parsys": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:mixinTypes": [
+				"cq:LiveRelationship"
+			],
+			"cq:lastRolledout": "Thu Aug 10 2017 23:53:18 GMT-0400",
+			"sling:resourceType": "foundation/components/parsys",
+			"cq:lastRolledoutBy": "admin"
+		},
+		"cq:LiveSyncConfig": {
+			"jcr:primaryType": "cq:LiveCopy",
+			"cq:isDeep": false,
+			"cq:master": "/content/customerportal/global-master-blueprint/en/home/product-category-page"
+		}
+	}
+}

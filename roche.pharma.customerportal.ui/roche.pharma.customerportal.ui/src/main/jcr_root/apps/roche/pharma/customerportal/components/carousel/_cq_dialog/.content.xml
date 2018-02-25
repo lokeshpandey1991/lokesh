@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <carousel
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Roche Carousel Component"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <fieldset
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Roche Carousel Input"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <sectionTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="Define the Heading for the Section"
+                                                fieldLabel="Section Title"
+                                                name="./secTitle"/>
+                                            <buttonTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="Define the Button title for this section"
+                                                fieldLabel="Asset Button Title"
+                                                name="./buttonTitle"/>
+                                            <multi
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                                class="full-width"
+                                                fieldDescription="Click 'Add Fields' to add Asset for Carousel (Max. 10 and Min. 4 Assets Required)"
+                                                fieldLabel="Carousel"
+                                                max="{Long}10"
+                                                min="{Long}4">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                                    acs-commons-nested="JSON_STORE"
+                                                    name="./carouselData">
+                                                    <layout
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                                        method="absolute"/>
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <assetType
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                                    fieldDescription="Tip : Select the Asset Type"
+                                                                    fieldLabel="Asset Type"
+                                                                    name="./assetType">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <image
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="Image"
+                                                                            value="image"/>
+                                                                        <video
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="Video"
+                                                                            value="video"/>
+                                                                    </items>
+                                                                </assetType>
+                                                                <assetHeading
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                    fieldDescription="Enter the Heading for the given asset"
+                                                                    fieldLabel="Asset Heading"
+                                                                    name="./assetHeading"
+                                                                    required="{Boolean}true"/>
+                                                                <assetPath
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                                    fieldDescription="Select the path for Asset"
+                                                                    fieldLabel="Asset Path"
+                                                                    name="./assetPath"
+                                                                    required="{Boolean}true"
+                                                                    rootPath="/content/dam/customerportal"/>
+                                                                <assetAltText
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                    fieldDescription="Enter the Alternate text for the Asset(Image only)"
+                                                                    fieldLabel="Asset Alt. Text"
+                                                                    name="./assetAltText"/>
+                                                                <linkBehaviour
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                                    fieldDescription="Select the link behaviour"
+                                                                    fieldLabel="Link behaviour"
+                                                                    name="./linkBehaviour">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <sameWindow
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="Same window"
+                                                                            value="_self"/>
+                                                                        <newWindow
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="New window"
+                                                                            value="_blank"/>
+                                                                    </items>
+                                                                </linkBehaviour>
+                                                                <path
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                                    fieldDescription="Define Asset Link path"
+                                                                    fieldLabel="Asset Link Page Path"
+                                                                    name="./linkPath"
+                                                                    rootPath="/content/customerportal"/>
+                                                                <assetSummary
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/include"
+                                                                    fieldLabel="Asset Summary"
+                                                                    name="./assetSummary"
+                                                                    path="/apps/roche/pharma/customerportal/components/richTextEditor/cq:dialog/content/items/rte/items/column/items/bodyText"/>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </multi>
+                                        </items>
+                                    </column>
+                                </items>
+                            </fieldset>
+                        </items>
+                    </column>
+                </items>
+            </carousel>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,57 @@
+.st-logo {
+  img {
+    width: auto;
+  }
+}
+
+.js-st-container {
+    &.st-container {
+    	margin: convert-in-rem(30) 0;
+    }
+	.st-btn[data-network] {
+		display:none !important;
+		margin-right: convert-in-rem(24) !important;
+		height: convert-in-rem(40) !important;
+  		width: convert-in-rem(40) !important;
+  		background-color: transparent !important;
+  		svg {
+  			display: none;
+  		}
+	}
+	&.facebook {
+		.st-btn[data-network=facebook] {
+			display:inline-block !important;
+			background: url("/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/Facebook.svg") no-repeat;
+		}
+	}
+
+	&.linkedin {
+		.st-btn[data-network=linkedin] {
+			display:inline-block !important;
+			background: url("/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/Linkedin.svg") no-repeat;
+		}
+	}
+
+	&.twitter {
+		.st-btn[data-network=twitter] {
+			display:inline-block !important;
+			background: url("/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/Twitter.svg") no-repeat;
+		}
+	}
+
+	&.email {
+		.st-btn[data-network=email] {
+			display:inline-block !important;
+			background: url("/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/mail.svg") no-repeat;
+		}
+	}
+
+	.st-custom-button[data-network] {
+	   background-color: #0adeff;
+	   display: inline-block;
+	   padding: 5px 10px;
+	   cursor: pointer;
+	   font-weight: bold;
+	   color: #fff;
+	}
+}

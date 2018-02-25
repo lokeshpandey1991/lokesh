@@ -1,0 +1,17 @@
+<!--/*
+Media Info
+*/-->
+<sly data-sly-test.emptyContent="${wcmmode.edit}">
+<div data-emptytext="configure ${component.title}"
+	class="cq-placeholder"></div>
+</sly>
+<sly
+	data-sly-use.mediaAndInfoModel="com.roche.pharma.customerportal.core.models.MediaAndInfoModel">
+<div data-sly-test="${mediaAndInfoModel.mediaList.size>0}"
+	data-sly-unwrap>
+	<div
+		data-sly-use.lib="/apps/roche/pharma/customerportal/components/mediainfo/mediainfo-template.html"
+		data-sly-call="${lib.mediainfo_template @ data=mediaAndInfoModel}"
+		data-sly-unwrap></div>
+</div>
+</sly>

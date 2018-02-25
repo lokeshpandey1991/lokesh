@@ -1,0 +1,99 @@
+{
+	"jcr:primaryType": "cq:Page",
+	"jcr:createdBy": "admin",
+	"jcr:created": "Thu Jul 27 2017 13:33:03 GMT+0530",
+	"jcr:content": {
+		"jcr:primaryType": "cq:PageContent",
+		"jcr:createdBy": "admin",
+		"jcr:title": "usa",
+		"cq:template": "/apps/roche/pharma/customerportal/templates/languagepage",
+		"jcr:created": "Thu Jul 27 2017 13:33:03 GMT+0530",
+		"cq:lastModified": "Thu Jul 27 2017 13:33:03 GMT+0530",
+		"sling:resourceType": "roche/customerportal/components/page/languagepage",
+		"cq:lastModifiedBy": "admin",
+         "languageconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"socialLinks": "{\"socialMediaOption\":\"facebook\",\"socialLink\":\"/content/roche/us\"}",
+					"searchPagePath": "/content/roche/us",
+					"searchLimit": "20",
+			"searchCollection": "searchCollection",
+					"searchUrl": "searchUrl",
+					"jcr:lastModifiedBy": "admin",
+					"countrySelectorPagePath": "/content/roche/us",
+					"personaSelectorPagePath": "/content/roche/us",
+					"isPersonaDisabled": true,
+					"dateFormatPattern": "MMM dd, yyyy",
+					"jcr:lastModified": "Sun Jul 23 2017 09:18:00 GMT+0530",
+					"fromEmail": "admin@roche.com",
+			"sling:resourceType": "roche/customerportal/components/adminconfig/languageconfig",
+			"shareId": "123",
+			"socialShareLinks": ["facebook", "linkedin"],
+			"twitterHandle": "@test"
+				}
+      },
+	"en": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Thu Jul 27 2017 13:33:16 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:createdBy": "admin",
+			"jcr:title": "english",
+			"cq:template": "/apps/roche/pharma/customerportal/templates/landingpage",
+			"jcr:created": "Thu Jul 27 2017 13:33:16 GMT+0530",
+			"cq:lastModified": "Thu Jul 27 2017 13:33:16 GMT+0530",
+			"sling:resourceType": "roche/customerportal/components/page/landingpage",
+			"cq:lastModifiedBy": "admin",
+					"headerfooterconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"hamburgerMenuLeftLinks": ["{\"pageName\":\"Innovations\",\"pagePath\":\"/content/roche/us\"}",
+						"{\"pageName\":\"Products\",\"pagePath\":\"/content/roche/us\"}"
+					],
+					"logoAltText": "alt text",
+					"fileReference": "/content/dam/roche/customerportal/products/11/04/58/110458.png",
+					"hamburgerMenuRightLinks": ["{\"pageName\":\"Events\",\"pagePath\":\"/content/roche/us\",\"mobileView\":\"true\"}",
+						"{\"pageName\":\"Careers\",\"pagePath\":\"/content/roche/us\",\"mobileView\":\"true\"}"
+					],
+					"footerSocialLinks": "{\"socialMediaOption\":\"facebook\",\"socialLink\":\"/content/roche/us\"}",
+					"jcr:lastModifiedBy": "admin",
+					"disclaimerText": "disclaimer",
+					"jcr:lastModified": "Sun Jul 23 2017 09:14:07 GMT+0530",
+					"footerLinks": "{\"pageName\":\"Contact us\",\"pagePath\":\"/content/roche/us\"}",
+					"headerLinks": ["{\"pageName\":\"Innovations\",\"pagePath\":\"/content/roche/us\"}",
+						"{\"pageName\":\"Products\",\"pagePath\":\"https://www.google.co.in\"}"
+					],
+					"copyRightText": "copyright",
+					"sling:resourceType": "roche/customerportal/components/adminconfig/headerfooterconfig",
+					"homePagePath": "/content/roche/us"
+				},
+				"languageconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"socialLinks": "{\"socialMediaOption\":\"facebook\",\"socialLink\":\"/content/roche/us\"}",
+					"searchPagePath": "/content/roche/us",
+					"jcr:lastModifiedBy": "admin",
+					"countrySelectorPagePath": "/content/roche/us",
+					"personaSelectorPagePath": "/content/roche/us",
+					"isPersonaDisabled": true,
+					"searchCollection": "en_US",
+					"searchUrl": "http://sp10050fca.guided.ss-omtrdc.net",
+					"cookieDisclaimerLink": "/content/roche/us/en/home/privacyandpolicy",
+					"isCookieNotificationDisabled": false,
+					"dateFormatPattern": "MMM dd, yyyy",
+					"jcr:lastModified": "Sun Jul 23 2017 09:18:00 GMT+0530",
+					"fromEmail": "admin@roche.com",
+				"sling:resourceType": "roche/customerportal/components/adminconfig/languageconfig",
+				"shareId": "123",
+				"socialShareLinks": ["facebook", "linkedin"],
+				"twitterHandle": "@test"
+			},
+			"socialshare": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:createdBy": "admin",
+				"jcr:lastModifiedBy": "admin",
+				"jcr:created": "Wed Sep 20 2017 14:43:10 GMT+0530",
+				"jcr:lastModified": "Wed Sep 20 2017 14:43:10 GMT+0530",
+				"sling:resourceType": "roche/customerportal/components/socialshare"
+				}
+         }
+      }
+}

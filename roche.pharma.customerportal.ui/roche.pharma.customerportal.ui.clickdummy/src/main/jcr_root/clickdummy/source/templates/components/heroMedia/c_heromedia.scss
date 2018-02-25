@@ -1,0 +1,493 @@
+// As this is the very particular module that's customizing slider as per theming and player
+// requirements, vendor file which decides the design of the slider is placed right beside it
+// instead of vendor directory for easy findability and customization
+@import "c_heromedia_rangeslider";
+// Component specific layout variables
+// decides the distance from bound/image boundaries where content actually starts
+// Initial 20% leaves very less room for alignment classes thus updated to 5% while development
+$bound-offset: 5%; //20%;
+$bound-offset-tb: $bound-offset; // top bottom offset for content
+$bound-offset-lr: 11.5%; // left right offset for content
+
+.c-heromedia, .c-mediacontainer, .c-heromedia-video{
+  position: relative;
+  margin: 0;
+  .h5 {
+    font-size: convert-in-rem(22);
+    line-height: convert-in-rem(28);
+    @media ($desktop){
+      font-size: convert-in-rem(32);
+      line-height: convert-in-rem(38);
+    }
+  }
+  .h6 {
+    font-size: convert-in-rem(18);
+    line-height: convert-in-rem(24);
+    @media ($desktop){
+      font-size: convert-in-rem(22);
+      line-height: convert-in-rem(28);
+    }
+  }
+  .headline {
+    @include components-header();
+    background: none;
+    margin: convert-in-rem(48) 0 convert-in-rem(24) 0;
+    @media ($desktop){
+      margin: 0 0 convert-in-rem(15) 0;
+    }
+  }
+  .subheadline {
+    margin: 0 0 convert-in-rem(16) 0;
+    @media ($desktop){
+      margin: 0 0 convert-in-rem(18) 0;
+    }
+  }
+
+  .hero_content {
+    margin-left: convert-in-rem(20);
+    margin-right: convert-in-rem(12);
+    margin-bottom: convert-in-rem(20);
+    @media ($desktop){
+      position: absolute;
+      width: convert-in-rem(384);
+      max-height: 600px;
+      margin: 0;
+      .x-body-text {
+        max-height: 385px;
+      }
+      // Content positioning
+      &.leftInsideImage,
+      &.rightInsideImage {
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+      &.topLeft{
+        top: $bound-offset-tb;
+        left: $bound-offset-lr;
+        transform: translate(0, 0);
+      }
+      &.topRight{
+        top: $bound-offset-tb;
+        right: $bound-offset-lr;
+        transform: translate(0, 0);
+      }
+      &.topCenter{
+        top: $bound-offset-tb;
+        left: 50%;
+        transform: translate(-50%, 0%);
+      }
+      &.leftInsideImage {
+        left: $bound-offset-lr;
+      }
+      &.rightInsideImage {
+        right: $bound-offset-lr;
+      }
+      &.leftOutsideImage,
+      &.rightOutsideImage {
+        top: 0;
+        right: 0;
+        transform: none; //changed from translate(0%, -40%) to none
+        position: relative;
+        display: inline-block;
+      }
+      &.topLeft,
+      &.bottomLeft,
+      &.middleLeft,
+      &.leftInsideImage,
+      &.leftOutsideImage{
+        text-align: left;
+      }
+      &.bottomRight,
+      &.topRight,
+      &.middleRight,
+      &.rightInsideImage,
+      &.rightOutsideImage{
+        text-align: left;
+      }
+      &.topCenter,
+      &.center,
+      &.bottomCenter {
+        text-align: center;
+      }
+      &.center{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &.middleLeft{
+        top: 50%;
+        left:$bound-offset-lr;
+        transform: translate(0, -50%);
+      }
+      &.middleRight{
+        top: 50%;
+        right:$bound-offset-lr;
+        transform: translate(0, -50%);
+      }
+      &.bottomLeft{
+        bottom: $bound-offset-tb;
+        left: $bound-offset-lr;
+        transform: translate(0, 0);
+      }
+      &.bottomCenter{
+        bottom: $bound-offset-tb;
+        left: 50%;
+        transform: translate(-50%, 0%);
+      }
+      &.bottomRight{
+        bottom: $bound-offset-tb;
+        right: $bound-offset-lr;
+        transform: translate(0, 0);
+      }
+    }
+    .x-submit-button {
+      margin-top: convert-in-rem(32);
+      text-transform: uppercase;
+      @media ($desktop){
+        margin-top: convert-in-rem(50);
+      }
+    }
+    .quote{
+      position: relative;
+      &:before{
+        content: url('/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/quotes-left.svg');
+        width: 24px;
+        height: 24px;
+      }
+      &:after{
+        content: url('/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/quotes-right.svg');
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .copyText {
+    margin: 0;
+  }
+}
+
+#jp_video_0{
+  width: 300px;
+  height: 200px;
+}
+
+// Default styling for video component
+.c-heromedia-video {
+  text-align:center;
+   @media ($tablet){
+    height: convert-in-rem(600);
+  }
+  @media ($mobile){
+    height: convert-in-rem(212);
+  }
+  .jp-interface {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(23, 49, 63, 0.4);
+    bottom: convert-in-rem(4);
+    height: 18%;
+    max-height: convert-in-rem(73);
+    visibility: hidden;
+    min-height: convert-in-rem(40);
+  }
+  .jp-gui {
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 convert-in-rem(16);
+  }
+  .jp-progress {
+    width: 100%;
+    background-image: none;
+    padding: 0;
+    height: convert-in-rem(6);
+    background-color: $clr-tint-blue;
+    margin-top: 2%;
+    transition: all 0.3s;
+    .jp-seek-bar{
+      position: relative;
+      height: 100%;
+      cursor: pointer;
+      .jp-play-bar{
+        background-color: $clr-white;
+        height: 100%;
+      }
+    }
+    &:hover{
+      -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    }
+  }
+  .jp-video-play {
+    position: absolute;
+    width: convert-in-rem(80);
+    height: convert-in-rem(80);
+    top: 50%;
+    cursor: pointer;
+    background-color: #fff;
+    left: 50%;
+    margin-top: convert-in-rem(-40);
+    margin-left: convert-in-rem(-40);
+    border-radius: 50%;
+    background-image: url(/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/bigPlayButton.svg);
+    -moz-box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+  }
+  .jp-video-ctrl {
+    margin-top: 8px;
+    display: inline-block;
+    width: convert-in-rem(24);
+    height: convert-in-rem(24);
+    cursor: pointer;
+    outline: none;
+    &:first-child{
+      margin-right: convert-in-rem(10);
+      margin-left: convert-in-rem(20);
+    }
+
+    &.ctrl-ext{
+      width: 30%;
+    }
+    .rangeslider--horizontal{
+      margin-top: convert-in-rem(10);
+    }
+
+    &.vid-play{
+      background-image: url(/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/vidPlay.svg);
+      &.pause{
+        background-image: url(/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/vidPause.svg);
+      }
+    }
+    &.vol-ctrl{
+      background-image: url(/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/vidVolOn.svg);
+      &.mute
+      {
+        background-image: url(/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/vidVolOff.svg);
+      }
+    }
+    &.vol-off{
+      background-image: url(/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/vidVolOff.svg);
+    }
+    &.full-scr{
+      background-image: url(/etc/designs/roche/customerportal/clientlibs/roche.global.publish/images/vidFullScr.svg);
+    }
+  }
+
+  .jp-play {
+    width: 0;
+    height: 0;
+    border-top: 11px solid transparent;
+    border-left: 16px solid #fff;
+    border-bottom: 11px solid transparent;
+    margin-top: convert-in-rem(5);
+    margin-left: convert-in-rem(22);
+  }
+  .jp-state-playing .jp-play {
+    width: 12px;
+    height: 16px;
+    border-right: 4px solid #fff;
+    border-left: 4px solid #fff;
+    border-top: 0;
+    border-bottom: 0;
+    margin-top: convert-in-rem(5);
+    margin-left: convert-in-rem(22);
+  }
+  .jp-heading-vid{
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    text-align: center;
+    width: 50%;
+  }
+
+  .jp-timer {
+    width: 40%;
+    float: right;
+    color: white;
+    font-size: convert-in-rem(18);
+    line-height: convert-in-rem(24);
+    font-family: $font-imagopro-light;
+    margin-right: convert-in-rem(20);
+    text-align: right;
+    .jp-duration{
+      margin-right: convert-in-rem(10);
+    }
+  }
+  .jp-controls {
+    width: 50%;
+    display: inline-block;
+  }
+  .jp-details {
+    display: none;
+  }
+}
+
+// Breakpoint Specific Changes
+// Desktop
+@media ($desktop) {
+  // Video player interface adjustments
+  .c-heromedia-video {
+    // Video control bar
+    .jp-interface {
+      height: 12%;
+      bottom: convert-in-rem(4);
+    }
+    .jp-state-playing .jp-interface {
+      bottom: convert-in-rem(4);
+    }
+    .jp-video-play {
+      width: convert-in-rem(160);
+      height: convert-in-rem(160);
+      margin-top: convert-in-rem(-80);
+      margin-left: convert-in-rem(-80);
+    }
+    .jp-play {
+      margin-top: convert-in-rem(10);
+    }
+    .jp-state-playing .jp-play {
+      margin-top: convert-in-rem(10);
+    }
+    .jp-timer {
+      font-size: convert-in-rem(22);
+      line-height: convert-in-rem(26);
+    }
+  }
+}
+
+
+// Used for MediaContainer split requirements
+.split-view-lg{
+  @media ($desktop){
+    display: table;
+    width: 100%;
+    .layer-cnt{
+      position: relative;
+      width: 50%;
+      min-height: 318px;
+      max-height: 600px;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      /* &.videoComponent {
+        display: inline-block;
+      } */
+    }
+  }
+  .c-heromedia-video{
+     background-color: black;
+     @media ($desktop){
+      .jp-jplayer{
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+      }
+     }
+  }
+}
+.c-heromedia {
+.no-image {
+  .layer-cnt {
+    .hero_content {
+      &.middleRight,
+      &.rightInsideImage,
+      &.rightOutsideImage,
+      &.leftInsideImage,
+      &.leftOutsideImage{
+        transform: none;
+        text-align: left;
+        margin: 0;
+        width: 80%;
+      }
+    }
+  }
+  }
+}
+// Container layer
+.layer-cnt{
+  &.video-info{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  &.with-opaque-img{
+    img{
+      background-color: white;
+      opacity: .6;
+    }
+  }
+}
+// Opaque layer
+.layer-opaque{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: .6;
+    pointer-events: none;
+}
+.layer-a{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+
+@media ($mobile){
+  .c-heromedia-video {
+    .jp-interface {
+      height: 30%;
+    }
+    .jp-gui {
+      width: 100%;
+      padding: 0;
+      .jp-controls {
+        width: 50%;
+        float: left;
+      }
+      .jp-timer {
+        float: left;
+        text-align: right;
+        margin: 2px;
+        width: 48%;
+        span {
+          float: left;
+          margin-top: convert-in-rem(8);
+        }
+        .full-scr {
+          float: left;
+        }
+      }
+    }
+    .jp-heading-vid {
+      top: 45%;
+    }
+  }
+}
+
+@media ($desktop){
+.c-heromedia {
+  .mediaContainer {
+    .hero_content{
+    &.leftInsideImage {
+      top: $bound-offset-tb;
+      left: $bound-offset-lr;
+      text-align: left;
+      transform:none;
+      position: absolute;
+    }
+    &.rightInsideImage {
+      top: $bound-offset-tb;
+      right: $bound-offset-lr;
+      text-align: left;
+      transform:none;
+      position: absolute;
+    }
+    }
+  }
+}
+}

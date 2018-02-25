@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Video Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <video
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Video"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <videotype
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                class="cq-dialog-dropdown-showhide"
+                                cq-dialog-dropdown-showhide-target=".text-image-hide-show"
+                                fieldLabel="Video Type"
+                                name="./videoType">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <external
+                                        jcr:primaryType="nt:unstructured"
+                                        text="External Video"
+                                        value="external"/>
+                                    <internal
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Internal Video"
+                                        value="internal"/>
+                                </items>
+                            </videotype>
+                            <external
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container"
+                                class="hide text-image-hide-show"
+                                showhidetargetvalue="external">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <heading
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/heading"
+                                        class="coral-Heading coral-Heading--4"
+                                        level="{Long}4"/>
+                                    <well
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <externalvideo
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldLabel="Video"
+                                                name="./assetPath"
+                                                showhidetargetvalue="external"/>
+                                        </items>
+                                    </well>
+                                </items>
+                            </external>
+                            <internal
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container"
+                                class="hide text-image-hide-show"
+                                showhidetargetvalue="internal">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <heading
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/heading"
+                                        class="coral-Heading coral-Heading--4"
+                                        level="{Long}4"/>
+                                    <well
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/layouts/well"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <file
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                                allowUpload="{Boolean}false"
+                                                autoStart="{Boolean}false"
+                                                class="cq-droptarget"
+                                                fieldLabel="Video asset"
+                                                fileNameParameter="./fileName"
+                                                fileReferenceParameter="./fileReference"
+                                                mimeTypes="[video/.*,image]"
+                                                multiple="{Boolean}false"
+                                                name="./file"
+                                                title="Video Asset"
+                                                uploadUrl="${suffix.path}"
+                                                useHTML5="{Boolean}true"/>
+                                        </items>
+                                    </well>
+                                </items>
+                            </internal>
+                            <headline
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Provide the headline text"
+                                fieldLabel="Headline text"
+                                name="./headline"
+                                required="true"/>
+                             <posterimage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldDescription="Poster for Video"
+                                fieldLabel="Poster"
+                                name="./posterLink"
+                                rootPath="/content/dam/customerportal"/>    
+                            <transparentOverlay
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="Please select if a transparent overlay for the image is required"
+                                fieldLabel="Transparent Overlay"
+                                name="./transparentOverlay">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <false
+                                        jcr:primaryType="nt:unstructured"
+                                        text="False"
+                                        value="false"/>
+                                    <true
+                                        jcr:primaryType="nt:unstructured"
+                                        text="True"
+                                        value="true"/>
+                                </items>
+                            </transparentOverlay>
+                        </items>
+                    </column>
+                </items>
+            </video>
+        </items>
+    </content>
+</jcr:root>
