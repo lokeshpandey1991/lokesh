@@ -1,4 +1,0 @@
-<?xml version="1.0"?>
-<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="cq:Page" jcr:title="ux-preview">
-  <jcr:content jcr:primaryType="nt:unstructured" jcr:title="ux-preview" sling:resourceType="/apps/roche/pharma/customerportal/components/imagegallery" pageTitle="ux-preview"/>
-</jcr:root>

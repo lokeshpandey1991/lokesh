@@ -1,7 +1,0 @@
-<sly data-sly-test.emptyContent="${wcmmode.edit}"> <div data-emptytext="configure ${component.title}" class="cq-placeholder"></div></sly>
-<sly data-sly-use.filterModel="com.roche.pharma.customerportal.core.models.ProductCategoryFilterModel">
-
-     <div data-sly-test="${filterModel.categoryFilter}" data-sly-use.lib="productCategoryFilter-template.html" data-sly-test="${properties.filters}"
-       data-sly-call="${lib.ProductCategoryFilter_template @ data=filterModel}"> </div>
-
-</sly>

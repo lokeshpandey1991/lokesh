@@ -1,8 +1,0 @@
-#base=js
-utils.js
-textfield.js
-pathfield.js
-multifield.js
-image-multifield.js
-image-multifield-node.js
-submit.js

@@ -1,9 +1,0 @@
-<template data-sly-template.dynamicimage_template="${@ imagePath,altText,className,imageView} ">
-<sly data-sly-use.dynamicImageModel="${'com.roche.pharma.customerportal.core.models.DynamicImageModel' @ imagePath=imagePath , assetAltText=altText , imageView=imageView}"/>
-<img src="${dynamicImageModel.fileReference}" class="js-dynamic-media ${className}"
-	itemprop="image" alt="${dynamicImageModel.altText}"
-	data-src_desktop="${dynamicImageModel.desktopUrl}"
-	data-src_mobileP="${dynamicImageModel.mobilePortraitUrl}"
-	data-src_mobileL="${dynamicImageModel.mobileLandscapeUrl}"
-	data-src_tabletP="${dynamicImageModel.tabletPortraitUrl}"
-	data-src_tabletL="${dynamicImageModel.tabletLandscapeUrl}" />
